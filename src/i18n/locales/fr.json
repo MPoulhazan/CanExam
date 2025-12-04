@@ -1,0 +1,29 @@
+{
+    "home": {
+        "title": "CanExam",
+        "subtitle": "Préparez-vous pour votre examen de citoyenneté",
+        "training": "Entraînement",
+        "trainingDescription": "Pratiquez avec des questions d'examen",
+        "statistics": "Statistiques",
+        "statisticsDescription": "Consultez vos progrès",
+        "settings": "Paramètres",
+        "settingsDescription": "Langue et préférences"
+    },
+    "training": {
+        "title": "Entraînement",
+        "question": "Question",
+        "of": "sur",
+        "next": "Suivant",
+        "submit": "Valider",
+        "correct": "Correct !",
+        "incorrect": "Incorrect",
+        "explanation": "Explication",
+        "score": "Score",
+        "restart": "Recommencer",
+        "back": "Retour"
+    },
+    "common": {
+        "loading": "Chargement...",
+        "error": "Une erreur est survenue"
+    }
+}

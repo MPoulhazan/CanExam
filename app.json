@@ -1,0 +1,24 @@
+{
+    "expo": {
+        "name": "CanExam",
+        "slug": "canexam",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "userInterfaceStyle": "dark",
+        "splash": {
+            "resizeMode": "contain",
+            "backgroundColor": "#0A0E27"
+        },
+        "assetBundlePatterns": ["**/*"],
+        "ios": {
+            "supportsTablet": true,
+            "bundleIdentifier": "com.canexam.app"
+        },
+        "android": {
+            "adaptiveIcon": {
+                "backgroundColor": "#0A0E27"
+            },
+            "package": "com.canexam.app"
+        }
+    }
+}

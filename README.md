@@ -1,47 +1,48 @@
-# CanExam - Application d'entraînement pour l'examen de citoyenneté canadienne
+# CanExam - Canadian Citizenship Exam Practice App
 
-Application mobile hybride pour iOS et Android permettant de s'entraîner aux examens de citoyenneté canadienne.
+A hybrid mobile application for iOS and Android that helps users practice for the Canadian citizenship exam.
 
-## 🚀 Fonctionnalités
+## 🚀 Features
 
--   ✅ Menu d'entraînement avec questions
--   ✅ Support multilingue (Français/Anglais)
--   ✅ Thème dark mode moderne
--   ✅ Animations fluides et attrayantes
--   ✅ Questions stockées localement (JSON)
--   ✅ Système de score et explications
+-   ✅ Quiz training menu with questions
+-   ✅ Multilingual support (French / English)
+-   ✅ Modern theme with dark mode
+-   ✅ Smooth, attractive animations
+-   ✅ Questions stored locally (JSON)
+-   ✅ Scoring system with explanations
 
 ## 📦 Installation
 
-1. Installer les dépendances:
+1. Install dependencies:
 
 ```bash
 npm install
 ```
 
-2. Démarrer l'application:
+2. Start the app:
 
 ```bash
 npm start
 ```
 
-3. Scanner le QR code avec Expo Go sur votre téléphone, ou:
-    - Appuyer sur `i` pour iOS (nécessite Xcode)
-    - Appuyer sur `a` pour Android (nécessite Android Studio)
+3. Scan the QR code with Expo Go on your phone, or:
+
+-   Press `i` to open in iOS simulator (requires Xcode)
+-   Press `a` to open in Android emulator (requires Android Studio)
 
 ## 🛠️ Technologies
 
--   **React Native** avec **Expo**
--   **TypeScript** pour le typage statique
--   **React Navigation** pour la navigation
--   **react-i18next** pour l'internationalisation
--   **styled-components** pour le styling
--   **react-native-reanimated** pour les animations
--   **JSON local** pour les questions
+-   **React Native** with **Expo**
+-   **TypeScript** for static typing
+-   **React Navigation** for navigation
+-   **react-i18next** for internationalization
+-   **styled-components** for styling
+-   **react-native-reanimated** for animations
+-   **Local JSON** for question storage
 
-## 📝 Structure des questions
+## 📝 Question structure
 
-Les questions sont stockées dans `src/data/questions.json` avec le format suivant:
+Questions are stored in `src/data/questions.json` with the following format:
 
 ```json
 {
@@ -62,19 +63,19 @@ Les questions sont stockées dans `src/data/questions.json` avec le format suiva
 }
 ```
 
-## 🎨 Personnalisation
+## 🎨 Customization
 
-Le thème peut être modifié dans `src/theme.ts`. Les couleurs, espacements, et typographies sont centralisés.
+The theme can be adjusted in `src/theme.ts`. Colors, spacing and typography are centralized there.
 
-## 📱 Build pour production
+## 📱 Production build
 
-Pour créer une build de production:
+To create a production build:
 
 ```bash
 expo build:android
 expo build:ios
 ```
 
-## 📄 Licence
+## 📄 License
 
 MIT

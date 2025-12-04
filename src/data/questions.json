@@ -1,0 +1,598 @@
+[
+    {
+        "id": 1,
+        "question": {
+            "fr": "Qui était le premier Premier ministre du Canada?",
+            "en": "Who was Canada's first Prime Minister?"
+        },
+        "options": {
+            "fr": [
+                "Sir John A. Macdonald",
+                "Wilfrid Laurier",
+                "William Lyon Mackenzie King",
+                "Pierre Trudeau"
+            ],
+            "en": [
+                "Sir John A. Macdonald",
+                "Wilfrid Laurier",
+                "William Lyon Mackenzie King",
+                "Pierre Trudeau"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Sir John A. Macdonald fut le premier Premier ministre du Canada de 1867 à 1873, puis de 1878 à 1891.",
+            "en": "Sir John A. Macdonald was Canada's first Prime Minister from 1867 to 1873, and again from 1878 to 1891."
+        }
+    },
+    {
+        "id": 2,
+        "question": {
+            "fr": "En quelle année le Canada est-il devenu un pays?",
+            "en": "In what year did Canada become a country?"
+        },
+        "options": {
+            "fr": ["1867", "1776", "1812", "1901"],
+            "en": ["1867", "1776", "1812", "1901"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le Canada est devenu un pays le 1er juillet 1867 avec l'Acte de l'Amérique du Nord britannique.",
+            "en": "Canada became a country on July 1, 1867 with the British North America Act."
+        }
+    },
+    {
+        "id": 3,
+        "question": {
+            "fr": "Quelle est la capitale du Canada?",
+            "en": "What is the capital of Canada?"
+        },
+        "options": {
+            "fr": ["Ottawa", "Toronto", "Montréal", "Vancouver"],
+            "en": ["Ottawa", "Toronto", "Montréal", "Vancouver"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Ottawa est la capitale du Canada depuis 1857, choisie par la reine Victoria.",
+            "en": "Ottawa has been the capital of Canada since 1857, chosen by Queen Victoria."
+        }
+    },
+    {
+        "id": 4,
+        "question": {
+            "fr": "Combien de provinces le Canada compte-t-il?",
+            "en": "How many provinces does Canada have?"
+        },
+        "options": {
+            "fr": ["10", "9", "11", "12"],
+            "en": ["10", "9", "11", "12"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le Canada compte 10 provinces: Alberta, Colombie-Britannique, Manitoba, Nouveau-Brunswick, Terre-Neuve-et-Labrador, Nouvelle-Écosse, Ontario, Île-du-Prince-Édouard, Québec et Saskatchewan.",
+            "en": "Canada has 10 provinces: Alberta, British Columbia, Manitoba, New Brunswick, Newfoundland and Labrador, Nova Scotia, Ontario, Prince Edward Island, Quebec, and Saskatchewan."
+        }
+    },
+    {
+        "id": 5,
+        "question": {
+            "fr": "Quel est le symbole national du Canada?",
+            "en": "What is Canada's national symbol?"
+        },
+        "options": {
+            "fr": [
+                "La feuille d'érable",
+                "Le castor",
+                "Le caribou",
+                "L'ours polaire"
+            ],
+            "en": [
+                "The maple leaf",
+                "The beaver",
+                "The caribou",
+                "The polar bear"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "La feuille d'érable est le symbole national du Canada et apparaît sur le drapeau canadien.",
+            "en": "The maple leaf is Canada's national symbol and appears on the Canadian flag."
+        }
+    },
+
+    {
+        "id": 6,
+        "question": {
+            "fr": "Quelle est la langue officielle du gouvernement fédéral canadien?",
+            "en": "What are the official languages of the federal government of Canada?"
+        },
+        "options": {
+            "fr": [
+                "Le français et l'anglais",
+                "Seulement le français",
+                "Seulement l'anglais",
+                "Le français et l'espagnol"
+            ],
+            "en": [
+                "French and English",
+                "French only",
+                "English only",
+                "French and Spanish"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le Canada a deux langues officielles: le français et l'anglais.",
+            "en": "Canada has two official languages: French and English."
+        }
+    },
+    {
+        "id": 7,
+        "question": {
+            "fr": "Quel symbole apparaît sur le drapeau canadien?",
+            "en": "What symbol appears on the Canadian flag?"
+        },
+        "options": {
+            "fr": [
+                "La feuille d'érable",
+                "La fleur de lys",
+                "La rose",
+                "Le chêne"
+            ],
+            "en": ["The maple leaf", "The fleur-de-lis", "The rose", "The oak"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le drapeau canadien affiche une grande feuille d'érable rouge au centre.",
+            "en": "The Canadian flag features a large red maple leaf in the centre."
+        }
+    },
+    {
+        "id": 8,
+        "question": {
+            "fr": "Quel est le système politique du Canada?",
+            "en": "What is Canada's system of government?"
+        },
+        "options": {
+            "fr": [
+                "Une monarchie constitutionnelle et une démocratie parlementaire",
+                "Une république",
+                "Une dictature",
+                "Une théocratie"
+            ],
+            "en": [
+                "A constitutional monarchy and parliamentary democracy",
+                "A republic",
+                "A dictatorship",
+                "A theocracy"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le Canada est une monarchie constitutionnelle avec un système parlementaire démocratique.",
+            "en": "Canada is a constitutional monarchy with a parliamentary democracy."
+        }
+    },
+    {
+        "id": 9,
+        "question": {
+            "fr": "Qui représente le monarque au Canada?",
+            "en": "Who represents the monarch in Canada?"
+        },
+        "options": {
+            "fr": [
+                "Le gouverneur général",
+                "Le Premier ministre",
+                "Le chef de l'opposition",
+                "Le maire d'Ottawa"
+            ],
+            "en": [
+                "The Governor General",
+                "The Prime Minister",
+                "The Leader of the Opposition",
+                "The Mayor of Ottawa"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le gouverneur général représente le monarque au Canada.",
+            "en": "The Governor General represents the monarch in Canada."
+        }
+    },
+    {
+        "id": 10,
+        "question": {
+            "fr": "Quel est le rôle du Premier ministre?",
+            "en": "What is the role of the Prime Minister?"
+        },
+        "options": {
+            "fr": [
+                "Chef du gouvernement fédéral",
+                "Chef de l'État",
+                "Juge en chef de la Cour suprême",
+                "Gouverneur général"
+            ],
+            "en": [
+                "Head of the federal government",
+                "Head of State",
+                "Chief Justice of the Supreme Court",
+                "Governor General"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le Premier ministre est le chef du gouvernement fédéral et dirige le cabinet.",
+            "en": "The Prime Minister is the head of the federal government and leads the cabinet."
+        }
+    },
+    {
+        "id": 11,
+        "question": {
+            "fr": "Quelle est la plus haute cour au Canada?",
+            "en": "What is the highest court in Canada?"
+        },
+        "options": {
+            "fr": [
+                "La Cour suprême du Canada",
+                "La Cour d'appel",
+                "La Cour fédérale",
+                "La Cour provinciale"
+            ],
+            "en": [
+                "The Supreme Court of Canada",
+                "The Court of Appeal",
+                "The Federal Court",
+                "The Provincial Court"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "La Cour suprême du Canada est la plus haute instance judiciaire du pays.",
+            "en": "The Supreme Court of Canada is the highest judicial authority in the country."
+        }
+    },
+    {
+        "id": 12,
+        "question": {
+            "fr": "Qui peut voter aux élections fédérales au Canada?",
+            "en": "Who can vote in federal elections in Canada?"
+        },
+        "options": {
+            "fr": [
+                "Les citoyens canadiens âgés de 18 ans et plus",
+                "Les résidents permanents",
+                "Les visiteurs temporaires",
+                "Les mineurs"
+            ],
+            "en": [
+                "Canadian citizens aged 18 and over",
+                "Permanent residents",
+                "Temporary visitors",
+                "Minors"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Seuls les citoyens canadiens âgés de 18 ans et plus peuvent voter aux élections fédérales.",
+            "en": "Only Canadian citizens aged 18 and over can vote in federal elections."
+        }
+    },
+    {
+        "id": 13,
+        "question": {
+            "fr": "Quel document garantit les droits et libertés fondamentaux au Canada?",
+            "en": "What document guarantees fundamental rights and freedoms in Canada?"
+        },
+        "options": {
+            "fr": [
+                "La Charte canadienne des droits et libertés",
+                "La Constitution des États-Unis",
+                "La Déclaration des droits",
+                "La Magna Carta"
+            ],
+            "en": [
+                "The Canadian Charter of Rights and Freedoms",
+                "The United States Constitution",
+                "The Bill of Rights",
+                "The Magna Carta"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "La Charte canadienne des droits et libertés fait partie de la Constitution et protège les droits fondamentaux.",
+            "en": "The Canadian Charter of Rights and Freedoms is part of the Constitution and protects fundamental rights."
+        }
+    },
+    {
+        "id": 14,
+        "question": {
+            "fr": "Quelle est la monnaie du Canada?",
+            "en": "What is the currency of Canada?"
+        },
+        "options": {
+            "fr": [
+                "Le dollar canadien",
+                "Le dollar américain",
+                "L'euro",
+                "La livre sterling"
+            ],
+            "en": [
+                "The Canadian dollar",
+                "The US dollar",
+                "The Euro",
+                "The British pound"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "La monnaie officielle du Canada est le dollar canadien (CAD).",
+            "en": "The official currency of Canada is the Canadian dollar (CAD)."
+        }
+    },
+    {
+        "id": 15,
+        "question": {
+            "fr": "Quel est le nom du Parlement fédéral?",
+            "en": "What is the name of the federal parliament?"
+        },
+        "options": {
+            "fr": [
+                "Le Parlement du Canada",
+                "La Législature du Québec",
+                "Le Congrès",
+                "L'Assemblée nationale"
+            ],
+            "en": [
+                "Parliament of Canada",
+                "Quebec Legislature",
+                "Congress",
+                "National Assembly"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le Parlement du Canada est composé de la Reine (représentée par le Gouverneur général), du Sénat et de la Chambre des communes.",
+            "en": "The Parliament of Canada is made up of the Queen (represented by the Governor General), the Senate, and the House of Commons."
+        }
+    },
+    {
+        "id": 16,
+        "question": {
+            "fr": "Combien de territoires le Canada possède-t-il?",
+            "en": "How many territories does Canada have?"
+        },
+        "options": {
+            "fr": ["3", "2", "4", "5"],
+            "en": ["3", "2", "4", "5"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le Canada compte trois territoires: Yukon, Territoires du Nord-Ouest et Nunavut.",
+            "en": "Canada has three territories: Yukon, Northwest Territories, and Nunavut."
+        }
+    },
+    {
+        "id": 17,
+        "question": {
+            "fr": "Quel est le nom du fleuve le plus long du Canada?",
+            "en": "What is the longest river in Canada?"
+        },
+        "options": {
+            "fr": [
+                "La rivière Mackenzie",
+                "Le fleuve Saint-Laurent",
+                "La rivière Fraser",
+                "La rivière Yukon"
+            ],
+            "en": [
+                "Mackenzie River",
+                "St. Lawrence River",
+                "Fraser River",
+                "Yukon River"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "La rivière Mackenzie est la plus longue au Canada.",
+            "en": "The Mackenzie River is the longest river in Canada."
+        }
+    },
+    {
+        "id": 18,
+        "question": {
+            "fr": "Quelle province est la plus peuplée du Canada?",
+            "en": "Which province is the most populous in Canada?"
+        },
+        "options": {
+            "fr": ["Ontario", "Québec", "Colombie-Britannique", "Alberta"],
+            "en": ["Ontario", "Quebec", "British Columbia", "Alberta"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "L'Ontario est la province la plus peuplée du Canada.",
+            "en": "Ontario is the most populous province in Canada."
+        }
+    },
+    {
+        "id": 19,
+        "question": {
+            "fr": "Quel est le nom du chef de l'État au Canada?",
+            "en": "Who is the head of state in Canada?"
+        },
+        "options": {
+            "fr": [
+                "Le monarque (ex: la Reine/roi)",
+                "Le Premier ministre",
+                "Le gouverneur général",
+                "Le président"
+            ],
+            "en": [
+                "The monarch (e.g., Queen/King)",
+                "The Prime Minister",
+                "The Governor General",
+                "The President"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le monarque est le chef d'État; toutefois, il est représenté au Canada par le gouverneur général.",
+            "en": "The monarch is the head of state; however, they are represented in Canada by the Governor General."
+        }
+    },
+    {
+        "id": 20,
+        "question": {
+            "fr": "Quel est le principal rôle du Sénat?",
+            "en": "What is the primary role of the Senate?"
+        },
+        "options": {
+            "fr": [
+                "Réviser et étudier les projets de loi",
+                "Rédiger les lois",
+                "Diriger le gouvernement",
+                "Gérer les élections"
+            ],
+            "en": [
+                "To review and study bills",
+                "To draft laws",
+                "To run the government",
+                "To manage elections"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le Sénat révise et étudie les projets de loi adoptés par la Chambre des communes.",
+            "en": "The Senate reviews and studies bills passed by the House of Commons."
+        }
+    },
+    {
+        "id": 21,
+        "question": {
+            "fr": "Quelle journée nationale célèbre la fondation du Canada?",
+            "en": "Which national day celebrates Canada's founding?"
+        },
+        "options": {
+            "fr": [
+                "La fête du Canada (1er juillet)",
+                "Le Jour du Canada (25 décembre)",
+                "La Fête nationale (1er mai)",
+                "Le Jour du Souvenir (11 novembre)"
+            ],
+            "en": [
+                "Canada Day (July 1)",
+                "Canada Day (December 25)",
+                "National Day (May 1)",
+                "Remembrance Day (November 11)"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "La fête du Canada est célébrée le 1er juillet pour commémorer la Confédération de 1867.",
+            "en": "Canada Day is celebrated on July 1 to mark Confederation in 1867."
+        }
+    },
+    {
+        "id": 22,
+        "question": {
+            "fr": "Quel est l'âge minimum pour devenir citoyen canadien naturalisé?",
+            "en": "What is the minimum age to apply for Canadian citizenship by naturalization?"
+        },
+        "options": {
+            "fr": [
+                "Il n'y a pas d'âge minimum pour être éligible (les mineurs peuvent être inclus)",
+                "18 ans",
+                "21 ans",
+                "16 ans"
+            ],
+            "en": [
+                "There is no strict minimum age (minors can be included)",
+                "18 years old",
+                "21 years old",
+                "16 years old"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Les mineurs peuvent devenir citoyens dans le cadre des demandes des parents; il n'y a pas d'âge minimum strict pour être inclus.",
+            "en": "Minors can become citizens as part of their parents' applications; there is no strict minimum age for inclusion."
+        }
+    },
+    {
+        "id": 23,
+        "question": {
+            "fr": "Quel est le principal document constitutionnel du Canada?",
+            "en": "What is the main constitutional document of Canada?"
+        },
+        "options": {
+            "fr": [
+                "La Loi constitutionnelle de 1867 (et ses amendements)",
+                "La Déclaration d'indépendance",
+                "La Charte des Nations Unies",
+                "La Constitution française"
+            ],
+            "en": [
+                "The Constitution Act, 1867 (and amendments)",
+                "The Declaration of Independence",
+                "The United Nations Charter",
+                "The French Constitution"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "La Loi constitutionnelle de 1867 (anciennement l'Acte de l'Amérique du Nord britannique) et la Loi constitutionnelle de 1982 constituent la base constitutionnelle du Canada.",
+            "en": "The Constitution Act, 1867 (formerly the British North America Act) and the Constitution Act, 1982 form Canada's constitutional foundation."
+        }
+    },
+    {
+        "id": 24,
+        "question": {
+            "fr": "Quel est l'emblème floral du Canada?",
+            "en": "What is Canada's floral emblem?"
+        },
+        "options": {
+            "fr": [
+                "La feuille d'érable (symbole national)",
+                "La rose (symbole anglais)",
+                "La fleur de lys (Québec)",
+                "La fleur de pissenlit"
+            ],
+            "en": [
+                "The maple leaf (national symbol)",
+                "The rose (English symbol)",
+                "The fleur-de-lis (Quebec)",
+                "The dandelion flower"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "La feuille d'érable est l'emblème végétal le plus reconnu du Canada.",
+            "en": "The maple leaf is Canada's most recognized plant emblem."
+        }
+    },
+    {
+        "id": 25,
+        "question": {
+            "fr": "Quel est le principal rôle des élus municipaux?",
+            "en": "What is the primary role of elected municipal officials?"
+        },
+        "options": {
+            "fr": [
+                "Gérer les services locaux comme les routes, l'eau et les déchets",
+                "Diriger le gouvernement fédéral",
+                "Administrer les provinces",
+                "Gérer les relations internationales"
+            ],
+            "en": [
+                "Manage local services like roads, water and waste",
+                "Run the federal government",
+                "Administer provinces",
+                "Manage international relations"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Les élus municipaux gèrent les services et infrastructures locaux au sein des villes et municipalités.",
+            "en": "Municipal officials manage local services and infrastructure within cities and towns."
+        }
+    }
+]

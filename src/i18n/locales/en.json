@@ -1,0 +1,29 @@
+{
+    "home": {
+        "title": "CanExam",
+        "subtitle": "Prepare for your citizenship exam",
+        "training": "Training",
+        "trainingDescription": "Practice with exam questions",
+        "statistics": "Statistics",
+        "statisticsDescription": "View your progress",
+        "settings": "Settings",
+        "settingsDescription": "Language and preferences"
+    },
+    "training": {
+        "title": "Training",
+        "question": "Question",
+        "of": "of",
+        "next": "Next",
+        "submit": "Submit",
+        "correct": "Correct!",
+        "incorrect": "Incorrect",
+        "explanation": "Explanation",
+        "score": "Score",
+        "restart": "Restart",
+        "back": "Back"
+    },
+    "common": {
+        "loading": "Loading...",
+        "error": "An error occurred"
+    }
+}
