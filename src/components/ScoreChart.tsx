@@ -19,8 +19,9 @@ const ScoreChart: React.FC<Props> = ({
 
     const max = 20;
     const stepX = width / Math.max(1, scores.length - 1);
+    // invert x-axis so newest/last points appear at the right side
     const points = scores
-        .map((s, i) => `${i * stepX},${height - (s / max) * height}`)
+        .map((s, i) => `${width - i * stepX},${height - (s / max) * height}`)
         .join(' ');
 
     const threshY = height - (threshold / max) * height;

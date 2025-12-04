@@ -72,11 +72,13 @@ const Subtitle = styled(Text)`
         props.theme.typography.body.lineHeight}px;
 `;
 
+// TitleBadge removed for a cleaner aesthetic
+
 const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
     const { t } = useTranslation();
     const titleOpacity = useRef(new Animated.Value(0)).current;
     const titleTranslateY = useRef(new Animated.Value(20)).current;
-    const pulseAnim = useRef(new Animated.Value(0)).current;
+    // pulseAnim removed for a cleaner title effect
     const subtitleOpacity = useRef(new Animated.Value(0)).current;
     const subtitleTranslateY = useRef(new Animated.Value(20)).current;
 
@@ -104,23 +106,7 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
                 delay: 220,
                 useNativeDriver: true,
             }),
-        ]).start(() => {
-            // small looping pulse + rotation to give life to the title
-            Animated.loop(
-                Animated.sequence([
-                    Animated.timing(pulseAnim, {
-                        toValue: 1,
-                        duration: 900,
-                        useNativeDriver: true,
-                    }),
-                    Animated.timing(pulseAnim, {
-                        toValue: 0,
-                        duration: 900,
-                        useNativeDriver: true,
-                    }),
-                ])
-            ).start();
-        });
+        ]).start();
     }, []);
 
     return (
@@ -132,58 +118,55 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
                             style={{
                                 opacity: titleOpacity,
                                 transform: [{ translateY: titleTranslateY }],
-                                alignItems: 'flex-start',
+                                alignItems: 'center',
                             }}
                         >
                             <Animated.View
                                 style={{
                                     flexDirection: 'row',
                                     alignItems: 'baseline',
-                                    transform: [
-                                        {
-                                            scale: titleOpacity.interpolate({
-                                                inputRange: [0, 1],
-                                                outputRange: [0.9, 1],
-                                            }),
-                                        },
-                                    ],
+                                    justifyContent: 'center',
                                 }}
                             >
                                 <Animated.Text
                                     style={{
-                                        fontSize: 36,
+                                        fontSize: 40,
                                         fontWeight: '800',
                                         color: theme.colors.secondary,
                                         letterSpacing: 0.6,
-                                        textShadowColor: 'rgba(0,0,0,0.5)',
+                                        textShadowColor: 'rgba(0,0,0,0.35)',
                                         textShadowOffset: {
                                             width: 0,
-                                            height: 8,
+                                            height: 6,
                                         },
-                                        textShadowRadius: 20,
+                                        textShadowRadius: 18,
+                                        fontFamily: 'System',
                                     }}
                                 >
                                     Can
                                 </Animated.Text>
                                 <Animated.Text
                                     style={{
-                                        fontSize: 36,
+                                        fontSize: 40,
                                         fontWeight: '800',
                                         color: theme.colors.primaryLight,
                                         letterSpacing: 0.6,
-                                        marginLeft: 6,
-                                        textShadowColor: 'rgba(0,0,0,0.5)',
+                                        marginLeft: 8,
+                                        textShadowColor: 'rgba(0,0,0,0.35)',
                                         textShadowOffset: {
                                             width: 0,
-                                            height: 8,
+                                            height: 6,
                                         },
-                                        textShadowRadius: 20,
+                                        textShadowRadius: 18,
+                                        fontFamily: 'System',
                                     }}
                                 >
                                     Exam
                                 </Animated.Text>
                             </Animated.View>
-                            <Subtitle style={{ marginTop: 6 }}>
+                            <Subtitle
+                                style={{ marginTop: 6, textAlign: 'center' }}
+                            >
                                 {t('home.subtitle')}
                             </Subtitle>
                         </Animated.View>

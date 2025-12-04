@@ -13,6 +13,7 @@ import ResultScreen from './src/screens/ResultScreen';
 import StatisticsScreen from './src/screens/StatisticsScreen';
 import SettingsScreen from './src/screens/SettingsScreen';
 import { RootStackParamList } from './src/types';
+import AppHeader from './src/components/AppHeader';
 
 const Stack = createStackNavigator<RootStackParamList>();
 
@@ -23,14 +24,21 @@ export default function App() {
                 <NavigationContainer>
                     <StatusBar style="light" />
                     <Stack.Navigator
-                        screenOptions={{
-                            headerShown: false,
+                        screenOptions={({ route, navigation }) => ({
+                            headerShown: true,
+                            header: (headerProps) => (
+                                <AppHeader {...headerProps} />
+                            ),
                             cardStyle: {
                                 backgroundColor: theme.colors.background,
                             },
-                        }}
+                        })}
                     >
-                        <Stack.Screen name="Home" component={HomeScreen} />
+                        <Stack.Screen
+                            name="Home"
+                            component={HomeScreen}
+                            options={{ headerTitle: '' }}
+                        />
                         <Stack.Screen
                             name="Training"
                             component={TrainingScreen}

@@ -9,6 +9,9 @@ import Card from '../components/Card';
 import Button from '../components/Button';
 import questionsData from '../data/questions.json';
 import { theme } from '../theme';
+import { DefaultTheme } from 'styled-components';
+
+type ThemeProps = { theme: DefaultTheme };
 import { RootStackParamList, Question } from '../types';
 
 type TrainingScreenNavigationProp = StackNavigationProp<
@@ -22,40 +25,40 @@ interface TrainingScreenProps {
 
 const Container = styled(SafeAreaView)`
     flex: 1;
-    background-color: ${(props) => props.theme.colors.background};
+    background-color: ${(props: ThemeProps) => props.theme.colors.background};
 `;
 
 const Header = styled.View`
     flex-direction: row;
     align-items: center;
-    padding: ${(props) => props.theme.spacing.lg}px;
-    padding-bottom: ${(props) => props.theme.spacing.md}px;
+    padding: ${(props: ThemeProps) => props.theme.spacing.lg}px;
+    padding-bottom: ${(props: ThemeProps) => props.theme.spacing.md}px;
 `;
 
 const BackButton = styled.TouchableOpacity`
-    margin-right: ${(props) => props.theme.spacing.md}px;
+    margin-right: ${(props: ThemeProps) => props.theme.spacing.md}px;
 `;
 
 const HeaderTitle = styled.Text`
-    color: ${(props) => props.theme.colors.text};
-    font-size: ${(props) => props.theme.typography.h2.fontSize}px;
-    font-weight: ${(props) => props.theme.typography.h2.fontWeight};
+    color: ${(props: ThemeProps) => props.theme.colors.text};
+    font-size: ${(props: ThemeProps) => props.theme.typography.h2.fontSize}px;
+    font-weight: ${(props: ThemeProps) => props.theme.typography.h2.fontWeight};
     flex: 1;
 `;
 
 const ProgressBar = styled.View`
     height: 4px;
-    background-color: ${(props) => props.theme.colors.surfaceLight};
-    margin: ${(props) => props.theme.spacing.lg}px;
+    background-color: ${(props: ThemeProps) => props.theme.colors.surfaceLight};
+    margin: ${(props: ThemeProps) => props.theme.spacing.lg}px;
     margin-top: 0;
-    border-radius: ${(props) => props.theme.borderRadius.full}px;
+    border-radius: ${(props: ThemeProps) => props.theme.borderRadius.full}px;
     overflow: hidden;
 `;
 
 const ProgressFill = styled(View)`
     height: 100%;
-    background-color: ${(props) => props.theme.colors.primary};
-    border-radius: ${(props) => props.theme.borderRadius.full}px;
+    background-color: ${(props: ThemeProps) => props.theme.colors.primary};
+    border-radius: ${(props: ThemeProps) => props.theme.borderRadius.full}px;
 `;
 
 const ScrollContainer = styled(ScrollView)`
@@ -63,23 +66,25 @@ const ScrollContainer = styled(ScrollView)`
 `;
 
 const Content = styled.View`
-    padding: ${(props) => props.theme.spacing.lg}px;
+    padding: ${(props: ThemeProps) => props.theme.spacing.lg}px;
 `;
 
 const QuestionNumber = styled.Text`
-    color: ${(props) => props.theme.colors.textMuted};
-    font-size: ${(props) => props.theme.typography.bodySmall.fontSize}px;
-    margin-bottom: ${(props) => props.theme.spacing.sm}px;
+    color: ${(props: ThemeProps) => props.theme.colors.textMuted};
+    font-size: ${(props: ThemeProps) =>
+        props.theme.typography.bodySmall.fontSize}px;
+    margin-bottom: ${(props: ThemeProps) => props.theme.spacing.sm}px;
     text-transform: uppercase;
     letter-spacing: 1px;
 `;
 
 const QuestionText = styled(Text)`
-    color: ${(props) => props.theme.colors.text};
-    font-size: ${(props) => props.theme.typography.h3.fontSize}px;
-    font-weight: ${(props) => props.theme.typography.h3.fontWeight};
-    line-height: ${(props) => props.theme.typography.h3.lineHeight}px;
-    margin-bottom: ${(props) => props.theme.spacing.xl}px;
+    color: ${(props: ThemeProps) => props.theme.colors.text};
+    font-size: ${(props: ThemeProps) => props.theme.typography.h3.fontSize}px;
+    font-weight: ${(props: ThemeProps) => props.theme.typography.h3.fontWeight};
+    line-height: ${(props: ThemeProps) =>
+        props.theme.typography.h3.lineHeight}px;
+    margin-bottom: ${(props: ThemeProps) => props.theme.spacing.xl}px;
 `;
 
 const OptionButton = styled.TouchableOpacity<{
@@ -87,7 +92,13 @@ const OptionButton = styled.TouchableOpacity<{
     correct?: boolean;
     incorrect?: boolean;
 }>`
-    background-color: ${(props) =>
+    background-color: ${(
+        props: {
+            selected?: boolean;
+            correct?: boolean;
+            incorrect?: boolean;
+        } & ThemeProps
+    ) =>
         props.selected
             ? props.correct
                 ? props.theme.colors.success
@@ -95,11 +106,17 @@ const OptionButton = styled.TouchableOpacity<{
                 ? props.theme.colors.error
                 : props.theme.colors.primary
             : props.theme.colors.surfaceLight};
-    padding: ${(props) => props.theme.spacing.md}px;
-    border-radius: ${(props) => props.theme.borderRadius.md}px;
-    margin-bottom: ${(props) => props.theme.spacing.md}px;
+    padding: ${(props: ThemeProps) => props.theme.spacing.md}px;
+    border-radius: ${(props: ThemeProps) => props.theme.borderRadius.md}px;
+    margin-bottom: ${(props: ThemeProps) => props.theme.spacing.md}px;
     border: 2px solid
-        ${(props) =>
+        ${(
+            props: {
+                selected?: boolean;
+                correct?: boolean;
+                incorrect?: boolean;
+            } & ThemeProps
+        ) =>
             props.selected
                 ? props.correct
                     ? props.theme.colors.success
@@ -112,36 +129,38 @@ const OptionButton = styled.TouchableOpacity<{
 `;
 
 const OptionText = styled.Text`
-    color: ${(props) => props.theme.colors.text};
-    font-size: ${(props) => props.theme.typography.body.fontSize}px;
+    color: ${(props: ThemeProps) => props.theme.colors.text};
+    font-size: ${(props: ThemeProps) => props.theme.typography.body.fontSize}px;
     flex: 1;
 `;
 
 const ExplanationCard = styled(View)<{ correct?: boolean }>`
-    background-color: ${(props) => props.theme.colors.surfaceLight};
-    border-radius: ${(props) => props.theme.borderRadius.md}px;
-    padding: ${(props) => props.theme.spacing.md}px;
-    margin-top: ${(props) => props.theme.spacing.md}px;
+    background-color: ${(props: ThemeProps) => props.theme.colors.surfaceLight};
+    border-radius: ${(props: ThemeProps) => props.theme.borderRadius.md}px;
+    padding: ${(props: ThemeProps) => props.theme.spacing.md}px;
+    margin-top: ${(props: ThemeProps) => props.theme.spacing.md}px;
     border-left-width: 4px;
-    border-left-color: ${(props) =>
+    border-left-color: ${(props: { correct?: boolean } & ThemeProps) =>
         props.correct ? props.theme.colors.success : props.theme.colors.error};
 `;
 
 const ExplanationTitle = styled.Text`
-    color: ${(props) => props.theme.colors.text};
+    color: ${(props: ThemeProps) => props.theme.colors.text};
     font-weight: 600;
-    margin-bottom: ${(props) => props.theme.spacing.xs}px;
+    margin-bottom: ${(props: ThemeProps) => props.theme.spacing.xs}px;
 `;
 
 const ExplanationText = styled.Text`
-    color: ${(props) => props.theme.colors.textSecondary};
-    font-size: ${(props) => props.theme.typography.bodySmall.fontSize}px;
-    line-height: ${(props) => props.theme.typography.bodySmall.lineHeight}px;
+    color: ${(props: ThemeProps) => props.theme.colors.textSecondary};
+    font-size: ${(props: ThemeProps) =>
+        props.theme.typography.bodySmall.fontSize}px;
+    line-height: ${(props: ThemeProps) =>
+        props.theme.typography.bodySmall.lineHeight}px;
 `;
 
 const ButtonContainer = styled.View`
-    padding: ${(props) => props.theme.spacing.lg}px;
-    padding-top: ${(props) => props.theme.spacing.md}px;
+    padding: ${(props: ThemeProps) => props.theme.spacing.lg}px;
+    padding-top: ${(props: ThemeProps) => props.theme.spacing.md}px;
 `;
 
 const TrainingScreen: React.FC<TrainingScreenProps> = ({ navigation }) => {
@@ -239,12 +258,8 @@ const TrainingScreen: React.FC<TrainingScreenProps> = ({ navigation }) => {
             setSelectedAnswer(null);
             setShowExplanation(false);
         } else {
-            // Fin du quiz — calculer le score final et naviguer vers l'écran Result
-            const finalScore =
-                score +
-                (selectedAnswer === questions[currentQuestion].correctAnswer
-                    ? 1
-                    : 0);
+            // End of quiz — final score already accumulated in `score`
+            const finalScore = score;
             const total = questions.length;
             const passed = finalScore >= 15;
             navigation.navigate('Result', { score: finalScore, total, passed });
