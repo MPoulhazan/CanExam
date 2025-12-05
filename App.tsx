@@ -1,5 +1,11 @@
 import 'react-native-gesture-handler';
 import React, { useEffect, useState, createContext } from 'react';
+import {
+    useFonts,
+    Comfortaa_400Regular,
+    Comfortaa_700Bold,
+} from '@expo-google-fonts/comfortaa';
+import AppLoading from 'expo-app-loading';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { StatusBar } from 'expo-status-bar';
@@ -27,7 +33,6 @@ const Stack = createStackNavigator<RootStackParamList>();
 export default function App() {
     const [mode, setMode] = useState<'light' | 'dark'>('light');
     const [loaded, setLoaded] = useState(false);
-
     useEffect(() => {
         const load = async () => {
             const stored = await AsyncStorage.getItem('preferred_theme');
@@ -38,9 +43,12 @@ export default function App() {
         load();
     }, []);
 
+    // Always call font hook at top-level so hook ordering is stable
+    const [fontsLoaded] = useFonts({ Comfortaa_400Regular, Comfortaa_700Bold });
+
     const currentTheme = mode === 'dark' ? darkTheme : lightTheme;
 
-    if (!loaded) return null; // simple splash while loading preference
+    if (!loaded || !fontsLoaded) return <AppLoading />; // splash while loading preference and fonts
 
     return (
         <I18nextProvider i18n={i18n}>

@@ -107,6 +107,8 @@ export interface Theme {
             elevation: number;
         };
     };
+    // optional font family loaded from Google Fonts
+    fontFamily?: string;
 }
 
 declare module 'styled-components/native' {

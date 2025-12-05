@@ -1,0 +1,2228 @@
+[
+    {
+        "id": 1,
+        "question": {
+            "fr": "Qui était le premier Premier ministre du Canada?",
+            "en": "Who was Canada's first Prime Minister?"
+        },
+        "options": {
+            "fr": [
+                "Sir John A. Macdonald",
+                "Wilfrid Laurier",
+                "William Lyon Mackenzie King",
+                "Pierre Trudeau"
+            ],
+            "en": [
+                "Sir John A. Macdonald",
+                "Wilfrid Laurier",
+                "William Lyon Mackenzie King",
+                "Pierre Trudeau"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Sir John A. Macdonald fut le premier Premier ministre du Canada de 1867 à 1873, puis de 1878 à 1891.",
+            "en": "Sir John A. Macdonald was Canada's first Prime Minister from 1867 to 1873, and again from 1878 to 1891."
+        }
+    },
+    {
+        "id": 2,
+        "question": {
+            "fr": "En quelle année le Canada est-il devenu un pays?",
+            "en": "In what year did Canada become a country?"
+        },
+        "options": {
+            "fr": ["1867", "1776", "1812", "1901"],
+            "en": ["1867", "1776", "1812", "1901"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le Canada est devenu un pays le 1er juillet 1867 avec l'Acte de l'Amérique du Nord britannique.",
+            "en": "Canada became a country on July 1, 1867 with the British North America Act."
+        }
+    },
+    {
+        "id": 3,
+        "question": {
+            "fr": "Quelle est la capitale du Canada?",
+            "en": "What is the capital of Canada?"
+        },
+        "options": {
+            "fr": ["Ottawa", "Toronto", "Montréal", "Vancouver"],
+            "en": ["Ottawa", "Toronto", "Montréal", "Vancouver"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Ottawa est la capitale du Canada depuis 1857, choisie par la reine Victoria.",
+            "en": "Ottawa has been the capital of Canada since 1857, chosen by Queen Victoria."
+        }
+    },
+    {
+        "id": 4,
+        "question": {
+            "fr": "Combien de provinces le Canada compte-t-il?",
+            "en": "How many provinces does Canada have?"
+        },
+        "options": {
+            "fr": ["10", "9", "11", "12"],
+            "en": ["10", "9", "11", "12"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le Canada compte 10 provinces: Alberta, Colombie-Britannique, Manitoba, Nouveau-Brunswick, Terre-Neuve-et-Labrador, Nouvelle-Écosse, Ontario, Île-du-Prince-Édouard, Québec et Saskatchewan.",
+            "en": "Canada has 10 provinces: Alberta, British Columbia, Manitoba, New Brunswick, Newfoundland and Labrador, Nova Scotia, Ontario, Prince Edward Island, Quebec, and Saskatchewan."
+        }
+    },
+    {
+        "id": 5,
+        "question": {
+            "fr": "Quel est le symbole national du Canada?",
+            "en": "What is Canada's national symbol?"
+        },
+        "options": {
+            "fr": [
+                "La feuille d'érable",
+                "Le castor",
+                "Le caribou",
+                "L'ours polaire"
+            ],
+            "en": [
+                "The maple leaf",
+                "The beaver",
+                "The caribou",
+                "The polar bear"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "La feuille d'érable est le symbole national du Canada et apparaît sur le drapeau canadien.",
+            "en": "The maple leaf is Canada's national symbol and appears on the Canadian flag."
+        }
+    },
+
+    {
+        "id": 6,
+        "question": {
+            "fr": "Quelle est la langue officielle du gouvernement fédéral canadien?",
+            "en": "What are the official languages of the federal government of Canada?"
+        },
+        "options": {
+            "fr": [
+                "Le français et l'anglais",
+                "Seulement le français",
+                "Seulement l'anglais",
+                "Le français et l'espagnol"
+            ],
+            "en": [
+                "French and English",
+                "French only",
+                "English only",
+                "French and Spanish"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le Canada a deux langues officielles: le français et l'anglais.",
+            "en": "Canada has two official languages: French and English."
+        }
+    },
+    {
+        "id": 7,
+        "question": {
+            "fr": "Quel symbole apparaît sur le drapeau canadien?",
+            "en": "What symbol appears on the Canadian flag?"
+        },
+        "options": {
+            "fr": [
+                "La feuille d'érable",
+                "La fleur de lys",
+                "La rose",
+                "Le chêne"
+            ],
+            "en": ["The maple leaf", "The fleur-de-lis", "The rose", "The oak"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le drapeau canadien affiche une grande feuille d'érable rouge au centre.",
+            "en": "The Canadian flag features a large red maple leaf in the centre."
+        }
+    },
+    {
+        "id": 8,
+        "question": {
+            "fr": "Quel est le système politique du Canada?",
+            "en": "What is Canada's system of government?"
+        },
+        "options": {
+            "fr": [
+                "Une monarchie constitutionnelle et une démocratie parlementaire",
+                "Une république",
+                "Une dictature",
+                "Une théocratie"
+            ],
+            "en": [
+                "A constitutional monarchy and parliamentary democracy",
+                "A republic",
+                "A dictatorship",
+                "A theocracy"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le Canada est une monarchie constitutionnelle avec un système parlementaire démocratique.",
+            "en": "Canada is a constitutional monarchy with a parliamentary democracy."
+        }
+    },
+    {
+        "id": 9,
+        "question": {
+            "fr": "Qui représente le monarque au Canada?",
+            "en": "Who represents the monarch in Canada?"
+        },
+        "options": {
+            "fr": [
+                "Le gouverneur général",
+                "Le Premier ministre",
+                "Le chef de l'opposition",
+                "Le maire d'Ottawa"
+            ],
+            "en": [
+                "The Governor General",
+                "The Prime Minister",
+                "The Leader of the Opposition",
+                "The Mayor of Ottawa"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le gouverneur général représente le monarque au Canada.",
+            "en": "The Governor General represents the monarch in Canada."
+        }
+    },
+    {
+        "id": 10,
+        "question": {
+            "fr": "Quel est le rôle du Premier ministre?",
+            "en": "What is the role of the Prime Minister?"
+        },
+        "options": {
+            "fr": [
+                "Chef du gouvernement fédéral",
+                "Chef de l'État",
+                "Juge en chef de la Cour suprême",
+                "Gouverneur général"
+            ],
+            "en": [
+                "Head of the federal government",
+                "Head of State",
+                "Chief Justice of the Supreme Court",
+                "Governor General"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le Premier ministre est le chef du gouvernement fédéral et dirige le cabinet.",
+            "en": "The Prime Minister is the head of the federal government and leads the cabinet."
+        }
+    },
+    {
+        "id": 11,
+        "question": {
+            "fr": "Quelle est la plus haute cour au Canada?",
+            "en": "What is the highest court in Canada?"
+        },
+        "options": {
+            "fr": [
+                "La Cour suprême du Canada",
+                "La Cour d'appel",
+                "La Cour fédérale",
+                "La Cour provinciale"
+            ],
+            "en": [
+                "The Supreme Court of Canada",
+                "The Court of Appeal",
+                "The Federal Court",
+                "The Provincial Court"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "La Cour suprême du Canada est la plus haute instance judiciaire du pays.",
+            "en": "The Supreme Court of Canada is the highest judicial authority in the country."
+        }
+    },
+    {
+        "id": 12,
+        "question": {
+            "fr": "Qui peut voter aux élections fédérales au Canada?",
+            "en": "Who can vote in federal elections in Canada?"
+        },
+        "options": {
+            "fr": [
+                "Les citoyens canadiens âgés de 18 ans et plus",
+                "Les résidents permanents",
+                "Les visiteurs temporaires",
+                "Les mineurs"
+            ],
+            "en": [
+                "Canadian citizens aged 18 and over",
+                "Permanent residents",
+                "Temporary visitors",
+                "Minors"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Seuls les citoyens canadiens âgés de 18 ans et plus peuvent voter aux élections fédérales.",
+            "en": "Only Canadian citizens aged 18 and over can vote in federal elections."
+        }
+    },
+    {
+        "id": 13,
+        "question": {
+            "fr": "Quel document garantit les droits et libertés fondamentaux au Canada?",
+            "en": "What document guarantees fundamental rights and freedoms in Canada?"
+        },
+        "options": {
+            "fr": [
+                "La Charte canadienne des droits et libertés",
+                "La Constitution des États-Unis",
+                "La Déclaration des droits",
+                "La Magna Carta"
+            ],
+            "en": [
+                "The Canadian Charter of Rights and Freedoms",
+                "The United States Constitution",
+                "The Bill of Rights",
+                "The Magna Carta"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "La Charte canadienne des droits et libertés fait partie de la Constitution et protège les droits fondamentaux.",
+            "en": "The Canadian Charter of Rights and Freedoms is part of the Constitution and protects fundamental rights."
+        }
+    },
+    {
+        "id": 14,
+        "question": {
+            "fr": "Quelle est la monnaie du Canada?",
+            "en": "What is the currency of Canada?"
+        },
+        "options": {
+            "fr": [
+                "Le dollar canadien",
+                "Le dollar américain",
+                "L'euro",
+                "La livre sterling"
+            ],
+            "en": [
+                "The Canadian dollar",
+                "The US dollar",
+                "The Euro",
+                "The British pound"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "La monnaie officielle du Canada est le dollar canadien (CAD).",
+            "en": "The official currency of Canada is the Canadian dollar (CAD)."
+        }
+    },
+    {
+        "id": 15,
+        "question": {
+            "fr": "Quel est le nom du Parlement fédéral?",
+            "en": "What is the name of the federal parliament?"
+        },
+        "options": {
+            "fr": [
+                "Le Parlement du Canada",
+                "La Législature du Québec",
+                "Le Congrès",
+                "L'Assemblée nationale"
+            ],
+            "en": [
+                "Parliament of Canada",
+                "Quebec Legislature",
+                "Congress",
+                "National Assembly"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le Parlement du Canada est composé de la Reine (représentée par le Gouverneur général), du Sénat et de la Chambre des communes.",
+            "en": "The Parliament of Canada is made up of the Queen (represented by the Governor General), the Senate, and the House of Commons."
+        }
+    },
+    {
+        "id": 16,
+        "question": {
+            "fr": "Combien de territoires le Canada possède-t-il?",
+            "en": "How many territories does Canada have?"
+        },
+        "options": {
+            "fr": ["3", "2", "4", "5"],
+            "en": ["3", "2", "4", "5"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le Canada compte trois territoires: Yukon, Territoires du Nord-Ouest et Nunavut.",
+            "en": "Canada has three territories: Yukon, Northwest Territories, and Nunavut."
+        }
+    },
+    {
+        "id": 17,
+        "question": {
+            "fr": "Quel est le nom du fleuve le plus long du Canada?",
+            "en": "What is the longest river in Canada?"
+        },
+        "options": {
+            "fr": [
+                "La rivière Mackenzie",
+                "Le fleuve Saint-Laurent",
+                "La rivière Fraser",
+                "La rivière Yukon"
+            ],
+            "en": [
+                "Mackenzie River",
+                "St. Lawrence River",
+                "Fraser River",
+                "Yukon River"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "La rivière Mackenzie est la plus longue au Canada.",
+            "en": "The Mackenzie River is the longest river in Canada."
+        }
+    },
+    {
+        "id": 18,
+        "question": {
+            "fr": "Quelle province est la plus peuplée du Canada?",
+            "en": "Which province is the most populous in Canada?"
+        },
+        "options": {
+            "fr": ["Ontario", "Québec", "Colombie-Britannique", "Alberta"],
+            "en": ["Ontario", "Quebec", "British Columbia", "Alberta"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "L'Ontario est la province la plus peuplée du Canada.",
+            "en": "Ontario is the most populous province in Canada."
+        }
+    },
+    {
+        "id": 19,
+        "question": {
+            "fr": "Quel est le nom du chef de l'État au Canada?",
+            "en": "Who is the head of state in Canada?"
+        },
+        "options": {
+            "fr": [
+                "Le monarque (ex: la Reine/roi)",
+                "Le Premier ministre",
+                "Le gouverneur général",
+                "Le président"
+            ],
+            "en": [
+                "The monarch (e.g., Queen/King)",
+                "The Prime Minister",
+                "The Governor General",
+                "The President"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le monarque est le chef d'État; toutefois, il est représenté au Canada par le gouverneur général.",
+            "en": "The monarch is the head of state; however, they are represented in Canada by the Governor General."
+        }
+    },
+    {
+        "id": 20,
+        "question": {
+            "fr": "Quel est le principal rôle du Sénat?",
+            "en": "What is the primary role of the Senate?"
+        },
+        "options": {
+            "fr": [
+                "Réviser et étudier les projets de loi",
+                "Rédiger les lois",
+                "Diriger le gouvernement",
+                "Gérer les élections"
+            ],
+            "en": [
+                "To review and study bills",
+                "To draft laws",
+                "To run the government",
+                "To manage elections"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le Sénat révise et étudie les projets de loi adoptés par la Chambre des communes.",
+            "en": "The Senate reviews and studies bills passed by the House of Commons."
+        }
+    },
+    {
+        "id": 21,
+        "question": {
+            "fr": "Quelle journée nationale célèbre la fondation du Canada?",
+            "en": "Which national day celebrates Canada's founding?"
+        },
+        "options": {
+            "fr": [
+                "La fête du Canada (1er juillet)",
+                "Le Jour du Canada (25 décembre)",
+                "La Fête nationale (1er mai)",
+                "Le Jour du Souvenir (11 novembre)"
+            ],
+            "en": [
+                "Canada Day (July 1)",
+                "Canada Day (December 25)",
+                "National Day (May 1)",
+                "Remembrance Day (November 11)"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "La fête du Canada est célébrée le 1er juillet pour commémorer la Confédération de 1867.",
+            "en": "Canada Day is celebrated on July 1 to mark Confederation in 1867."
+        }
+    },
+    {
+        "id": 22,
+        "question": {
+            "fr": "Quel est l'âge minimum pour devenir citoyen canadien naturalisé?",
+            "en": "What is the minimum age to apply for Canadian citizenship by naturalization?"
+        },
+        "options": {
+            "fr": [
+                "Il n'y a pas d'âge minimum pour être éligible (les mineurs peuvent être inclus)",
+                "18 ans",
+                "21 ans",
+                "16 ans"
+            ],
+            "en": [
+                "There is no strict minimum age (minors can be included)",
+                "18 years old",
+                "21 years old",
+                "16 years old"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Les mineurs peuvent devenir citoyens dans le cadre des demandes des parents; il n'y a pas d'âge minimum strict pour être inclus.",
+            "en": "Minors can become citizens as part of their parents' applications; there is no strict minimum age for inclusion."
+        }
+    },
+    {
+        "id": 23,
+        "question": {
+            "fr": "Quel est le principal document constitutionnel du Canada?",
+            "en": "What is the main constitutional document of Canada?"
+        },
+        "options": {
+            "fr": [
+                "La Loi constitutionnelle de 1867 (et ses amendements)",
+                "La Déclaration d'indépendance",
+                "La Charte des Nations Unies",
+                "La Constitution française"
+            ],
+            "en": [
+                "The Constitution Act, 1867 (and amendments)",
+                "The Declaration of Independence",
+                "The United Nations Charter",
+                "The French Constitution"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "La Loi constitutionnelle de 1867 (anciennement l'Acte de l'Amérique du Nord britannique) et la Loi constitutionnelle de 1982 constituent la base constitutionnelle du Canada.",
+            "en": "The Constitution Act, 1867 (formerly the British North America Act) and the Constitution Act, 1982 form Canada's constitutional foundation."
+        }
+    },
+    {
+        "id": 24,
+        "question": {
+            "fr": "Quel est l'emblème floral du Canada?",
+            "en": "What is Canada's floral emblem?"
+        },
+        "options": {
+            "fr": [
+                "La feuille d'érable (symbole national)",
+                "La rose (symbole anglais)",
+                "La fleur de lys (Québec)",
+                "La fleur de pissenlit"
+            ],
+            "en": [
+                "The maple leaf (national symbol)",
+                "The rose (English symbol)",
+                "The fleur-de-lis (Quebec)",
+                "The dandelion flower"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "La feuille d'érable est l'emblème végétal le plus reconnu du Canada.",
+            "en": "The maple leaf is Canada's most recognized plant emblem."
+        }
+    },
+    {
+        "id": 25,
+        "question": {
+            "fr": "Quel est le principal rôle des élus municipaux?",
+            "en": "What is the primary role of elected municipal officials?"
+        },
+        "options": {
+            "fr": [
+                "Gérer les services locaux comme les routes, l'eau et les déchets",
+                "Diriger le gouvernement fédéral",
+                "Administrer les provinces",
+                "Gérer les relations internationales"
+            ],
+            "en": [
+                "Manage local services like roads, water and waste",
+                "Run the federal government",
+                "Administer provinces",
+                "Manage international relations"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Les élus municipaux gèrent les services et infrastructures locaux au sein des villes et municipalités.",
+            "en": "Municipal officials manage local services and infrastructure within cities and towns."
+        }
+    },
+    {
+        "id": 26,
+        "question": {
+            "fr": "Quelle est la capitale du Canada?",
+            "en": "What is the capital of Canada?"
+        },
+        "options": {
+            "fr": ["Toronto", "Ottawa", "Montréal", "Vancouver"],
+            "en": ["Toronto", "Ottawa", "Montreal", "Vancouver"]
+        },
+        "correctAnswer": 1,
+        "explanation": {
+            "fr": "Ottawa est la capitale du Canada.",
+            "en": "Ottawa is the capital of Canada."
+        }
+    },
+    {
+        "id": 27,
+        "question": {
+            "fr": "Quel est l'océan situé à l'est du Canada?",
+            "en": "Which ocean is located to the east of Canada?"
+        },
+        "options": {
+            "fr": ["Atlantique", "Pacifique", "Arctique", "Indien"],
+            "en": ["Atlantic", "Pacific", "Arctic", "Indian"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "L'océan Atlantique borde l'est du Canada.",
+            "en": "The Atlantic Ocean borders eastern Canada."
+        }
+    },
+    {
+        "id": 28,
+        "question": {
+            "fr": "Quel document contient les lois fondamentales du Canada?",
+            "en": "Which document contains Canada's fundamental laws?"
+        },
+        "options": {
+            "fr": [
+                "Charte canadienne des droits et libertés",
+                "Constitution",
+                "Code civil",
+                "Code criminel"
+            ],
+            "en": [
+                "Canadian Charter of Rights and Freedoms",
+                "Constitution",
+                "Civil Code",
+                "Criminal Code"
+            ]
+        },
+        "correctAnswer": 1,
+        "explanation": {
+            "fr": "La Constitution du Canada contient les lois fondamentales.",
+            "en": "Canada's Constitution contains the fundamental laws."
+        }
+    },
+    {
+        "id": 29,
+        "question": {
+            "fr": "Quel animal est emblématique du Canada?",
+            "en": "Which animal is emblematic of Canada?"
+        },
+        "options": {
+            "fr": ["Orignal", "Castor", "Aigle", "Caribou"],
+            "en": ["Moose", "Beaver", "Eagle", "Caribou"]
+        },
+        "correctAnswer": 1,
+        "explanation": {
+            "fr": "Le castor est un symbole national du Canada.",
+            "en": "The beaver is a national symbol of Canada."
+        }
+    },
+    {
+        "id": 30,
+        "question": {
+            "fr": "Quelle est la monnaie officielle du Canada?",
+            "en": "What is the official currency of Canada?"
+        },
+        "options": {
+            "fr": [
+                "Dollar canadien",
+                "Euro",
+                "Dollar américain",
+                "Livre sterling"
+            ],
+            "en": ["Canadian dollar", "Euro", "US dollar", "British pound"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le dollar canadien est la monnaie officielle du Canada.",
+            "en": "The Canadian dollar is Canada's official currency."
+        }
+    },
+    {
+        "id": 31,
+        "question": {
+            "fr": "Quel est le plus long fleuve du Canada?",
+            "en": "What is the longest river in Canada?"
+        },
+        "options": {
+            "fr": ["Saint-Laurent", "Fraser", "Mackenzie", "Colombie"],
+            "en": ["St. Lawrence", "Fraser", "Mackenzie", "Columbia"]
+        },
+        "correctAnswer": 2,
+        "explanation": {
+            "fr": "Le fleuve Mackenzie est le plus long du Canada.",
+            "en": "The Mackenzie River is the longest river in Canada."
+        }
+    },
+    {
+        "id": 32,
+        "question": {
+            "fr": "Quel est le sport le plus populaire au Canada?",
+            "en": "What is the most popular sport in Canada?"
+        },
+        "options": {
+            "fr": ["Hockey sur glace", "Soccer", "Basketball", "Baseball"],
+            "en": ["Ice hockey", "Soccer", "Basketball", "Baseball"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le hockey sur glace est le sport national et le plus populaire.",
+            "en": "Ice hockey is the national and most popular sport."
+        }
+    },
+    {
+        "id": 33,
+        "question": {
+            "fr": "Quelle province canadienne est majoritairement francophone?",
+            "en": "Which Canadian province is predominantly French-speaking?"
+        },
+        "options": {
+            "fr": ["Ontario", "Québec", "Alberta", "Colombie-Britannique"],
+            "en": ["Ontario", "Quebec", "Alberta", "British Columbia"]
+        },
+        "correctAnswer": 1,
+        "explanation": {
+            "fr": "Le Québec est la seule province majoritairement francophone.",
+            "en": "Quebec is the only predominantly French-speaking province."
+        }
+    },
+    {
+        "id": 34,
+        "question": {
+            "fr": "Qui est le chef de l'État du Canada?",
+            "en": "Who is the head of state of Canada?"
+        },
+        "options": {
+            "fr": [
+                "Premier ministre",
+                "Gouverneur général",
+                "Monarque",
+                "Président"
+            ],
+            "en": ["Prime Minister", "Governor General", "Monarch", "President"]
+        },
+        "correctAnswer": 2,
+        "explanation": {
+            "fr": "Le monarque est le chef de l'État, représenté par le gouverneur général.",
+            "en": "The monarch is the head of state, represented by the Governor General."
+        }
+    },
+    {
+        "id": 35,
+        "question": {
+            "fr": "Quel est le plus haut sommet du Canada?",
+            "en": "What is the highest peak in Canada?"
+        },
+        "options": {
+            "fr": ["Mont Logan", "Mont Rainier", "Mont Robson", "Mont Royal"],
+            "en": [
+                "Mount Logan",
+                "Mount Rainier",
+                "Mount Robson",
+                "Mount Royal"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le Mont Logan, au Yukon, est le plus haut sommet du Canada.",
+            "en": "Mount Logan in Yukon is the highest peak in Canada."
+        }
+    },
+    {
+        "id": 36,
+        "question": {
+            "fr": "Quel est le principal produit d'exportation du Canada?",
+            "en": "What is Canada's main export product?"
+        },
+        "options": {
+            "fr": ["Pétrole", "Blé", "Technologie", "Bois"],
+            "en": ["Oil", "Wheat", "Technology", "Wood"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le pétrole est l’un des principaux produits d’exportation du Canada.",
+            "en": "Oil is one of Canada's main export products."
+        }
+    },
+    {
+        "id": 37,
+        "question": {
+            "fr": "Quel est le jour de la fête nationale du Canada?",
+            "en": "When is Canada’s national holiday?"
+        },
+        "options": {
+            "fr": ["1er juillet", "25 décembre", "24 juin", "15 août"],
+            "en": ["July 1", "December 25", "June 24", "August 15"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "La fête nationale du Canada, appelée la Fête du Canada, est le 1er juillet.",
+            "en": "Canada Day is celebrated on July 1."
+        }
+    },
+    {
+        "id": 38,
+        "question": {
+            "fr": "Quelle est la langue officielle du gouvernement fédéral du Canada?",
+            "en": "What is the official language of the Canadian federal government?"
+        },
+        "options": {
+            "fr": [
+                "Français uniquement",
+                "Anglais uniquement",
+                "Français et anglais",
+                "Aucune langue officielle"
+            ],
+            "en": [
+                "French only",
+                "English only",
+                "French and English",
+                "No official language"
+            ]
+        },
+        "correctAnswer": 2,
+        "explanation": {
+            "fr": "Le Canada est officiellement bilingue, français et anglais.",
+            "en": "Canada is officially bilingual, French and English."
+        }
+    },
+    {
+        "id": 39,
+        "question": {
+            "fr": "Quelle province est la plus peuplée du Canada?",
+            "en": "Which province is the most populous in Canada?"
+        },
+        "options": {
+            "fr": ["Québec", "Ontario", "Colombie-Britannique", "Alberta"],
+            "en": ["Quebec", "Ontario", "British Columbia", "Alberta"]
+        },
+        "correctAnswer": 1,
+        "explanation": {
+            "fr": "L’Ontario est la province la plus peuplée du Canada.",
+            "en": "Ontario is the most populous province in Canada."
+        }
+    },
+    {
+        "id": 40,
+        "question": {
+            "fr": "Quel parc national canadien est connu pour ses montagnes Rocheuses?",
+            "en": "Which Canadian national park is known for the Rocky Mountains?"
+        },
+        "options": {
+            "fr": [
+                "Parc Banff",
+                "Parc Algonquin",
+                "Parc Forillon",
+                "Parc de la Mauricie"
+            ],
+            "en": [
+                "Banff National Park",
+                "Algonquin Park",
+                "Forillon Park",
+                "La Mauricie Park"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le parc national Banff est célèbre pour ses paysages des Rocheuses.",
+            "en": "Banff National Park is famous for its Rocky Mountain landscapes."
+        }
+    },
+    {
+        "id": 41,
+        "question": {
+            "fr": "Quelle est la plus grande ville du Canada par population?",
+            "en": "What is the largest city in Canada by population?"
+        },
+        "options": {
+            "fr": ["Toronto", "Montréal", "Vancouver", "Calgary"],
+            "en": ["Toronto", "Montreal", "Vancouver", "Calgary"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Toronto est la ville la plus peuplée du Canada.",
+            "en": "Toronto is the largest city in Canada by population."
+        }
+    },
+    {
+        "id": 42,
+        "question": {
+            "fr": "Quelle est la fleur emblématique du Canada?",
+            "en": "What is Canada’s emblematic flower?"
+        },
+        "options": {
+            "fr": ["Lys", "Trille rouge", "Érable", "Rose sauvage"],
+            "en": ["Lily", "Red Trillium", "Maple", "Wild Rose"]
+        },
+        "correctAnswer": 3,
+        "explanation": {
+            "fr": "La rose sauvage est la fleur emblématique du Canada.",
+            "en": "The wild rose is Canada’s emblematic flower."
+        }
+    },
+    {
+        "id": 43,
+        "question": {
+            "fr": "Quel territoire canadien est situé le plus au nord?",
+            "en": "Which Canadian territory is the northernmost?"
+        },
+        "options": {
+            "fr": ["Yukon", "Nunavut", "Territoires du Nord-Ouest", "Québec"],
+            "en": ["Yukon", "Nunavut", "Northwest Territories", "Quebec"]
+        },
+        "correctAnswer": 1,
+        "explanation": {
+            "fr": "Le Nunavut est le territoire le plus au nord du Canada.",
+            "en": "Nunavut is Canada’s northernmost territory."
+        }
+    },
+    {
+        "id": 44,
+        "question": {
+            "fr": "Quel est le fleuve qui traverse Montréal?",
+            "en": "Which river runs through Montreal?"
+        },
+        "options": {
+            "fr": ["Saint-Laurent", "Ottawa", "Fraser", "Saguenay"],
+            "en": ["St. Lawrence", "Ottawa", "Fraser", "Saguenay"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le fleuve Saint-Laurent traverse la ville de Montréal.",
+            "en": "The St. Lawrence River runs through Montreal."
+        }
+    },
+    {
+        "id": 45,
+        "question": {
+            "fr": "Quelle chaîne de montagnes se trouve à l'ouest du Canada?",
+            "en": "Which mountain range is located in western Canada?"
+        },
+        "options": {
+            "fr": ["Appalaches", "Rocheuses", "Laurentides", "Côte-Nord"],
+            "en": ["Appalachians", "Rockies", "Laurentians", "Côte-Nord"]
+        },
+        "correctAnswer": 1,
+        "explanation": {
+            "fr": "Les montagnes Rocheuses se trouvent à l'ouest du Canada.",
+            "en": "The Rocky Mountains are located in western Canada."
+        }
+    },
+    {
+        "id": 46,
+        "question": {
+            "fr": "Quel est le plus grand producteur de sirop d’érable au monde?",
+            "en": "Which country is the largest producer of maple syrup in the world?"
+        },
+        "options": {
+            "fr": ["Canada", "États-Unis", "France", "Suède"],
+            "en": ["Canada", "United States", "France", "Sweden"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le Canada produit plus de 70 % du sirop d’érable mondial.",
+            "en": "Canada produces over 70% of the world’s maple syrup."
+        }
+    },
+    {
+        "id": 47,
+        "question": {
+            "fr": "Quelle ville canadienne est surnommée la « ville reine »?",
+            "en": "Which Canadian city is nicknamed the 'Queen City'?"
+        },
+        "options": {
+            "fr": ["Toronto", "Regina", "Montréal", "Vancouver"],
+            "en": ["Toronto", "Regina", "Montreal", "Vancouver"]
+        },
+        "correctAnswer": 1,
+        "explanation": {
+            "fr": "Regina, la capitale de la Saskatchewan, est surnommée la 'ville reine'.",
+            "en": "Regina, the capital of Saskatchewan, is nicknamed the 'Queen City'."
+        }
+    },
+    {
+        "id": 48,
+        "question": {
+            "fr": "Quelle est la principale ressource minérale du Québec?",
+            "en": "What is Quebec’s main mineral resource?"
+        },
+        "options": {
+            "fr": ["Fer", "Or", "Cuivre", "Diamant"],
+            "en": ["Iron", "Gold", "Copper", "Diamond"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le Québec est un grand producteur de minerai de fer.",
+            "en": "Quebec is a major producer of iron ore."
+        }
+    },
+    {
+        "id": 49,
+        "question": {
+            "fr": "Quel événement historique canadien a eu lieu en 1867?",
+            "en": "Which historic Canadian event took place in 1867?"
+        },
+        "options": {
+            "fr": [
+                "Confédération canadienne",
+                "Première guerre mondiale",
+                "Abolition de l’esclavage",
+                "Création du parc national Banff"
+            ],
+            "en": [
+                "Canadian Confederation",
+                "First World War",
+                "Abolition of slavery",
+                "Creation of Banff National Park"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "La Confédération canadienne a été fondée en 1867.",
+            "en": "The Canadian Confederation was established in 1867."
+        }
+    },
+    {
+        "id": 50,
+        "question": {
+            "fr": "Quel est le style architectural du Parlement canadien à Ottawa?",
+            "en": "What is the architectural style of Canada’s Parliament in Ottawa?"
+        },
+        "options": {
+            "fr": [
+                "Gothique victorien",
+                "Baroque",
+                "Néo-classique",
+                "Art déco"
+            ],
+            "en": ["Victorian Gothic", "Baroque", "Neoclassical", "Art Deco"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le Parlement canadien est de style gothique victorien.",
+            "en": "Canada’s Parliament is in the Victorian Gothic style."
+        }
+    },
+    {
+        "id": 51,
+        "question": {
+            "fr": "Quelle province est connue pour ses nombreux lacs et forêts?",
+            "en": "Which province is known for its many lakes and forests?"
+        },
+        "options": {
+            "fr": ["Ontario", "Alberta", "Québec", "Manitoba"],
+            "en": ["Ontario", "Alberta", "Quebec", "Manitoba"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "L’Ontario possède des milliers de lacs et de vastes forêts.",
+            "en": "Ontario has thousands of lakes and vast forests."
+        }
+    },
+    {
+        "id": 52,
+        "question": {
+            "fr": "Quelle est la ville la plus à l’ouest du Canada continental?",
+            "en": "What is the westernmost city on continental Canada?"
+        },
+        "options": {
+            "fr": ["Vancouver", "Victoria", "Prince Rupert", "Whitehorse"],
+            "en": ["Vancouver", "Victoria", "Prince Rupert", "Whitehorse"]
+        },
+        "correctAnswer": 2,
+        "explanation": {
+            "fr": "Prince Rupert est la ville la plus à l’ouest du Canada continental.",
+            "en": "Prince Rupert is the westernmost city on continental Canada."
+        }
+    },
+    {
+        "id": 53,
+        "question": {
+            "fr": "Quel type de climat prédomine dans le nord du Canada?",
+            "en": "What type of climate predominates in northern Canada?"
+        },
+        "options": {
+            "fr": ["Tempéré", "Subarctique", "Méditerranéen", "Tropical"],
+            "en": ["Temperate", "Subarctic", "Mediterranean", "Tropical"]
+        },
+        "correctAnswer": 1,
+        "explanation": {
+            "fr": "Le nord du Canada a principalement un climat subarctique et arctique.",
+            "en": "Northern Canada mainly has subarctic and arctic climates."
+        }
+    },
+    {
+        "id": 54,
+        "question": {
+            "fr": "Quelle ville canadienne est célèbre pour son festival international de jazz?",
+            "en": "Which Canadian city is famous for its international jazz festival?"
+        },
+        "options": {
+            "fr": ["Montréal", "Toronto", "Vancouver", "Québec"],
+            "en": ["Montreal", "Toronto", "Vancouver", "Quebec City"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Montréal est célèbre pour son Festival International de Jazz.",
+            "en": "Montreal is famous for its International Jazz Festival."
+        }
+    },
+    {
+        "id": 55,
+        "question": {
+            "fr": "Quel territoire canadien possède le plus grand nombre d’îles?",
+            "en": "Which Canadian territory has the largest number of islands?"
+        },
+        "options": {
+            "fr": [
+                "Yukon",
+                "Territoires du Nord-Ouest",
+                "Nunavut",
+                "Colombie-Britannique"
+            ],
+            "en": [
+                "Yukon",
+                "Northwest Territories",
+                "Nunavut",
+                "British Columbia"
+            ]
+        },
+        "correctAnswer": 2,
+        "explanation": {
+            "fr": "Le Nunavut possède le plus grand nombre d’îles au Canada.",
+            "en": "Nunavut has the largest number of islands in Canada."
+        }
+    },
+    {
+        "id": 56,
+        "question": {
+            "fr": "Quelle ville canadienne est connue comme la capitale de l’énergie du pays?",
+            "en": "Which Canadian city is known as the energy capital of the country?"
+        },
+        "options": {
+            "fr": ["Calgary", "Edmonton", "Vancouver", "Toronto"],
+            "en": ["Calgary", "Edmonton", "Vancouver", "Toronto"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Calgary est connue comme la capitale de l’énergie du Canada en raison de son industrie pétrolière et gazière.",
+            "en": "Calgary is known as Canada’s energy capital because of its oil and gas industry."
+        }
+    },
+    {
+        "id": 57,
+        "question": {
+            "fr": "Quel est l’arbre emblématique du Canada?",
+            "en": "What is Canada’s emblematic tree?"
+        },
+        "options": {
+            "fr": ["Érable", "Chêne", "Sapin", "Peuplier"],
+            "en": ["Maple", "Oak", "Fir", "Poplar"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "L’érable est l’arbre emblématique du Canada, présent sur le drapeau national.",
+            "en": "The maple tree is Canada’s emblematic tree and appears on the national flag."
+        }
+    },
+    {
+        "id": 58,
+        "question": {
+            "fr": "Quel est le plus grand port maritime du Canada?",
+            "en": "What is the largest seaport in Canada?"
+        },
+        "options": {
+            "fr": ["Montréal", "Vancouver", "Halifax", "Toronto"],
+            "en": ["Montreal", "Vancouver", "Halifax", "Toronto"]
+        },
+        "correctAnswer": 1,
+        "explanation": {
+            "fr": "Le port de Vancouver est le plus grand port maritime du Canada.",
+            "en": "The Port of Vancouver is the largest seaport in Canada."
+        }
+    },
+    {
+        "id": 59,
+        "question": {
+            "fr": "Quelle est la capitale de la Colombie-Britannique?",
+            "en": "What is the capital of British Columbia?"
+        },
+        "options": {
+            "fr": ["Vancouver", "Victoria", "Kelowna", "Richmond"],
+            "en": ["Vancouver", "Victoria", "Kelowna", "Richmond"]
+        },
+        "correctAnswer": 1,
+        "explanation": {
+            "fr": "Victoria est la capitale de la Colombie-Britannique.",
+            "en": "Victoria is the capital of British Columbia."
+        }
+    },
+    {
+        "id": 60,
+        "question": {
+            "fr": "Quel est le plus grand producteur de blé du Canada?",
+            "en": "Which province is the largest wheat producer in Canada?"
+        },
+        "options": {
+            "fr": ["Saskatchewan", "Manitoba", "Alberta", "Ontario"],
+            "en": ["Saskatchewan", "Manitoba", "Alberta", "Ontario"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "La Saskatchewan est la principale province productrice de blé au Canada.",
+            "en": "Saskatchewan is the largest wheat-producing province in Canada."
+        }
+    },
+    {
+        "id": 61,
+        "question": {
+            "fr": "Quelle est la ville canadienne surnommée la 'porte de l’Arctique'?",
+            "en": "Which Canadian city is nicknamed the 'Gateway to the Arctic'?"
+        },
+        "options": {
+            "fr": ["Yellowknife", "Iqaluit", "Whitehorse", "Churchill"],
+            "en": ["Yellowknife", "Iqaluit", "Whitehorse", "Churchill"]
+        },
+        "correctAnswer": 3,
+        "explanation": {
+            "fr": "Churchill au Manitoba est surnommée la 'porte de l’Arctique'.",
+            "en": "Churchill, Manitoba, is nicknamed the 'Gateway to the Arctic'."
+        }
+    },
+    {
+        "id": 62,
+        "question": {
+            "fr": "Quel animal marin est le symbole de la côte ouest canadienne?",
+            "en": "Which marine animal symbolizes Canada’s west coast?"
+        },
+        "options": {
+            "fr": ["Orque", "Baleine bleue", "Phoque", "Morse"],
+            "en": ["Orca", "Blue whale", "Seal", "Walrus"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "L’orque est emblématique de la côte ouest canadienne.",
+            "en": "The orca is emblematic of Canada’s west coast."
+        }
+    },
+    {
+        "id": 63,
+        "question": {
+            "fr": "Quel est le festival hivernal le plus célèbre à Québec?",
+            "en": "What is the most famous winter festival in Quebec?"
+        },
+        "options": {
+            "fr": [
+                "Carnaval de Québec",
+                "Festival de glace de Montréal",
+                "Fête de l’hiver à Ottawa",
+                "Bal de neige de Toronto"
+            ],
+            "en": [
+                "Quebec Winter Carnival",
+                "Montreal Ice Festival",
+                "Ottawa Winter Fest",
+                "Toronto Snow Ball"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le Carnaval de Québec est le plus grand festival hivernal au Canada.",
+            "en": "The Quebec Winter Carnival is Canada’s largest winter festival."
+        }
+    },
+    {
+        "id": 64,
+        "question": {
+            "fr": "Quelle ville canadienne est connue pour ses films et studios cinématographiques?",
+            "en": "Which Canadian city is known for its films and movie studios?"
+        },
+        "options": {
+            "fr": ["Toronto", "Vancouver", "Montreal", "Calgary"],
+            "en": ["Toronto", "Vancouver", "Montreal", "Calgary"]
+        },
+        "correctAnswer": 1,
+        "explanation": {
+            "fr": "Vancouver est surnommée 'Hollywood du Nord' pour son industrie cinématographique.",
+            "en": "Vancouver is called 'Hollywood North' for its film industry."
+        }
+    },
+    {
+        "id": 65,
+        "question": {
+            "fr": "Quelle est la province canadienne la plus petite en superficie?",
+            "en": "Which is the smallest Canadian province by area?"
+        },
+        "options": {
+            "fr": [
+                "Île-du-Prince-Édouard",
+                "Saskatchewan",
+                "Nouveau-Brunswick",
+                "Nova Scotia"
+            ],
+            "en": [
+                "Prince Edward Island",
+                "Saskatchewan",
+                "New Brunswick",
+                "Nova Scotia"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "L’Île-du-Prince-Édouard est la plus petite province canadienne.",
+            "en": "Prince Edward Island is the smallest Canadian province by area."
+        }
+    },
+    {
+        "id": 66,
+        "question": {
+            "fr": "Quelle ville canadienne est surnommée la 'ville des festivals'?",
+            "en": "Which Canadian city is nicknamed the 'City of Festivals'?"
+        },
+        "options": {
+            "fr": ["Montréal", "Québec", "Calgary", "Toronto"],
+            "en": ["Montreal", "Quebec City", "Calgary", "Toronto"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Montréal est célèbre pour ses nombreux festivals culturels et musicaux.",
+            "en": "Montreal is famous for its numerous cultural and music festivals."
+        }
+    },
+    {
+        "id": 67,
+        "question": {
+            "fr": "Quelle ville est connue comme le centre financier du Canada?",
+            "en": "Which city is known as Canada’s financial center?"
+        },
+        "options": {
+            "fr": ["Toronto", "Vancouver", "Montréal", "Calgary"],
+            "en": ["Toronto", "Vancouver", "Montreal", "Calgary"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Toronto abrite la Bourse de Toronto et la majorité des institutions financières canadiennes.",
+            "en": "Toronto hosts the Toronto Stock Exchange and most Canadian financial institutions."
+        }
+    },
+    {
+        "id": 68,
+        "question": {
+            "fr": "Quel est le plus ancien parc national du Canada?",
+            "en": "What is Canada’s oldest national park?"
+        },
+        "options": {
+            "fr": ["Banff", "Jasper", "Gros Morne", "Waterton Lakes"],
+            "en": ["Banff", "Jasper", "Gros Morne", "Waterton Lakes"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le parc national de Banff, fondé en 1885, est le plus ancien du Canada.",
+            "en": "Banff National Park, established in 1885, is Canada’s oldest national park."
+        }
+    },
+    {
+        "id": 69,
+        "question": {
+            "fr": "Quel fleuve canadien traverse Montréal?",
+            "en": "Which Canadian river flows through Montreal?"
+        },
+        "options": {
+            "fr": [
+                "Fleuve Saint-Laurent",
+                "Rivière Outaouais",
+                "Rivière Richelieu",
+                "Fleuve Fraser"
+            ],
+            "en": [
+                "St. Lawrence River",
+                "Ottawa River",
+                "Richelieu River",
+                "Fraser River"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le fleuve Saint-Laurent traverse la ville de Montréal.",
+            "en": "The St. Lawrence River flows through Montreal."
+        }
+    },
+    {
+        "id": 70,
+        "question": {
+            "fr": "Quelle province canadienne est la seule officiellement bilingue?",
+            "en": "Which Canadian province is officially bilingual?"
+        },
+        "options": {
+            "fr": ["Nouveau-Brunswick", "Québec", "Ontario", "Manitoba"],
+            "en": ["New Brunswick", "Quebec", "Ontario", "Manitoba"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le Nouveau-Brunswick est la seule province officiellement bilingue anglais-français.",
+            "en": "New Brunswick is the only officially bilingual province (English and French)."
+        }
+    },
+    {
+        "id": 71,
+        "question": {
+            "fr": "Quel est le plus long tunnel ferroviaire du Canada?",
+            "en": "What is the longest railway tunnel in Canada?"
+        },
+        "options": {
+            "fr": [
+                "Tunnel des Montagnes Rocheuses",
+                "Tunnel du Saint-Laurent",
+                "Tunnel du Port Mann",
+                "Tunnel Seigneurs"
+            ],
+            "en": [
+                "Rocky Mountains Tunnel",
+                "St. Lawrence Tunnel",
+                "Port Mann Tunnel",
+                "Seigneurs Tunnel"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le tunnel des Montagnes Rocheuses est le plus long tunnel ferroviaire du Canada.",
+            "en": "The Rocky Mountains Tunnel is the longest railway tunnel in Canada."
+        }
+    },
+    {
+        "id": 72,
+        "question": {
+            "fr": "Quel est le principal centre de production cinématographique au Québec?",
+            "en": "What is Quebec’s main film production center?"
+        },
+        "options": {
+            "fr": ["Montréal", "Québec", "Gatineau", "Sherbrooke"],
+            "en": ["Montreal", "Quebec City", "Gatineau", "Sherbrooke"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Montréal est le principal centre de production cinématographique au Québec.",
+            "en": "Montreal is Quebec’s main film production center."
+        }
+    },
+    {
+        "id": 73,
+        "question": {
+            "fr": "Quel est le plus grand producteur de pétrole au Canada?",
+            "en": "Which province is the largest oil producer in Canada?"
+        },
+        "options": {
+            "fr": [
+                "Alberta",
+                "Saskatchewan",
+                "Ontario",
+                "Terre-Neuve-et-Labrador"
+            ],
+            "en": [
+                "Alberta",
+                "Saskatchewan",
+                "Ontario",
+                "Newfoundland and Labrador"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "L’Alberta est la province canadienne la plus productive en pétrole.",
+            "en": "Alberta is Canada’s largest oil-producing province."
+        }
+    },
+    {
+        "id": 74,
+        "question": {
+            "fr": "Quel est le festival de rue le plus célèbre de Toronto?",
+            "en": "Which is Toronto’s most famous street festival?"
+        },
+        "options": {
+            "fr": [
+                "Caribana",
+                "Taste of Toronto",
+                "Luminato",
+                "Toronto Jazz Festival"
+            ],
+            "en": [
+                "Caribana",
+                "Taste of Toronto",
+                "Luminato",
+                "Toronto Jazz Festival"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Caribana est le festival de rue le plus célèbre de Toronto.",
+            "en": "Caribana is Toronto’s most famous street festival."
+        }
+    },
+    {
+        "id": 75,
+        "question": {
+            "fr": "Quelle province canadienne possède la plus grande population autochtone?",
+            "en": "Which Canadian province has the largest Indigenous population?"
+        },
+        "options": {
+            "fr": ["Ontario", "Saskatchewan", "Alberta", "Manitoba"],
+            "en": ["Ontario", "Saskatchewan", "Alberta", "Manitoba"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "L’Ontario possède la plus grande population autochtone du Canada.",
+            "en": "Ontario has the largest Indigenous population in Canada."
+        }
+    },
+    {
+        "id": 76,
+        "question": {
+            "fr": "Quel est le plus long fleuve entièrement situé au Canada?",
+            "en": "What is the longest river entirely within Canada?"
+        },
+        "options": {
+            "fr": [
+                "Fleuve Mackenzie",
+                "Fleuve Saint-Laurent",
+                "Fleuve Fraser",
+                "Rivière Columbia"
+            ],
+            "en": [
+                "Mackenzie River",
+                "St. Lawrence River",
+                "Fraser River",
+                "Columbia River"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le fleuve Mackenzie est le plus long fleuve entièrement situé au Canada.",
+            "en": "The Mackenzie River is the longest river entirely within Canada."
+        }
+    },
+    {
+        "id": 77,
+        "question": {
+            "fr": "Quelle ville canadienne est connue pour son festival international du film?",
+            "en": "Which Canadian city is known for its international film festival?"
+        },
+        "options": {
+            "fr": ["Toronto", "Montréal", "Vancouver", "Ottawa"],
+            "en": ["Toronto", "Montreal", "Vancouver", "Ottawa"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Toronto accueille le Festival international du film de Toronto (TIFF), un événement majeur.",
+            "en": "Toronto hosts the Toronto International Film Festival (TIFF), a major event."
+        }
+    },
+    {
+        "id": 78,
+        "question": {
+            "fr": "Quelle province canadienne est surnommée la 'terre des 100 000 lacs'?",
+            "en": "Which Canadian province is nicknamed the 'Land of 100,000 Lakes'?"
+        },
+        "options": {
+            "fr": ["Manitoba", "Ontario", "Saskatchewan", "Alberta"],
+            "en": ["Manitoba", "Ontario", "Saskatchewan", "Alberta"]
+        },
+        "correctAnswer": 1,
+        "explanation": {
+            "fr": "L’Ontario possède un très grand nombre de lacs et est surnommée ainsi.",
+            "en": "Ontario has a huge number of lakes and is nicknamed the 'Land of 100,000 Lakes'."
+        }
+    },
+    {
+        "id": 79,
+        "question": {
+            "fr": "Quel est le symbole officiel du Canada adopté en 1965?",
+            "en": "What official symbol of Canada was adopted in 1965?"
+        },
+        "options": {
+            "fr": [
+                "Le drapeau à la feuille d’érable",
+                "L’orignal",
+                "Le castor",
+                "L’hymne national"
+            ],
+            "en": ["Maple leaf flag", "Moose", "Beaver", "National anthem"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le drapeau à la feuille d’érable a été adopté en 1965 comme symbole officiel du Canada.",
+            "en": "The maple leaf flag was adopted in 1965 as Canada’s official symbol."
+        }
+    },
+    {
+        "id": 80,
+        "question": {
+            "fr": "Quelle est la plus grande île du Canada?",
+            "en": "What is Canada’s largest island?"
+        },
+        "options": {
+            "fr": [
+                "Île de Baffin",
+                "Île de Vancouver",
+                "Île du Cap-Breton",
+                "Île de Terre-Neuve"
+            ],
+            "en": [
+                "Baffin Island",
+                "Vancouver Island",
+                "Cape Breton Island",
+                "Newfoundland Island"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "L’Île de Baffin est la plus grande île du Canada.",
+            "en": "Baffin Island is Canada’s largest island."
+        }
+    },
+    {
+        "id": 81,
+        "question": {
+            "fr": "Quelle est la capitale des Territoires du Nord-Ouest?",
+            "en": "What is the capital of the Northwest Territories?"
+        },
+        "options": {
+            "fr": ["Yellowknife", "Iqaluit", "Whitehorse", "Inuvik"],
+            "en": ["Yellowknife", "Iqaluit", "Whitehorse", "Inuvik"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Yellowknife est la capitale des Territoires du Nord-Ouest.",
+            "en": "Yellowknife is the capital of the Northwest Territories."
+        }
+    },
+    {
+        "id": 82,
+        "question": {
+            "fr": "Quel sport est considéré comme le sport national d’été du Canada?",
+            "en": "Which sport is considered Canada’s national summer sport?"
+        },
+        "options": {
+            "fr": ["Lacrosse", "Hockey sur glace", "Soccer", "Baseball"],
+            "en": ["Lacrosse", "Ice hockey", "Soccer", "Baseball"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le lacrosse est reconnu comme le sport national d’été du Canada.",
+            "en": "Lacrosse is recognized as Canada’s national summer sport."
+        }
+    },
+    {
+        "id": 83,
+        "question": {
+            "fr": "Quelle province possède la plus grande diversité de cultures au Canada?",
+            "en": "Which province has the greatest cultural diversity in Canada?"
+        },
+        "options": {
+            "fr": ["Ontario", "Colombie-Britannique", "Québec", "Alberta"],
+            "en": ["Ontario", "British Columbia", "Quebec", "Alberta"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "L’Ontario, surtout Toronto, est la province la plus multiculturelle du Canada.",
+            "en": "Ontario, especially Toronto, is the most multicultural province in Canada."
+        }
+    },
+    {
+        "id": 84,
+        "question": {
+            "fr": "Quelle est la plus grande ville de l’Île-du-Prince-Édouard?",
+            "en": "What is the largest city on Prince Edward Island?"
+        },
+        "options": {
+            "fr": ["Charlottetown", "Summerside", "Cornwall", "Montague"],
+            "en": ["Charlottetown", "Summerside", "Cornwall", "Montague"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Charlottetown est la plus grande ville de l’Île-du-Prince-Édouard.",
+            "en": "Charlottetown is the largest city on Prince Edward Island."
+        }
+    },
+    {
+        "id": 85,
+        "question": {
+            "fr": "Quel parc national canadien est célèbre pour ses chutes impressionnantes sur la rivière Athabasca?",
+            "en": "Which Canadian national park is famous for the impressive falls on the Athabasca River?"
+        },
+        "options": {
+            "fr": [
+                "Parc national Jasper",
+                "Parc national Banff",
+                "Parc national Yoho",
+                "Parc national Kootenay"
+            ],
+            "en": [
+                "Jasper National Park",
+                "Banff National Park",
+                "Yoho National Park",
+                "Kootenay National Park"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Les chutes Athabasca se trouvent dans le parc national Jasper en Alberta.",
+            "en": "The Athabasca Falls are located in Jasper National Park in Alberta."
+        }
+    },
+    {
+        "id": 86,
+        "question": {
+            "fr": "Quelle entité est responsable de l’émission de la monnaie au Canada?",
+            "en": "Which entity is responsible for issuing currency in Canada?"
+        },
+        "options": {
+            "fr": [
+                "Banque du Canada",
+                "Gouvernement fédéral",
+                "Banques commerciales",
+                "Ministère des Finances"
+            ],
+            "en": [
+                "Bank of Canada",
+                "Federal Government",
+                "Commercial Banks",
+                "Department of Finance"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "La Banque du Canada est responsable de l’émission et de la régulation de la monnaie.",
+            "en": "The Bank of Canada is responsible for issuing and regulating currency."
+        }
+    },
+    {
+        "id": 87,
+        "question": {
+            "fr": "Quel est le rôle principal du gouverneur général du Canada?",
+            "en": "What is the main role of Canada’s Governor General?"
+        },
+        "options": {
+            "fr": [
+                "Représenter la reine et signer les lois",
+                "Gérer les affaires économiques",
+                "Diriger le parlement",
+                "Nommer les juges fédéraux"
+            ],
+            "en": [
+                "Represent the Queen and sign laws",
+                "Manage economic affairs",
+                "Lead Parliament",
+                "Appoint federal judges"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le gouverneur général représente la reine au Canada et sanctionne les lois adoptées par le Parlement.",
+            "en": "The Governor General represents the Queen in Canada and gives royal assent to laws passed by Parliament."
+        }
+    },
+    {
+        "id": 88,
+        "question": {
+            "fr": "Quel document fonde la Confédération canadienne de 1867?",
+            "en": "Which document established the Canadian Confederation in 1867?"
+        },
+        "options": {
+            "fr": [
+                "L’Acte de l’Amérique du Nord britannique",
+                "La Charte canadienne",
+                "Le Traité de Paris",
+                "La Déclaration d’indépendance"
+            ],
+            "en": [
+                "British North America Act",
+                "Canadian Charter",
+                "Treaty of Paris",
+                "Declaration of Independence"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "L’Acte de l’Amérique du Nord britannique de 1867 a créé la Confédération canadienne.",
+            "en": "The British North America Act of 1867 established the Canadian Confederation."
+        }
+    },
+    {
+        "id": 89,
+        "question": {
+            "fr": "Quelle institution canadienne est responsable de l’application de la loi fédérale?",
+            "en": "Which Canadian institution is responsible for enforcing federal law?"
+        },
+        "options": {
+            "fr": [
+                "Gendarmerie royale du Canada (GRC)",
+                "Police provinciale",
+                "Cour suprême",
+                "Ministère de la Justice"
+            ],
+            "en": [
+                "Royal Canadian Mounted Police (RCMP)",
+                "Provincial Police",
+                "Supreme Court",
+                "Department of Justice"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "La GRC applique les lois fédérales partout au Canada et dans certaines provinces.",
+            "en": "The RCMP enforces federal laws across Canada and in some provinces."
+        }
+    },
+    {
+        "id": 90,
+        "question": {
+            "fr": "Quel principe assure la répartition des pouvoirs entre le fédéral et les provinces?",
+            "en": "Which principle ensures the division of powers between the federal and provincial governments?"
+        },
+        "options": {
+            "fr": [
+                "Fédéralisme",
+                "Monarchie",
+                "Parlementarisme",
+                "Suffrage universel"
+            ],
+            "en": [
+                "Federalism",
+                "Monarchy",
+                "Parliamentarism",
+                "Universal suffrage"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le fédéralisme répartit les pouvoirs entre le gouvernement fédéral et les provinces.",
+            "en": "Federalism divides powers between the federal government and the provinces."
+        }
+    },
+    {
+        "id": 91,
+        "question": {
+            "fr": "Quel est l’âge minimum pour voter aux élections fédérales au Canada?",
+            "en": "What is the minimum voting age for federal elections in Canada?"
+        },
+        "options": {
+            "fr": ["18 ans", "16 ans", "21 ans", "19 ans"],
+            "en": [
+                "18 years old",
+                "16 years old",
+                "21 years old",
+                "19 years old"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "L’âge légal pour voter aux élections fédérales au Canada est de 18 ans.",
+            "en": "The legal voting age in federal elections in Canada is 18."
+        }
+    },
+    {
+        "id": 92,
+        "question": {
+            "fr": "Quel est le rôle du Sénat canadien?",
+            "en": "What is the role of the Canadian Senate?"
+        },
+        "options": {
+            "fr": [
+                "Étudier et réviser les lois adoptées par la Chambre des communes",
+                "Gérer le budget fédéral",
+                "Nommer le Premier ministre",
+                "Organiser les élections"
+            ],
+            "en": [
+                "Study and review laws passed by the House of Commons",
+                "Manage the federal budget",
+                "Appoint the Prime Minister",
+                "Organize elections"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le Sénat examine et peut proposer des modifications aux projets de loi adoptés par la Chambre des communes.",
+            "en": "The Senate reviews and can propose changes to bills passed by the House of Commons."
+        }
+    },
+    {
+        "id": 93,
+        "question": {
+            "fr": "Quel principe garantit que les juges sont indépendants du gouvernement?",
+            "en": "Which principle guarantees that judges are independent from the government?"
+        },
+        "options": {
+            "fr": [
+                "Indépendance judiciaire",
+                "Fédéralisme",
+                "Souveraineté parlementaire",
+                "Égalité des sexes"
+            ],
+            "en": [
+                "Judicial independence",
+                "Federalism",
+                "Parliamentary sovereignty",
+                "Gender equality"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "L’indépendance judiciaire protège les juges contre les influences politiques.",
+            "en": "Judicial independence protects judges from political influence."
+        }
+    },
+    {
+        "id": 94,
+        "question": {
+            "fr": "Quel document garantit les droits et libertés fondamentaux des Canadiens?",
+            "en": "Which document guarantees the fundamental rights and freedoms of Canadians?"
+        },
+        "options": {
+            "fr": [
+                "Charte canadienne des droits et libertés",
+                "Constitution de 1867",
+                "Code civil",
+                "Déclaration des droits de l’homme"
+            ],
+            "en": [
+                "Canadian Charter of Rights and Freedoms",
+                "Constitution Act of 1867",
+                "Civil Code",
+                "Declaration of Human Rights"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "La Charte canadienne des droits et libertés protège les libertés fondamentales au Canada.",
+            "en": "The Canadian Charter of Rights and Freedoms protects fundamental freedoms in Canada."
+        }
+    },
+    {
+        "id": 95,
+        "question": {
+            "fr": "Quel est le rôle du premier ministre du Canada?",
+            "en": "What is the role of the Prime Minister of Canada?"
+        },
+        "options": {
+            "fr": [
+                "Diriger le gouvernement et proposer des lois",
+                "Gérer la Banque du Canada",
+                "Présider la Cour suprême",
+                "Organiser les élections fédérales"
+            ],
+            "en": [
+                "Lead the government and propose laws",
+                "Manage the Bank of Canada",
+                "Preside over the Supreme Court",
+                "Organize federal elections"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le Premier ministre dirige le gouvernement fédéral et propose des projets de loi au Parlement.",
+            "en": "The Prime Minister leads the federal government and proposes bills to Parliament."
+        }
+    },
+    {
+        "id": 96,
+        "question": {
+            "fr": "Quel organisme canadien supervise les élections fédérales?",
+            "en": "Which Canadian organization oversees federal elections?"
+        },
+        "options": {
+            "fr": [
+                "Élections Canada",
+                "Gendarmerie royale du Canada",
+                "Parlement du Canada",
+                "Cour suprême du Canada"
+            ],
+            "en": [
+                "Elections Canada",
+                "Royal Canadian Mounted Police",
+                "Parliament of Canada",
+                "Supreme Court of Canada"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Élections Canada est responsable de l’organisation et de la supervision des élections fédérales.",
+            "en": "Elections Canada is responsible for organizing and overseeing federal elections."
+        }
+    },
+    {
+        "id": 97,
+        "question": {
+            "fr": "Quel est le rôle principal du Sénat canadien?",
+            "en": "What is the main role of the Canadian Senate?"
+        },
+        "options": {
+            "fr": [
+                "Réviser et amender les projets de loi",
+                "Voter les lois de finance",
+                "Diriger le gouvernement",
+                "Nommer le Premier ministre"
+            ],
+            "en": [
+                "Review and amend bills",
+                "Vote on financial laws",
+                "Lead the government",
+                "Appoint the Prime Minister"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le Sénat examine et peut proposer des modifications aux projets de loi adoptés par la Chambre des communes.",
+            "en": "The Senate reviews and can propose changes to bills passed by the House of Commons."
+        }
+    },
+    {
+        "id": 98,
+        "question": {
+            "fr": "Quel principe permet de protéger les droits des minorités au Canada?",
+            "en": "Which principle protects the rights of minorities in Canada?"
+        },
+        "options": {
+            "fr": [
+                "Charte canadienne des droits et libertés",
+                "Fédéralisme",
+                "Parlementarisme",
+                "Monarchie constitutionnelle"
+            ],
+            "en": [
+                "Canadian Charter of Rights and Freedoms",
+                "Federalism",
+                "Parliamentarism",
+                "Constitutional Monarchy"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "La Charte canadienne des droits et libertés garantit les droits et libertés des minorités.",
+            "en": "The Canadian Charter of Rights and Freedoms guarantees the rights and freedoms of minorities."
+        }
+    },
+    {
+        "id": 99,
+        "question": {
+            "fr": "Quelle institution a le pouvoir de déclarer la constitution canadienne inconstitutionnelle?",
+            "en": "Which institution has the power to declare Canadian laws unconstitutional?"
+        },
+        "options": {
+            "fr": [
+                "Cour suprême du Canada",
+                "Parlement du Canada",
+                "Premier ministre",
+                "Gouverneur général"
+            ],
+            "en": [
+                "Supreme Court of Canada",
+                "Parliament of Canada",
+                "Prime Minister",
+                "Governor General"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "La Cour suprême du Canada peut déclarer des lois inconstitutionnelles.",
+            "en": "The Supreme Court of Canada can declare laws unconstitutional."
+        }
+    },
+    {
+        "id": 100,
+        "question": {
+            "fr": "Quelle branche du gouvernement fédéral est responsable de l’exécution des lois?",
+            "en": "Which branch of the federal government is responsible for executing laws?"
+        },
+        "options": {
+            "fr": ["Exécutif", "Législatif", "Judiciaire", "Sénatorial"],
+            "en": ["Executive", "Legislative", "Judicial", "Senatorial"]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le pouvoir exécutif, dirigé par le Premier ministre et le Cabinet, exécute les lois.",
+            "en": "The executive branch, led by the Prime Minister and Cabinet, executes laws."
+        }
+    },
+    {
+        "id": 101,
+        "question": {
+            "fr": "Quel rôle joue la Chambre des communes dans le processus législatif?",
+            "en": "What role does the House of Commons play in the legislative process?"
+        },
+        "options": {
+            "fr": [
+                "Proposer et voter les projets de loi",
+                "Nommer les juges",
+                "Organiser les élections",
+                "Émettre la monnaie"
+            ],
+            "en": [
+                "Propose and vote on bills",
+                "Appoint judges",
+                "Organize elections",
+                "Issue currency"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "La Chambre des communes propose, débat et vote les projets de loi.",
+            "en": "The House of Commons proposes, debates, and votes on bills."
+        }
+    },
+    {
+        "id": 102,
+        "question": {
+            "fr": "Qui signe les projets de loi pour qu’ils deviennent loi au Canada?",
+            "en": "Who signs bills into law in Canada?"
+        },
+        "options": {
+            "fr": [
+                "Le gouverneur général",
+                "Le Premier ministre",
+                "Le Sénat",
+                "La Cour suprême"
+            ],
+            "en": [
+                "Governor General",
+                "Prime Minister",
+                "Senate",
+                "Supreme Court"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le gouverneur général donne la sanction royale aux projets de loi pour qu’ils deviennent loi.",
+            "en": "The Governor General gives royal assent to bills to become law."
+        }
+    },
+    {
+        "id": 103,
+        "question": {
+            "fr": "Quel mécanisme permet aux Canadiens de proposer une modification constitutionnelle?",
+            "en": "Which mechanism allows Canadians to propose a constitutional amendment?"
+        },
+        "options": {
+            "fr": [
+                "Référendum constitutionnel",
+                "Élections fédérales",
+                "Décision du Sénat",
+                "Vote du Premier ministre seul"
+            ],
+            "en": [
+                "Constitutional referendum",
+                "Federal elections",
+                "Senate decision",
+                "Prime Minister's sole vote"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Un référendum constitutionnel permet aux Canadiens de voter sur une modification de la constitution.",
+            "en": "A constitutional referendum allows Canadians to vote on a constitutional amendment."
+        }
+    },
+    {
+        "id": 104,
+        "question": {
+            "fr": "Quel principe garantit l’égalité devant la loi au Canada?",
+            "en": "Which principle guarantees equality before the law in Canada?"
+        },
+        "options": {
+            "fr": [
+                "Égalité juridique",
+                "Fédéralisme",
+                "Souveraineté parlementaire",
+                "Indépendance judiciaire"
+            ],
+            "en": [
+                "Legal equality",
+                "Federalism",
+                "Parliamentary sovereignty",
+                "Judicial independence"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "L’égalité juridique signifie que toutes les personnes sont traitées de façon égale devant la loi.",
+            "en": "Legal equality means all people are treated equally before the law."
+        }
+    },
+    {
+        "id": 105,
+        "question": {
+            "fr": "Quel rôle joue le Premier ministre dans le Cabinet canadien?",
+            "en": "What role does the Prime Minister play in the Canadian Cabinet?"
+        },
+        "options": {
+            "fr": [
+                "Diriger le Cabinet et coordonner les ministères",
+                "Écrire les lois",
+                "Présider la Cour suprême",
+                "Organiser les élections"
+            ],
+            "en": [
+                "Lead the Cabinet and coordinate ministries",
+                "Write laws",
+                "Preside over the Supreme Court",
+                "Organize elections"
+            ]
+        },
+        "correctAnswer": 0,
+        "explanation": {
+            "fr": "Le Premier ministre dirige le Cabinet et coordonne le travail des ministres.",
+            "en": "The Prime Minister leads the Cabinet and coordinates the work of ministers."
+        }
+    }
+]

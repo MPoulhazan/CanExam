@@ -1,5 +1,5 @@
 import React from 'react';
-import Svg, { Polyline, Line } from 'react-native-svg';
+import Svg, { Polyline, Line, Text as SvgText } from 'react-native-svg';
 import { View } from 'react-native';
 
 interface Props {
@@ -28,6 +28,30 @@ const ScoreChart: React.FC<Props> = ({
 
     return (
         <Svg width={width} height={height}>
+            {/* top = score 20, bottom = score 0 */}
+            <Line
+                x1={0}
+                y1={0}
+                x2={width}
+                y2={0}
+                stroke="#94a3b8"
+                strokeWidth={0.8}
+            />
+            <Line
+                x1={0}
+                y1={height}
+                x2={width}
+                y2={height}
+                stroke="#94a3b8"
+                strokeWidth={0.8}
+            />
+            {/* labels for axis limits */}
+            <SvgText x={4} y={12} fill="#94a3b8" fontSize={10}>
+                20
+            </SvgText>
+            <SvgText x={4} y={height - 4} fill="#94a3b8" fontSize={10}>
+                0
+            </SvgText>
             <Line
                 x1={0}
                 y1={threshY}

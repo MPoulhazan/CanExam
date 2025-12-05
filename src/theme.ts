@@ -1,6 +1,7 @@
 import { Theme } from './types';
 
 export const lightTheme: Theme = {
+    fontFamily: 'Comfortaa_400Regular',
     colors: {
         background: '#F6F7F9',
         surface: '#FFFFFF',

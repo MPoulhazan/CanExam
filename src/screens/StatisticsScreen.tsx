@@ -77,6 +77,40 @@ const StatisticsScreen: React.FC<{ navigation: StatisticsNavProp }> = ({
 }) => {
     const [history, setHistory] = useState<HistoryItem[]>([]);
 
+    const dateFormatter = new Intl.DateTimeFormat(undefined, {
+        year: 'numeric',
+        month: 'short',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+    });
+
+    const formatDateSafe = (value: any) => {
+        if (!value && value !== 0) return '-';
+
+        let d: Date;
+        try {
+            if (typeof value === 'number') d = new Date(value);
+            else if (typeof value === 'string') d = new Date(value);
+            else if (value instanceof Date) d = value;
+            else d = new Date(String(value));
+        } catch (e) {
+            return String(value);
+        }
+
+        if (Number.isNaN(d.getTime())) {
+            // try parsing as number string
+            const parsed = Number(value);
+            if (!Number.isNaN(parsed)) {
+                d = new Date(parsed);
+            }
+        }
+
+        if (Number.isNaN(d.getTime())) return String(value);
+
+        return dateFormatter.format(d);
+    };
+
     useEffect(() => {
         const load = async () => {
             try {
@@ -125,14 +159,7 @@ const StatisticsScreen: React.FC<{ navigation: StatisticsNavProp }> = ({
                 renderItem={({ item }) => {
                     const score20 = Math.round((item.score / item.total) * 20);
                     const passed = score20 >= 15;
-                    const d = new Date(item.date);
-                    const formatted = new Intl.DateTimeFormat(undefined, {
-                        year: 'numeric',
-                        month: 'short',
-                        day: '2-digit',
-                        hour: '2-digit',
-                        minute: '2-digit',
-                    }).format(d);
+                    const formatted = formatDateSafe(item.date);
 
                     return (
                         <Item>
@@ -143,7 +170,6 @@ const StatisticsScreen: React.FC<{ navigation: StatisticsNavProp }> = ({
                                         fontWeight: '700',
                                     }}
                                 >
-                                    {`${item.score}/${item.total}`}
                                 </Text>
                                 <DateText>{formatted}</DateText>
                             </Left>

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { View, Text, Animated } from 'react-native';
 import styled from 'styled-components/native';
+import { Theme } from '../types';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RouteProp } from '@react-navigation/native';
@@ -24,23 +25,23 @@ interface Props {
 
 const Container = styled(SafeAreaView)`
     flex: 1;
-    background-color: ${(p) => p.theme.colors.background};
+    background-color: ${(p: { theme: Theme }) => p.theme.colors.background};
     align-items: center;
     justify-content: center;
-    padding: ${(p) => p.theme.spacing.lg}px;
+    padding: ${(p: { theme: Theme }) => p.theme.spacing.lg}px;
 `;
 
 const Title = styled.Text`
-    color: ${(p) => p.theme.colors.text};
-    font-size: ${(p) => p.theme.typography.h2.fontSize}px;
-    font-weight: ${(p) => p.theme.typography.h2.fontWeight};
-    margin-bottom: ${(p) => p.theme.spacing.md}px;
+    color: ${(p: { theme: Theme }) => p.theme.colors.text};
+    font-size: ${(p: { theme: Theme }) => p.theme.typography.h2.fontSize}px;
+    font-weight: ${(p: { theme: Theme }) => p.theme.typography.h2.fontWeight};
+    margin-bottom: ${(p: { theme: Theme }) => p.theme.spacing.md}px;
 `;
 
 const Subtitle = styled.Text`
-    color: ${(p) => p.theme.colors.textSecondary};
+    color: ${(p: { theme: Theme }) => p.theme.colors.textSecondary};
     text-align: center;
-    margin-bottom: ${(p) => p.theme.spacing.lg}px;
+    margin-bottom: ${(p: { theme: Theme }) => p.theme.spacing.lg}px;
 `;
 
 const ResultScreen: React.FC<Props> = ({ navigation, route }) => {
