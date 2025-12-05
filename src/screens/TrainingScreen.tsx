@@ -385,7 +385,7 @@ const TrainingScreen: React.FC<TrainingScreenProps> = ({ navigation }) => {
                     <Button onPress={handleNext}>
                         {currentQuestion < questions.length - 1
                             ? t('training.next')
-                            : t('training.restart')}
+                            : t('training.viewResults')}
                     </Button>
                 )}
             </ButtonContainer>
