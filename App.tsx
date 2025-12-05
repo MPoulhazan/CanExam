@@ -12,6 +12,7 @@ import TrainingScreen from './src/screens/TrainingScreen';
 import ResultScreen from './src/screens/ResultScreen';
 import StatisticsScreen from './src/screens/StatisticsScreen';
 import SettingsScreen from './src/screens/SettingsScreen';
+import InfoScreen from './src/screens/InfoScreen';
 import { RootStackParamList } from './src/types';
 import AppHeader from './src/components/AppHeader';
 
@@ -52,6 +53,7 @@ export default function App() {
                             name="Settings"
                             component={SettingsScreen}
                         />
+                        <Stack.Screen name="Info" component={InfoScreen} />
                     </Stack.Navigator>
                 </NavigationContainer>
             </ThemeProvider>

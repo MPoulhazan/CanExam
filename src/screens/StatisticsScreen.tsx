@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { FlatList, Text, View } from 'react-native';
+import Button from '../components/Button';
+import { StackNavigationProp } from '@react-navigation/stack';
+import { RootStackParamList } from '../types';
 import styled from 'styled-components/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -67,7 +70,11 @@ interface HistoryItem {
 
 const STORAGE_KEY = 'exam_history';
 
-const StatisticsScreen: React.FC = () => {
+type StatisticsNavProp = StackNavigationProp<RootStackParamList, 'Statistics'>;
+
+const StatisticsScreen: React.FC<{ navigation: StatisticsNavProp }> = ({
+    navigation,
+}) => {
     const [history, setHistory] = useState<HistoryItem[]>([]);
 
     useEffect(() => {
@@ -103,6 +110,13 @@ const StatisticsScreen: React.FC = () => {
                 >
                     Showing {recentScores.length} of {scores.length} exams
                 </Text>
+                <View style={{ height: 12 }} />
+                <Button
+                    variant="secondary"
+                    onPress={() => navigation.navigate('Info')}
+                >
+                    Infos pratiques
+                </Button>
             </View>
 
             <FlatList
@@ -123,6 +137,14 @@ const StatisticsScreen: React.FC = () => {
                     return (
                         <Item>
                             <Left>
+                                <Text
+                                    style={{
+                                        color: theme.colors.text,
+                                        fontWeight: '700',
+                                    }}
+                                >
+                                    {`${item.score}/${item.total}`}
+                                </Text>
                                 <DateText>{formatted}</DateText>
                             </Left>
 

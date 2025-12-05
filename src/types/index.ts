@@ -20,6 +20,7 @@ export type RootStackParamList = {
     Training: undefined;
     Result: { score: number; total: number; passed: boolean } | undefined;
     Statistics: undefined;
+    Info: undefined;
     Settings: undefined;
 };
 

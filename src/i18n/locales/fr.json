@@ -7,7 +7,9 @@
         "statistics": "Statistiques",
         "statisticsDescription": "Consultez vos progrès",
         "settings": "Paramètres",
-        "settingsDescription": "Langue et préférences"
+        "settingsDescription": "Langue et préférences",
+        "info": "Infos pratiques",
+        "infoDescription": "Conseils et liens utiles pour l'examen"
     },
     "training": {
         "title": "Entraînement",
@@ -25,5 +27,15 @@
     "common": {
         "loading": "Chargement...",
         "error": "Une erreur est survenue"
+    },
+    "info": {
+        "title": "Infos pratiques — Examen de citoyenneté",
+        "overview": "L'examen comporte 20 questions à choix multiple. Il faut obtenir au moins 15 bonnes réponses pour réussir. Les sujets couvrent l'histoire, la géographie, les institutions et les droits et responsabilités au Canada.",
+        "format": "Le test est généralement administré dans une salle surveillée et dure environ 30–45 minutes. Apportez une pièce d'identité valide et arrivez en avance.",
+        "tips": "Conseils : lisez attentivement, éliminez les réponses manifestement fausses, gérez votre temps et passez une question pour y revenir plus tard.",
+        "linksTitle": "Liens utiles",
+        "ircc": "Immigration, Réfugiés et Citoyenneté Canada",
+        "discover": "Guide d'étude — Discover Canada",
+        "testPage": "Informations sur le test de citoyenneté"
     }
 }

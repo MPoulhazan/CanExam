@@ -7,7 +7,9 @@
         "statistics": "Statistics",
         "statisticsDescription": "View your progress",
         "settings": "Settings",
-        "settingsDescription": "Language and preferences"
+        "settingsDescription": "Language and preferences",
+        "info": "Practical info",
+        "infoDescription": "Exam tips and useful links"
     },
     "training": {
         "title": "Training",
@@ -25,5 +27,15 @@
     "common": {
         "loading": "Loading...",
         "error": "An error occurred"
+    },
+    "info": {
+        "title": "Practical info — Citizenship exam",
+        "overview": "The test has 20 multiple-choice questions. You must score at least 15 correct answers to pass. Topics cover history, geography, institutions, and rights & responsibilities in Canada.",
+        "format": "The test is usually administered in a supervised room and lasts about 30–45 minutes. Bring valid ID and arrive early.",
+        "tips": "Tips: read carefully, eliminate obviously wrong answers, manage your time and skip and return if needed.",
+        "linksTitle": "Useful links",
+        "ircc": "Immigration, Refugees and Citizenship Canada",
+        "discover": "Discover Canada study guide",
+        "testPage": "Citizenship test information"
     }
 }

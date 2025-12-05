@@ -191,6 +191,15 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
                     />
 
                     <MenuCard
+                        icon="information-circle-outline"
+                        title={t('home.info')}
+                        description={t('home.infoDescription')}
+                        onPress={() => navigation.navigate('Info')}
+                        delay={450}
+                        iconColor={theme.colors.primaryDark}
+                    />
+
+                    <MenuCard
                         icon="settings-outline"
                         title={t('home.settings')}
                         description={t('home.settingsDescription')}

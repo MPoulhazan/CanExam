@@ -291,13 +291,6 @@ const TrainingScreen: React.FC<TrainingScreenProps> = ({ navigation }) => {
     return (
         <Container>
             <Header>
-                <BackButton onPress={() => navigation.goBack()}>
-                    <Ionicons
-                        name="arrow-back"
-                        size={24}
-                        color={theme.colors.text}
-                    />
-                </BackButton>
                 <HeaderTitle>{t('training.title')}</HeaderTitle>
             </Header>
 
