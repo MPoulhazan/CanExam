@@ -10,9 +10,9 @@ type ThemeProps = { theme: DefaultTheme };
 const HeaderContainer = styled.View`
     height: 64px;
     padding: 0 16px;
-    background-color: ${(p: ThemeProps) => p.theme.colors.background};
+    background-color: ${(p: ThemeProps) => p.theme.colors.surface};
     border-bottom-width: 1px;
-    border-bottom-color: rgba(255, 255, 255, 0.02);
+    border-bottom-color: ${(p: ThemeProps) => p.theme.colors.border};
     align-items: center;
     flex-direction: row;
     justify-content: space-between;

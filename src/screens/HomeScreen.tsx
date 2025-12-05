@@ -16,6 +16,7 @@ import MenuCard from '../components/MenuCard';
 import { theme } from '../theme';
 import { DefaultTheme } from 'styled-components';
 import { RootStackParamList } from '../types';
+import Logo from '../components/Logo';
 
 type HomeScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Home'>;
 
@@ -54,6 +55,7 @@ const Header = styled.View`
     margin-bottom: ${(props: ThemeProps) => props.theme.spacing.xl}px;
     margin-top: ${(props: ThemeProps) => props.theme.spacing.md}px;
     align-items: center;
+    background-color: transparent;
 `;
 
 const Title = styled(Text)`
@@ -61,8 +63,7 @@ const Title = styled(Text)`
     font-size: 36px;
     font-weight: 800;
     margin-bottom: ${(props: ThemeProps) => props.theme.spacing.sm}px;
-    text-shadow: 0px 6px 20px rgba(0, 0, 0, 0.6);
-    letter-spacing: 0.4px;
+    letter-spacing: 0.2px;
 `;
 
 const Subtitle = styled(Text)`
@@ -121,48 +122,8 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
                                 alignItems: 'center',
                             }}
                         >
-                            <Animated.View
-                                style={{
-                                    flexDirection: 'row',
-                                    alignItems: 'baseline',
-                                    justifyContent: 'center',
-                                }}
-                            >
-                                <Animated.Text
-                                    style={{
-                                        fontSize: 40,
-                                        fontWeight: '800',
-                                        color: theme.colors.secondary,
-                                        letterSpacing: 0.6,
-                                        textShadowColor: 'rgba(0,0,0,0.35)',
-                                        textShadowOffset: {
-                                            width: 0,
-                                            height: 6,
-                                        },
-                                        textShadowRadius: 18,
-                                        fontFamily: 'System',
-                                    }}
-                                >
-                                    Can
-                                </Animated.Text>
-                                <Animated.Text
-                                    style={{
-                                        fontSize: 40,
-                                        fontWeight: '800',
-                                        color: theme.colors.primaryLight,
-                                        letterSpacing: 0.6,
-                                        marginLeft: 8,
-                                        textShadowColor: 'rgba(0,0,0,0.35)',
-                                        textShadowOffset: {
-                                            width: 0,
-                                            height: 6,
-                                        },
-                                        textShadowRadius: 18,
-                                        fontFamily: 'System',
-                                    }}
-                                >
-                                    Exam
-                                </Animated.Text>
+                            <Animated.View style={{ alignItems: 'center' }}>
+                                <Logo width={300} height={80} />
                             </Animated.View>
                             <Subtitle
                                 style={{ marginTop: 6, textAlign: 'center' }}

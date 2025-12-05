@@ -11,6 +11,9 @@
         "info": "Infos pratiques",
         "infoDescription": "Conseils et liens utiles pour l'examen"
     },
+    "settings": {
+        "darkMode": "Mode sombre"
+    },
     "training": {
         "title": "Entraînement",
         "question": "Question",

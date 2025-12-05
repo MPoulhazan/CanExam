@@ -11,6 +11,9 @@
         "info": "Practical info",
         "infoDescription": "Exam tips and useful links"
     },
+    "settings": {
+        "darkMode": "Dark mode"
+    },
     "training": {
         "title": "Training",
         "question": "Question",

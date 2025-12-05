@@ -2,31 +2,34 @@ import React, { ReactNode, useRef } from 'react';
 import { TouchableOpacity, Text, Animated } from 'react-native';
 import styled from 'styled-components/native';
 import { theme } from '../theme';
+import { DefaultTheme } from 'styled-components';
+
+type ThemeProps = { theme: DefaultTheme };
 
 const StyledButton = styled(TouchableOpacity)<{
     variant?: 'primary' | 'secondary' | 'default';
     outline?: boolean;
 }>`
-    background-color: ${(props) =>
-        props.variant === 'primary'
-            ? props.theme.colors.primary
+    background-color: ${(
+        props: ThemeProps & { variant?: string; outline?: boolean }
+    ) =>
+        props.outline
+            ? 'transparent'
             : props.variant === 'secondary'
             ? props.theme.colors.secondary
-            : props.theme.colors.surfaceLight};
-    padding: ${(props) =>
-        `${props.theme.spacing.md}px ${props.theme.spacing.lg}px`};
-    border-radius: ${(props) => props.theme.borderRadius.md}px;
+            : props.theme.colors.primary};
+    padding: ${(props: ThemeProps) =>
+        `${props.theme.spacing.sm * 2}px ${props.theme.spacing.lg}px`};
+    border-radius: ${(props: ThemeProps) => props.theme.borderRadius.xl}px;
     align-items: center;
     justify-content: center;
-    border: ${(props) =>
-        props.outline ? `2px solid ${props.theme.colors.primary}` : 'none'};
-    background-color: ${(props) =>
-        props.outline ? 'transparent' : props.theme.colors.primary};
+    border: ${(props: ThemeProps & { outline?: boolean }) =>
+        props.outline ? `1px solid ${props.theme.colors.border}` : 'none'};
 `;
 
 const ButtonText = styled(Text)`
-    color: ${(props) => props.theme.colors.text};
-    font-size: ${(props) => props.theme.typography.body.fontSize}px;
+    color: ${(props: ThemeProps) => props.theme.colors.text};
+    font-size: ${(props: ThemeProps) => props.theme.typography.body.fontSize}px;
     font-weight: 600;
     letter-spacing: 0.5px;
 `;
@@ -82,7 +85,7 @@ const Button: React.FC<ButtonProps> = ({
         <Animated.View
             style={{
                 transform: [{ scale: scaleAnim }],
-                opacity: disabled ? 0.5 : opacityAnim,
+                opacity: disabled ? 0.6 : opacityAnim,
             }}
         >
             <StyledButton
@@ -92,11 +95,20 @@ const Button: React.FC<ButtonProps> = ({
                 onPressIn={handlePressIn}
                 onPressOut={handlePressOut}
                 disabled={disabled}
-                activeOpacity={0.8}
-                style={theme.shadows.md}
+                activeOpacity={0.9}
+                style={{ ...theme.shadows.sm }}
                 {...props}
             >
-                <ButtonText>{children}</ButtonText>
+                <ButtonText
+                    style={{
+                        color:
+                            variant === 'primary'
+                                ? '#FFFFFF'
+                                : theme.colors.text,
+                    }}
+                >
+                    {children}
+                </ButtonText>
             </StyledButton>
         </Animated.View>
     );

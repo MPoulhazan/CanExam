@@ -3,26 +3,29 @@ import { TouchableOpacity, Animated } from 'react-native';
 import styled from 'styled-components/native';
 import { Ionicons } from '@expo/vector-icons';
 import { theme } from '../theme';
+import { DefaultTheme } from 'styled-components';
+
+type ThemeProps = { theme: DefaultTheme };
 
 const StyledCard = styled(TouchableOpacity)`
-    background-color: ${(props) => props.theme.colors.surface};
-    border-radius: ${(props) => props.theme.borderRadius.lg}px;
-    padding: ${(props) => props.theme.spacing.xl}px;
-    margin-vertical: ${(props) => props.theme.spacing.md}px;
-    border: 1px solid ${(props) => props.theme.colors.border};
+    background-color: ${(props: ThemeProps) => props.theme.colors.surface};
+    border-radius: ${(props: ThemeProps) => props.theme.borderRadius.lg}px;
+    padding: ${(props: ThemeProps) => props.theme.spacing.lg}px;
+    margin-vertical: ${(props: ThemeProps) => props.theme.spacing.sm}px;
+    border: 1px solid ${(props: ThemeProps) => props.theme.colors.border};
     flex-direction: row;
     align-items: center;
     overflow: hidden;
 `;
 
 const IconContainer = styled.View`
-    width: 60px;
-    height: 60px;
-    border-radius: ${(props) => props.theme.borderRadius.md}px;
-    background-color: ${(props) => props.theme.colors.primary};
+    width: 56px;
+    height: 56px;
+    border-radius: ${(props: ThemeProps) => props.theme.borderRadius.full}px;
+    background-color: ${(props: ThemeProps) => props.theme.colors.surfaceLight};
     align-items: center;
     justify-content: center;
-    margin-right: ${(props) => props.theme.spacing.md}px;
+    margin-right: ${(props: ThemeProps) => props.theme.spacing.md}px;
 `;
 
 const ContentContainer = styled.View`
@@ -30,21 +33,23 @@ const ContentContainer = styled.View`
 `;
 
 const Title = styled.Text`
-    color: ${(props) => props.theme.colors.text};
-    font-size: ${(props) => props.theme.typography.h3.fontSize}px;
-    font-weight: ${(props) => props.theme.typography.h3.fontWeight};
-    margin-bottom: ${(props) => props.theme.spacing.xs}px;
+    color: ${(props: ThemeProps) => props.theme.colors.text};
+    font-size: ${(props: ThemeProps) => props.theme.typography.h3.fontSize}px;
+    font-weight: ${(props: ThemeProps) => props.theme.typography.h3.fontWeight};
+    margin-bottom: ${(props: ThemeProps) => props.theme.spacing.xs}px;
 `;
 
 const Description = styled.Text`
-    color: ${(props) => props.theme.colors.textSecondary};
-    font-size: ${(props) => props.theme.typography.bodySmall.fontSize}px;
-    line-height: ${(props) => props.theme.typography.bodySmall.lineHeight}px;
+    color: ${(props: ThemeProps) => props.theme.colors.textSecondary};
+    font-size: ${(props: ThemeProps) =>
+        props.theme.typography.bodySmall.fontSize}px;
+    line-height: ${(props: ThemeProps) =>
+        props.theme.typography.bodySmall.lineHeight}px;
 `;
 
 const ArrowIcon = styled(Ionicons)`
-    color: ${(props) => props.theme.colors.textMuted};
-    margin-left: ${(props) => props.theme.spacing.sm}px;
+    color: ${(props: ThemeProps) => props.theme.colors.textMuted};
+    margin-left: ${(props: ThemeProps) => props.theme.spacing.sm}px;
 `;
 
 interface MenuCardProps {
@@ -109,21 +114,21 @@ const MenuCard: React.FC<MenuCardProps> = ({
                 onPress={onPress}
                 onPressIn={handlePressIn}
                 onPressOut={handlePressOut}
-                activeOpacity={0.9}
-                style={theme.shadows.lg}
+                activeOpacity={0.95}
+                style={theme.shadows.md}
             >
                 <IconContainer>
                     <Ionicons
                         name={icon as any}
-                        size={28}
-                        color={iconColor || '#FFFFFF'}
+                        size={24}
+                        color={iconColor || theme.colors.primary}
                     />
                 </IconContainer>
                 <ContentContainer>
                     <Title>{title}</Title>
                     <Description>{description}</Description>
                 </ContentContainer>
-                <ArrowIcon name="chevron-forward" size={24} />
+                <ArrowIcon name="chevron-forward" size={20} />
             </StyledCard>
         </Animated.View>
     );
