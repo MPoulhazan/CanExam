@@ -9,11 +9,5 @@ module.exports = async function (env, argv) {
     }
     config.optimization.minimize = false;
 
-    // Fix nanoid ESM import issue
-    config.resolve.alias = {
-        ...config.resolve.alias,
-        nanoid: require.resolve('nanoid'),
-    };
-
     return config;
 };
