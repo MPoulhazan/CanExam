@@ -1,6 +1,4 @@
 {
-    "root": "web",
     "buildCommand": "npm run build",
-    "outputDirectory": ".next",
-    "framework": "nextjs"
+    "outputDirectory": ".next"
 }
