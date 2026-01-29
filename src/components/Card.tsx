@@ -7,11 +7,20 @@ import { DefaultTheme } from 'styled-components';
 type ThemeProps = { theme: DefaultTheme };
 
 const StyledCard = styled(View)`
-    background-color: ${(props: ThemeProps) => props.theme.colors.surface};
-    border-radius: ${(props: ThemeProps) => props.theme.borderRadius.lg}px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border-radius: ${(props: ThemeProps) => props.theme.borderRadius.xl}px;
     padding: ${(props: ThemeProps) => props.theme.spacing.lg}px;
     margin-vertical: ${(props: ThemeProps) => props.theme.spacing.sm}px;
-    border: 1px solid ${(props: ThemeProps) => props.theme.colors.border};
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    max-width: 600px;
+    align-self: center;
+    width: 100%;
+    shadow-color: rgba(124, 58, 237, 0.3);
+    shadow-offset: 0px 8px;
+    shadow-opacity: 0.3;
+    shadow-radius: 16px;
+    elevation: 8;
 `;
 
 interface CardProps extends ViewProps {

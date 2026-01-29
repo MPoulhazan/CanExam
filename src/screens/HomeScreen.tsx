@@ -28,7 +28,7 @@ type ThemeProps = { theme: DefaultTheme };
 
 const Container = styled(SafeAreaView)`
     flex: 1;
-    background-color: ${(props: ThemeProps) => props.theme.colors.background};
+    background-color: #0a0e27;
 `;
 
 const ScrollContainer = styled(ScrollView)`
@@ -37,8 +37,10 @@ const ScrollContainer = styled(ScrollView)`
 
 const Content = styled.View`
     padding: ${(props: ThemeProps) => props.theme.spacing.lg}px;
-    padding-bottom: ${(props: ThemeProps) =>
-        props.theme.spacing.xxl}px; /* leave space for footer */
+    padding-bottom: ${(props: ThemeProps) => props.theme.spacing.xxl}px;
+    max-width: 800px;
+    align-self: center;
+    width: 100%;
 `;
 
 const Footer = styled.View`
@@ -48,22 +50,25 @@ const Footer = styled.View`
     bottom: 0;
     padding: ${(props: ThemeProps) => props.theme.spacing.md}px;
     align-items: center;
-    background-color: transparent;
+    background-color: rgba(10, 14, 39, 0.9);
+    border-top-width: 1px;
+    border-top-color: rgba(255, 255, 255, 0.1);
 `;
 
 const Header = styled.View`
     margin-bottom: ${(props: ThemeProps) => props.theme.spacing.xl}px;
-    margin-top: ${(props: ThemeProps) => props.theme.spacing.md}px;
+    margin-top: ${(props: ThemeProps) => props.theme.spacing.lg}px;
     align-items: center;
     background-color: transparent;
 `;
 
 const Title = styled(Text)`
     color: ${(props: ThemeProps) => props.theme.colors.text};
-    font-size: 36px;
+    font-size: 42px;
     font-weight: 800;
-    margin-bottom: ${(props: ThemeProps) => props.theme.spacing.sm}px;
-    letter-spacing: 0.2px;
+    margin-bottom: ${(props: ThemeProps) => props.theme.spacing.md}px;
+    letter-spacing: -0.5px;
+    text-shadow: 0px 0px 30px rgba(124, 58, 237, 0.5);
 `;
 
 const Subtitle = styled(Text)`
