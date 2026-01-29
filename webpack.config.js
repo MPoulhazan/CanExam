@@ -1,20 +1,16 @@
 const createExpoWebpackConfigAsync = require('@expo/webpack-config');
 
 module.exports = async function (env, argv) {
-    const config = await createExpoWebpackConfigAsync(env, argv);
+    const config = await createExpoWebpackConfigAsync(
+        {
+            ...env,
+            mode: 'development',
+        },
+        argv
+    );
 
-    // Exclude problematic files from Terser minification
-    if (config.optimization && config.optimization.minimizer) {
-        config.optimization.minimizer.forEach((plugin) => {
-            if (plugin.constructor.name === 'TerserPlugin') {
-                plugin.options.exclude = [
-                    /\.flow\.js$/,
-                    /node_modules\/@swc\/helpers\/scripts/,
-                    /node_modules\/styleq/,
-                ];
-            }
-        });
-    }
+    // Disable minification to avoid Terser errors with Flow and script files
+    config.optimization.minimize = false;
 
     return config;
 };
