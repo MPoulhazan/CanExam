@@ -1,16 +1,15 @@
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { View } from 'react-native';
+import { View, Linking } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useTranslation } from 'react-i18next';
 import { DefaultTheme } from 'styled-components';
+import { Ionicons } from '@expo/vector-icons';
 
 type ThemeProps = { theme: DefaultTheme };
 import Button from '../components/Button';
 import { theme } from '../theme';
-import { ThemeModeContext } from '../../App';
-import { Switch } from 'react-native';
 
 const Container = styled(SafeAreaView)`
     flex: 1;
@@ -29,14 +28,50 @@ const Title = styled.Text`
     margin-bottom: ${(p: ThemeProps) => p.theme.spacing.md}px;
 `;
 
+const DonationSection = styled.View`
+    margin-top: ${(p: ThemeProps) => p.theme.spacing.xl}px;
+    padding: ${(p: ThemeProps) => p.theme.spacing.lg}px;
+    background-color: rgba(124, 58, 237, 0.1);
+    border-radius: 12px;
+    border-width: 1px;
+    border-color: rgba(124, 58, 237, 0.3);
+`;
+
+const DonationTitle = styled.Text`
+    color: ${(p: ThemeProps) => p.theme.colors.text};
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: ${(p: ThemeProps) => p.theme.spacing.sm}px;
+`;
+
+const DonationText = styled.Text`
+    color: ${(p: ThemeProps) => p.theme.colors.textSecondary};
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: ${(p: ThemeProps) => p.theme.spacing.md}px;
+`;
+
+const PayPalButton = styled.TouchableOpacity`
+    background-color: #0070ba;
+    padding: ${(p: ThemeProps) => p.theme.spacing.md}px;
+    border-radius: 8px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+`;
+
+const PayPalButtonText = styled.Text`
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: ${(p: ThemeProps) => p.theme.spacing.sm}px;
+`;
+
 const STORAGE_LANG = 'preferred_lang';
-const STORAGE_THEME = 'preferred_theme';
 
 const SettingsScreen: React.FC = () => {
     const { i18n, t } = useTranslation();
     const [lang, setLang] = useState(i18n.language);
-    const { mode, setMode } = useContext(ThemeModeContext);
-    const [isDark, setIsDark] = useState(mode === 'dark');
 
     useEffect(() => {
         const load = async () => {
@@ -44,11 +79,6 @@ const SettingsScreen: React.FC = () => {
             if (stored) {
                 setLang(stored);
                 i18n.changeLanguage(stored);
-            }
-            const storedTheme = await AsyncStorage.getItem(STORAGE_THEME);
-            if (storedTheme === 'dark' || storedTheme === 'light') {
-                setIsDark(storedTheme === 'dark');
-                setMode(storedTheme as 'dark' | 'light');
             }
         };
         load();
@@ -60,11 +90,8 @@ const SettingsScreen: React.FC = () => {
         await AsyncStorage.setItem(STORAGE_LANG, l);
     };
 
-    const toggleTheme = async (value: boolean) => {
-        setIsDark(value);
-        const m = value ? 'dark' : 'light';
-        setMode(m as 'dark' | 'light');
-        await AsyncStorage.setItem(STORAGE_THEME, m);
+    const openPayPal = () => {
+        Linking.openURL('https://www.paypal.com/paypalme/mpoulhazan');
     };
 
     return (
@@ -78,19 +105,16 @@ const SettingsScreen: React.FC = () => {
                 English
             </Button>
 
-            <View style={{ height: theme.spacing.lg }} />
-            <View
-                style={{
-                    flexDirection: 'row',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                }}
-            >
-                <Title style={{ fontSize: 16, marginBottom: 0 }}>
-                    {t('settings.darkMode')}
-                </Title>
-                <Switch value={isDark} onValueChange={toggleTheme} />
-            </View>
+            <DonationSection>
+                <DonationTitle>{t('settings.donationTitle')}</DonationTitle>
+                <DonationText>{t('settings.donationText')}</DonationText>
+                <PayPalButton onPress={openPayPal}>
+                    <Ionicons name="logo-paypal" size={24} color="white" />
+                    <PayPalButtonText>
+                        {t('settings.donateButton')}
+                    </PayPalButtonText>
+                </PayPalButton>
+            </DonationSection>
         </Container>
     );
 };

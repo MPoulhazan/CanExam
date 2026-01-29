@@ -12,7 +12,10 @@
         "infoDescription": "Exam tips and useful links"
     },
     "settings": {
-        "darkMode": "Dark mode"
+        "darkMode": "Dark mode",
+        "donationTitle": "Support the app",
+        "donationText": "This app is 100% free and ad-free. If it helps you prepare, you can thank me with a small donation. Thank you for your support! 🙏",
+        "donateButton": "Donate via PayPal"
     },
     "training": {
         "title": "Training",

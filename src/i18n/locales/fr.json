@@ -12,7 +12,10 @@
         "infoDescription": "Conseils et liens utiles pour l'examen"
     },
     "settings": {
-        "darkMode": "Mode sombre"
+        "darkMode": "Mode sombre",
+        "donationTitle": "Soutenir l'application",
+        "donationText": "Cette application est 100% gratuite et sans publicité. Si elle vous aide dans votre préparation, vous pouvez me remercier avec un petit don. Merci pour votre soutien ! 🙏",
+        "donateButton": "Faire un don via PayPal"
     },
     "training": {
         "title": "Entraînement",
