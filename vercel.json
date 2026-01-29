@@ -1,4 +1,5 @@
 {
     "buildCommand": "npm run build:web",
-    "outputDirectory": "web-build"
+    "outputDirectory": "web-build",
+    "installCommand": "npm install"
 }
