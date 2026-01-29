@@ -14,6 +14,7 @@ import i18n from './src/i18n';
 import { ThemeProvider } from 'styled-components/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { lightTheme, darkTheme } from './src/theme';
+import { Platform } from 'react-native';
 
 export const ThemeModeContext = createContext({
     mode: 'light',
@@ -41,6 +42,15 @@ export default function App() {
             setLoaded(true);
         };
         load();
+    }, []);
+
+    // Register service worker on web
+    useEffect(() => {
+        if (Platform.OS === 'web' && 'serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js').catch(() => {
+                // Service worker registration failed, app still works
+            });
+        }
     }, []);
 
     // Always call font hook at top-level so hook ordering is stable
