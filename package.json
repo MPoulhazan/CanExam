@@ -8,7 +8,8 @@
         "ios": "expo start --ios",
         "web": "expo start --web",
         "build:web": "npx expo export:web",
-        "vercel-build": "npm run build:web"
+        "vercel-build": "npm run build:web",
+        "generate-favicons": "node generate-favicons.js"
     },
     "dependencies": {
         "@expo-google-fonts/comfortaa": "^0.4.2",
@@ -42,6 +43,7 @@
         "@types/react": "~19.1.10",
         "@types/styled-components": "^5.1.36",
         "@types/styled-components-react-native": "^5.2.5",
+        "sharp": "^0.33.5",
         "typescript": "^5.3.3",
         "webpack": "^5.104.1",
         "webpack-cli": "^6.0.1"
