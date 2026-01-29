@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://canexam.vercel.app/sitemap.xml
+
+# Crawl delay (optional, in seconds)
+Crawl-delay: 1
