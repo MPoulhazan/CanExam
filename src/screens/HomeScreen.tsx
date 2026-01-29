@@ -212,12 +212,14 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
             <Footer>
                 <TouchableOpacity
                     onPress={() =>
-                        Linking.openURL('https://github.com/MPoulhazan')
+                        Linking.openURL(
+                            'https://www.paypal.com/paypalme/mpoulhazan'
+                        )
                     }
                     style={{ flexDirection: 'row', alignItems: 'center' }}
                 >
                     <Ionicons
-                        name="logo-github"
+                        name="logo-paypal"
                         size={20}
                         color={theme.colors.textSecondary}
                     />
@@ -227,7 +229,7 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
                             marginLeft: theme.spacing.sm,
                         }}
                     >
-                        © {new Date().getFullYear()} MPoulhazan
+                        Support CanExam
                     </Text>
                 </TouchableOpacity>
             </Footer>
