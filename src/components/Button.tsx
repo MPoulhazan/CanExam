@@ -10,14 +10,14 @@ const StyledButton = styled(TouchableOpacity)<{
     variant?: 'primary' | 'secondary' | 'default';
     outline?: boolean;
 }>`
-    background: ${(
+    background-color: ${(
         props: ThemeProps & { variant?: string; outline?: boolean }
     ) =>
         props.outline
             ? 'rgba(255, 255, 255, 0.05)'
             : props.variant === 'secondary'
-            ? 'linear-gradient(135deg, #06B6D4 0%, #0891B2 100%)'
-            : 'linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%)'};
+            ? '#06B6D4'
+            : '#7C3AED'};
     padding: ${(props: ThemeProps) =>
         `${props.theme.spacing.md}px ${props.theme.spacing.xl}px`};
     border-radius: ${(props: ThemeProps) => props.theme.borderRadius.xl}px;

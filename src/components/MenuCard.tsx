@@ -8,8 +8,7 @@ import { DefaultTheme } from 'styled-components';
 type ThemeProps = { theme: DefaultTheme };
 
 const StyledCard = styled(TouchableOpacity)`
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(12px);
+    background-color: rgba(255, 255, 255, 0.08);
     border-radius: ${(props: ThemeProps) => props.theme.borderRadius.xl}px;
     padding: ${(props: ThemeProps) => props.theme.spacing.lg}px;
     margin-vertical: ${(props: ThemeProps) => props.theme.spacing.sm}px;
@@ -31,11 +30,7 @@ const IconContainer = styled.View`
     width: 56px;
     height: 56px;
     border-radius: ${(props: ThemeProps) => props.theme.borderRadius.md}px;
-    background: linear-gradient(
-        135deg,
-        rgba(124, 58, 237, 0.2) 0%,
-        rgba(6, 182, 212, 0.2) 100%
-    );
+    background-color: rgba(124, 58, 237, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.1);
     align-items: center;
     justify-content: center;

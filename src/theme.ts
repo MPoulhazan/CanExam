@@ -3,7 +3,7 @@ import { Theme } from './types';
 export const lightTheme: Theme = {
     fontFamily: 'Comfortaa_400Regular',
     colors: {
-        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        background: '#0A0E27',
         surface: 'rgba(255, 255, 255, 0.08)',
         surfaceLight: 'rgba(255, 255, 255, 0.05)',
         primary: '#7C3AED',
@@ -18,8 +18,7 @@ export const lightTheme: Theme = {
         success: '#10B981',
         border: 'rgba(255, 255, 255, 0.1)',
         shadow: 'rgba(0, 0, 0, 0.3)',
-        cardGradient:
-            'linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%)',
+        cardGradient: 'rgba(124, 58, 237, 0.1)',
         glowPrimary: 'rgba(124, 58, 237, 0.4)',
         glowSecondary: 'rgba(6, 182, 212, 0.4)',
     },
@@ -108,8 +107,7 @@ export const darkTheme: Theme = {
         success: '#10B981',
         border: 'rgba(255, 255, 255, 0.1)',
         shadow: 'rgba(0, 0, 0, 0.5)',
-        cardGradient:
-            'linear-gradient(135deg, rgba(124, 58, 237, 0.15) 0%, rgba(6, 182, 212, 0.15) 100%)',
+        cardGradient: 'rgba(124, 58, 237, 0.15)',
         glowPrimary: 'rgba(124, 58, 237, 0.5)',
         glowSecondary: 'rgba(6, 182, 212, 0.5)',
     },

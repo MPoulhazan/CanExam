@@ -29,6 +29,9 @@ const Container = styled(SafeAreaView)`
     align-items: center;
     justify-content: center;
     padding: ${(p: { theme: Theme }) => p.theme.spacing.lg}px;
+    max-width: 800px;
+    align-self: center;
+    width: 100%;
 `;
 
 const Title = styled.Text`

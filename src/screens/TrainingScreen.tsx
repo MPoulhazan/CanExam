@@ -26,6 +26,9 @@ interface TrainingScreenProps {
 const Container = styled(SafeAreaView)`
     flex: 1;
     background-color: ${(props: ThemeProps) => props.theme.colors.background};
+    max-width: 800px;
+    align-self: center;
+    width: 100%;
 `;
 
 const Header = styled.View`

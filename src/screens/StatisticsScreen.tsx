@@ -16,6 +16,9 @@ const Container = styled(SafeAreaView)`
     flex: 1;
     background-color: ${(p: ThemeProps) => p.theme.colors.background};
     padding: ${(p: ThemeProps) => p.theme.spacing.lg}px;
+    max-width: 800px;
+    align-self: center;
+    width: 100%;
 `;
 
 const Title = styled.Text`
@@ -169,8 +172,7 @@ const StatisticsScreen: React.FC<{ navigation: StatisticsNavProp }> = ({
                                         color: theme.colors.text,
                                         fontWeight: '700',
                                     }}
-                                >
-                                </Text>
+                                ></Text>
                                 <DateText>{formatted}</DateText>
                             </Left>
 

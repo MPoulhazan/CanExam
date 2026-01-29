@@ -15,7 +15,11 @@ import { Switch } from 'react-native';
 const Container = styled(SafeAreaView)`
     flex: 1;
     background-color: ${(p: ThemeProps) => p.theme.colors.background};
-    padding: ${(p: ThemeProps) => p.theme.spacing.lg}px;
+    padding-horizontal: ${(p: ThemeProps) => p.theme.spacing.md}px;
+    padding-vertical: ${(p: ThemeProps) => p.theme.spacing.lg}px;
+    max-width: 800px;
+    align-self: center;
+    width: 100%;
 `;
 
 const Title = styled.Text`

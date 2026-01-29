@@ -7,8 +7,7 @@ import { DefaultTheme } from 'styled-components';
 type ThemeProps = { theme: DefaultTheme };
 
 const StyledCard = styled(View)`
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(12px);
+    background-color: rgba(255, 255, 255, 0.08);
     border-radius: ${(props: ThemeProps) => props.theme.borderRadius.xl}px;
     padding: ${(props: ThemeProps) => props.theme.spacing.lg}px;
     margin-vertical: ${(props: ThemeProps) => props.theme.spacing.sm}px;
