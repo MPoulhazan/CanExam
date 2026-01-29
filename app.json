@@ -1,29 +1,41 @@
 {
-  "expo": {
-    "name": "CanExam",
-    "slug": "canexam",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "userInterfaceStyle": "dark",
-    "splash": {
-      "resizeMode": "contain",
-      "backgroundColor": "#0A0E27"
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.canexam.app"
-    },
-    "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#0A0E27"
-      },
-      "package": "com.canexam.app"
-    },
-    "plugins": [
-      "expo-font"
-    ]
-  }
+    "expo": {
+        "name": "CanExam",
+        "slug": "canexam",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "userInterfaceStyle": "dark",
+        "platforms": ["ios", "android", "web"],
+        "splash": {
+            "resizeMode": "contain",
+            "backgroundColor": "#0A0E27"
+        },
+        "assetBundlePatterns": ["**/*"],
+        "ios": {
+            "supportsTablet": true,
+            "bundleIdentifier": "com.canexam.app"
+        },
+        "android": {
+            "adaptiveIcon": {
+                "backgroundColor": "#0A0E27"
+            },
+            "package": "com.canexam.app"
+        },
+        "plugins": ["expo-font"],
+        "web": {
+            "favicon": "./assets/favicon.png",
+            "bundler": "webpack"
+        },
+        "extra": {
+            "eas": {
+                "projectId": "62a61b2a-28e0-4997-a013-cbd904cc2906"
+            }
+        },
+        "runtimeVersion": {
+            "policy": "appVersion"
+        },
+        "updates": {
+            "url": "https://u.expo.dev/62a61b2a-28e0-4997-a013-cbd904cc2906"
+        }
+    }
 }
