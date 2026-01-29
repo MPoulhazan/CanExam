@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { View } from 'react-native';
+import { View, Platform } from 'react-native';
 import styled from 'styled-components/native';
 import { useTranslation } from 'react-i18next';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -17,6 +17,7 @@ import { theme } from '../theme';
 import { DefaultTheme } from 'styled-components';
 import { RootStackParamList } from '../types';
 import Logo from '../components/Logo';
+import { useInstallPrompt } from '../hooks/useInstallPrompt';
 
 type HomeScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Home'>;
 
@@ -78,10 +79,29 @@ const Subtitle = styled(Text)`
         props.theme.typography.body.lineHeight}px;
 `;
 
+const InstallButton = styled.TouchableOpacity`
+    background-color: ${(props: ThemeProps) => props.theme.colors.primary};
+    padding: ${(props: ThemeProps) => props.theme.spacing.md}px
+        ${(props: ThemeProps) => props.theme.spacing.lg}px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    margin-top: ${(props: ThemeProps) => props.theme.spacing.lg}px;
+    flex-direction: row;
+`;
+
+const InstallButtonText = styled(Text)`
+    color: white;
+    font-size: ${(props: ThemeProps) => props.theme.typography.body.fontSize}px;
+    font-weight: 600;
+    margin-left: ${(props: ThemeProps) => props.theme.spacing.sm}px;
+`;
+
 // TitleBadge removed for a cleaner aesthetic
 
 const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
     const { t } = useTranslation();
+    const { isVisible, handleInstall } = useInstallPrompt();
     const titleOpacity = useRef(new Animated.Value(0)).current;
     const titleTranslateY = useRef(new Animated.Value(20)).current;
     // pulseAnim removed for a cleaner title effect
@@ -137,6 +157,19 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
                             </Subtitle>
                         </Animated.View>
                     </Header>
+
+                    {Platform.OS === 'web' && isVisible && (
+                        <InstallButton onPress={handleInstall}>
+                            <Ionicons
+                                name="download-outline"
+                                size={20}
+                                color="white"
+                            />
+                            <InstallButtonText>
+                                Add to Home Screen
+                            </InstallButtonText>
+                        </InstallButton>
+                    )}
 
                     <MenuCard
                         icon="book-outline"
