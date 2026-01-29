@@ -23,7 +23,8 @@
         },
         "plugins": ["expo-font"],
         "web": {
-            "bundler": "webpack"
+            "bundler": "webpack",
+            "favicon": "./public/favicon-32.png"
         },
         "extra": {
             "eas": {
