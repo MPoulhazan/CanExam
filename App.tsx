@@ -15,6 +15,7 @@ import { ThemeProvider } from 'styled-components/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { lightTheme, darkTheme } from './src/theme';
 import { Platform } from 'react-native';
+import { Analytics } from '@vercel/analytics/react';
 
 export const ThemeModeContext = createContext({
     mode: 'light',
@@ -61,49 +62,57 @@ export default function App() {
     if (!loaded || !fontsLoaded) return <AppLoading />; // splash while loading preference and fonts
 
     return (
-        <I18nextProvider i18n={i18n}>
-            <ThemeModeContext.Provider value={{ mode, setMode }}>
-                <ThemeProvider theme={currentTheme}>
-                    <NavigationContainer>
-                        <StatusBar style={mode === 'dark' ? 'light' : 'dark'} />
-                        <Stack.Navigator
-                            screenOptions={({ route, navigation }) => ({
-                                headerShown: true,
-                                header: (headerProps) => (
-                                    <AppHeader {...headerProps} />
-                                ),
-                                cardStyle: {
-                                    backgroundColor:
-                                        currentTheme.colors.background,
-                                },
-                            })}
-                        >
-                            <Stack.Screen
-                                name="Home"
-                                component={HomeScreen}
-                                options={{ headerShown: false }}
+        <>
+            <Analytics />
+            <I18nextProvider i18n={i18n}>
+                <ThemeModeContext.Provider value={{ mode, setMode }}>
+                    <ThemeProvider theme={currentTheme}>
+                        <NavigationContainer>
+                            <StatusBar
+                                style={mode === 'dark' ? 'light' : 'dark'}
                             />
-                            <Stack.Screen
-                                name="Training"
-                                component={TrainingScreen}
-                            />
-                            <Stack.Screen
-                                name="Result"
-                                component={ResultScreen}
-                            />
-                            <Stack.Screen
-                                name="Statistics"
-                                component={StatisticsScreen}
-                            />
-                            <Stack.Screen
-                                name="Settings"
-                                component={SettingsScreen}
-                            />
-                            <Stack.Screen name="Info" component={InfoScreen} />
-                        </Stack.Navigator>
-                    </NavigationContainer>
-                </ThemeProvider>
-            </ThemeModeContext.Provider>
-        </I18nextProvider>
+                            <Stack.Navigator
+                                screenOptions={({ route, navigation }) => ({
+                                    headerShown: true,
+                                    header: (headerProps) => (
+                                        <AppHeader {...headerProps} />
+                                    ),
+                                    cardStyle: {
+                                        backgroundColor:
+                                            currentTheme.colors.background,
+                                    },
+                                })}
+                            >
+                                <Stack.Screen
+                                    name="Home"
+                                    component={HomeScreen}
+                                    options={{ headerShown: false }}
+                                />
+                                <Stack.Screen
+                                    name="Training"
+                                    component={TrainingScreen}
+                                />
+                                <Stack.Screen
+                                    name="Result"
+                                    component={ResultScreen}
+                                />
+                                <Stack.Screen
+                                    name="Statistics"
+                                    component={StatisticsScreen}
+                                />
+                                <Stack.Screen
+                                    name="Settings"
+                                    component={SettingsScreen}
+                                />
+                                <Stack.Screen
+                                    name="Info"
+                                    component={InfoScreen}
+                                />
+                            </Stack.Navigator>
+                        </NavigationContainer>
+                    </ThemeProvider>
+                </ThemeModeContext.Provider>
+            </I18nextProvider>
+        </>
     );
 }
