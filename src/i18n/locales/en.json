@@ -19,7 +19,7 @@
     },
     "training": {
         "title": "Training",
-        "setupTitle": "Choose your session length",
+        "setupTitle": "Choose your session lengh",
         "setupDescription": "Pick how many questions you want before starting your practice session.",
         "questionCountLabel": "{{count}} questions",
         "recommended": "Recommended",
