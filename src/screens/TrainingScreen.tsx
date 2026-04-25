@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ScrollView, Alert, Animated, Text, View } from 'react-native';
+import { ScrollView, Animated, Text, View } from 'react-native';
 import styled from 'styled-components/native';
 import { useTranslation } from 'react-i18next';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { Ionicons } from '@expo/vector-icons';
 import { StackNavigationProp } from '@react-navigation/stack';
+import { Ionicons } from '@expo/vector-icons';
 import Card from '../components/Card';
 import Button from '../components/Button';
 import questionsData from '../data/questions.json';
@@ -18,6 +18,11 @@ type TrainingScreenNavigationProp = StackNavigationProp<
     RootStackParamList,
     'Training'
 >;
+
+const QUESTION_COUNT_OPTIONS = [5, 10, 20, 40] as const;
+const DEFAULT_QUESTION_COUNT = 20;
+const PASS_RATIO = 0.75;
+const QUESTION_COUNT_STORAGE_KEY = 'preferred_training_question_count';
 
 interface TrainingScreenProps {
     navigation: TrainingScreenNavigationProp;
@@ -38,15 +43,88 @@ const Header = styled.View`
     padding-bottom: ${(props: ThemeProps) => props.theme.spacing.md}px;
 `;
 
-const BackButton = styled.TouchableOpacity`
-    margin-right: ${(props: ThemeProps) => props.theme.spacing.md}px;
-`;
-
 const HeaderTitle = styled.Text`
     color: ${(props: ThemeProps) => props.theme.colors.text};
     font-size: ${(props: ThemeProps) => props.theme.typography.h2.fontSize}px;
     font-weight: ${(props: ThemeProps) => props.theme.typography.h2.fontWeight};
     flex: 1;
+`;
+
+const SetupDescription = styled.Text`
+    color: ${(props: ThemeProps) => props.theme.colors.textSecondary};
+    font-size: ${(props: ThemeProps) => props.theme.typography.body.fontSize}px;
+    line-height: ${(props: ThemeProps) => props.theme.typography.body.lineHeight}px;
+    margin-bottom: ${(props: ThemeProps) => props.theme.spacing.lg}px;
+`;
+
+const OptionsGrid = styled.View`
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: ${(props: ThemeProps) => props.theme.spacing.lg}px;
+`;
+
+const QuestionCountOption = styled.TouchableOpacity<{
+    selected: boolean;
+    recommended?: boolean;
+}>`
+    width: 48%;
+    background-color: ${(props: ThemeProps & { selected: boolean }) =>
+        props.selected ? props.theme.colors.primary : props.theme.colors.surfaceLight};
+    border: 2px solid
+        ${(props: ThemeProps & { selected: boolean; recommended?: boolean }) =>
+            props.selected
+                ? props.theme.colors.primaryLight
+                : props.recommended
+                ? props.theme.colors.secondary
+                : props.theme.colors.border};
+    border-radius: ${(props: ThemeProps) => props.theme.borderRadius.lg}px;
+    padding: ${(props: ThemeProps) => props.theme.spacing.md}px;
+    margin-bottom: ${(props: ThemeProps) => props.theme.spacing.md}px;
+`;
+
+const OptionHeader = styled.View`
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: ${(props: ThemeProps) => props.theme.spacing.xs}px;
+`;
+
+const OptionCount = styled.Text<{ selected: boolean }>`
+    color: ${(props: ThemeProps & { selected: boolean }) =>
+        props.selected ? '#FFFFFF' : props.theme.colors.text};
+    font-size: ${(props: ThemeProps) => props.theme.typography.h3.fontSize}px;
+    font-weight: ${(props: ThemeProps) => props.theme.typography.h3.fontWeight};
+`;
+
+const RecommendedBadge = styled.View`
+    background-color: rgba(6, 182, 212, 0.18);
+    padding: 4px 8px;
+    border-radius: ${(props: ThemeProps) => props.theme.borderRadius.full}px;
+`;
+
+const RecommendedBadgeText = styled.Text`
+    color: ${(props: ThemeProps) => props.theme.colors.secondary};
+    font-size: 12px;
+    font-weight: 700;
+`;
+
+const OptionLabel = styled.Text<{ selected: boolean }>`
+    color: ${(props: ThemeProps & { selected: boolean }) =>
+        props.selected ? 'rgba(255, 255, 255, 0.86)' : props.theme.colors.textSecondary};
+    font-size: ${(props: ThemeProps) =>
+        props.theme.typography.bodySmall.fontSize}px;
+    line-height: ${(props: ThemeProps) =>
+        props.theme.typography.bodySmall.lineHeight}px;
+`;
+
+const SetupNote = styled.Text`
+    color: ${(props: ThemeProps) => props.theme.colors.textMuted};
+    font-size: ${(props: ThemeProps) =>
+        props.theme.typography.bodySmall.fontSize}pp;
+    line-height: ${(props: ThemeProps) =>
+        props.theme.typography.bodySmall.lineHeight}px;
+    margin-bottom: ${(props: ThemeProps) => props.theme.spacing.lg}px;
 `;
 
 const ProgressBar = styled.View`
@@ -56,12 +134,6 @@ const ProgressBar = styled.View`
     margin-top: 0;
     border-radius: ${(props: ThemeProps) => props.theme.borderRadius.full}px;
     overflow: hidden;
-`;
-
-const ProgressFill = styled(View)`
-    height: 100%;
-    background-color: ${(props: ThemeProps) => props.theme.colors.primary};
-    border-radius: ${(props: ThemeProps) => props.theme.borderRadius.full}px;
 `;
 
 const ScrollContainer = styled(ScrollView)`
@@ -166,6 +238,16 @@ const ButtonContainer = styled.View`
     padding-top: ${(props: ThemeProps) => props.theme.spacing.md}px;
 `;
 
+const isValidQuestionCount = (
+    value: number
+): value is (typeof QUESTION_COUNT_OPTIONS)[number] =>
+    QUESTION_COUNT_OPTIONS.includes(
+        value as (typeof QUESTION_COUNT_OPTIONS)[number]
+    );
+
+const getRequiredCorrectAnswers = (totalQuestions: number) =>
+    Math.ceil(totalQuestions * PASS_RATIO);
+
 const TrainingScreen: React.FC<TrainingScreenProps> = ({ navigation }) => {
     const { t, i18n } = useTranslation();
     const [currentQuestion, setCurrentQuestion] = useState<number>(0);
@@ -173,13 +255,65 @@ const TrainingScreen: React.FC<TrainingScreenProps> = ({ navigation }) => {
     const [showExplanation, setShowExplanation] = useState<boolean>(false);
     const [score, setScore] = useState<number>(0);
     const [questions, setQuestions] = useState<Question[]>([]);
+    const [selectedQuestionCount, setSelectedQuestionCount] = useState<number>(
+        DEFAULT_QUESTION_COUNT
+    );
+    const [preferencesLoaded, setPreferencesLoaded] = useState<boolean>(false);
+    const [sessionStarted, setSessionStarted] = useState<boolean>(false);
 
     const progressAnim = useRef(new Animated.Value(0)).current;
     const explanationOpacity = useRef(new Animated.Value(0)).current;
 
     useEffect(() => {
-        // Mélanger les options de chaque question (même permutation pour FR/EN)
-        // et recalculer correctAnswer. Limiter la session à 20 questions maximum.
+        const loadPreferredQuestionCount = async () => {
+            try {
+                const storedValue = await AsyncStorage.getItem(
+                    QUESTION_COUNT_STORAGE_KEY
+                );
+
+                if (storedValue) {
+                    const parsedValue = Number(storedValue);
+
+                    if (isValidQuestionCount(parsedValue)) {
+                        setSelectedQuestionCount(parsedValue);
+                    }
+                }
+            } catch (error) {
+                console.warn(
+                    'Failed to load preferred training question count.',
+                    error
+                );
+            } finally {
+                setPreferencesLoaded(true);
+            }
+        };
+
+        void loadPreferredQuestionCount();
+    }, []);
+
+    useEffect(() => {
+        if (!preferencesLoaded) {
+            return;
+        }
+
+        const savePreferredQuestionCount = async () => {
+            try {
+                await AsyncStorage.setItem(
+                    QUESTION_COUNT_STORAGE_KEY,
+                    String(selectedQuestionCount)
+                );
+            } catch (error) {
+                console.warn(
+                    'Failed to save preferred training question count.',
+                    error
+                );
+            }
+        };
+
+        void savePreferredQuestionCount();
+    }, [preferencesLoaded, selectedQuestionCount]);
+
+    const buildSessionQuestions = (requestedQuestionCount: number) => {
         const shuffleArray = <T,>(arr: T[]): T[] => {
             const a = [...arr];
             for (let i = a.length - 1; i > 0; i--) {
@@ -206,20 +340,22 @@ const TrainingScreen: React.FC<TrainingScreenProps> = ({ navigation }) => {
         });
 
         const shuffledQuestions = shuffleArray(normalized);
+        const sessionCount = Math.min(
+            requestedQuestionCount,
+            shuffledQuestions.length
+        );
 
-        // Limit to 20 questions (or fewer if not enough questions available)
-        const sessionCount = Math.min(20, shuffledQuestions.length);
-        setQuestions(shuffledQuestions.slice(0, sessionCount));
-    }, []);
+        return shuffledQuestions.slice(0, sessionCount);
+    };
 
     useEffect(() => {
-        if (questions.length > 0) {
+        if (sessionStarted && questions.length > 0) {
             Animated.spring(progressAnim, {
                 toValue: (currentQuestion + 1) / questions.length,
                 useNativeDriver: false,
             }).start();
         }
-    }, [currentQuestion, questions.length]);
+    }, [currentQuestion, progressAnim, questions.length, sessionStarted]);
 
     useEffect(() => {
         if (showExplanation) {
@@ -240,6 +376,18 @@ const TrainingScreen: React.FC<TrainingScreenProps> = ({ navigation }) => {
     const handleAnswerSelect = (index: number) => {
         if (showExplanation) return;
         setSelectedAnswer(index);
+    };
+
+    const handleStartSession = () => {
+        const sessionQuestions = buildSessionQuestions(selectedQuestionCount);
+
+        setQuestions(sessionQuestions);
+        setCurrentQuestion(0);
+        setSelectedAnswer(null);
+        setShowExplanation(false);
+        setScore(0);
+        progressAnim.setValue(0);
+        setSessionStarted(true);
     };
 
     const handleSubmit = () => {
@@ -264,24 +412,119 @@ const TrainingScreen: React.FC<TrainingScreenProps> = ({ navigation }) => {
             // End of quiz — final score already accumulated in `score`
             const finalScore = score;
             const total = questions.length;
-            const passed = finalScore >= 15;
+            const passed = finalScore >= getRequiredCorrectAnswers(total);
             navigation.navigate('Result', { score: finalScore, total, passed });
         }
     };
 
-    if (questions.length === 0) {
+    if (!preferencesLoaded) {
         return (
             <Container>
                 <Header>
-                    <BackButton onPress={() => navigation.goBack()}>
-                        <Ionicons
-                            name="arrow-back"
-                            size={24}
-                            color={theme.colors.text}
-                        />
-                    </BackButton>
                     <HeaderTitle>{t('training.title')}</HeaderTitle>
                 </Header>
+                <Content>
+                    <SetupNote>{t('common.loading')}</SetupNote>
+                </Content>
+            </Container>
+        );
+    }
+
+    if (!sessionStarted) {
+        const availableQuestions = (questionsData as Question[]).length;
+        const sessionCount = Math.min(selectedQuestionCount, availableQuestions);
+        const requiredCorrectAnswers = getRequiredCorrectAnswers(sessionCount);
+
+        return (
+            <Container>
+                <Header>
+                    <HeaderTitle>{t('training.title')}</HeaderTitle>
+                </Header>
+
+                <ScrollContainer>
+                    <Content>
+                        <Card delay={100}>
+                            <QuestionText>
+                                {t('training.setupTitle')}
+                            </QuestionText>
+                            <SetupDescription>
+                                {t('training.setupDescription')}
+                            </SetupDescription>
+
+                            <OptionsGrid>
+                                {QUESTION_COUNT_OPTIONS.map((count) => {
+                                    const isSelected =
+                                        selectedQuestionCount === count;
+
+                                    return (
+                                        <QuestionCountOption
+                                            key={count}
+                                            selected={isSelected}
+                                            recommended={
+                                                count === DEFAULT_QUESTION_COUNT
+                                            }
+                                            onPress={() =>
+                                                setSelectedQuestionCount(count)
+                                            }
+                                            activeOpacity={0.9}
+                                        >
+                                            <OptionHeader>
+                                                <OptionCount
+                                                    selected={isSelected}
+                                                >
+                                                    {count}
+                                                </OptionCount>
+                                                {count ===
+                                                    DEFAULT_QUESTION_COUNT && (
+                                                    <RecommendedBadge>
+                                                        <RecommendedBadgeText>
+                                                            {t(
+                                                                'training.recommended'
+                                                            )}
+                                                        </RecommendedBadgeText>
+                                                    </RecommendedBadge>
+                                                )}
+                                            </OptionHeader>
+                                            <OptionLabel
+                                                selected={isSelected}
+                                            >
+                                                {t(
+                                                    'training.questionCountLabel',
+                                                    { count }
+                                                )}
+                                            </OptionLabel>
+                                        </QuestionCountOption>
+                                    );
+                                })}
+                            </OptionsGrid>
+
+                            {sessionCount === 0 ? (
+                                <SetupNote>
+                                    {t('training.noQuestionsAvailable')}
+                                </SetupNote>
+                            ) : sessionCount < selectedQuestionCount ? (
+                                <SetupNote>
+                                    {t('training.availableQuestions', {
+                                        count: sessionCount,
+                                    })}
+                                </SetupNote>
+                            ) : (
+                                <SetupNote>
+                                    {t('training.passTarget', {
+                                        count: requiredCorrectAnswers,
+                                    })}
+                                </SetupNote>
+                            )}
+
+                            <Button
+                                onPress={handleStartSession}
+                                disabled={sessionCount === 0}
+                            >
+                                {t('training.startSession')}
+                            </Button>
+                        </Card>
+                    </Content>
+                </ScrollContainer>
             </Container>
         );
     }
