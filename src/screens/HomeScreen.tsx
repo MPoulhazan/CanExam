@@ -148,7 +148,11 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
                             }}
                         >
                             <Animated.View style={{ alignItems: 'center' }}>
-                                <Logo width={300} height={80} />
+                                <Logo
+                                    width={300}
+                                    height={80}
+                                    title={t('home.title')}
+                                />
                             </Animated.View>
                             <Subtitle
                                 style={{ marginTop: 6, textAlign: 'center' }}

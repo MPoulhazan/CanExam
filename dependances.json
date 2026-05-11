@@ -1,0 +1,1 @@
+{ "title": "Dépendances du Projet Canexam", "presenter": "Prénom Nom", "slides": [ { "type": "cover" }, { "type": "section", "title": "Introduction aux Dépendances" }, { "type": "bullets", "title": "Dépendances Clés", "items": ["Dépendances A", "Dépendances B", "Dépendances C"] }, { "type": "thankyou", "name": "Nom", "email": "email@domaine.com", "website": "www.site.com" } ] }

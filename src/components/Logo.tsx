@@ -2,7 +2,20 @@ import React from 'react';
 import { View } from 'react-native';
 import { SvgXml } from 'react-native-svg';
 
-const svg = `<?xml version="1.0" encoding="UTF-8"?>
+interface LogoProps {
+    width?: number;
+    height?: number;
+    title?: string;
+}
+
+const DEFAULT_TITLE = 'Can-Exam';
+
+const buildSvg = (title: string) => {
+    const [prefixPart, suffixPart] = title.split('-', 2);
+    const prefix = suffixPart ? `${prefixPart}-` : title;
+    const suffix = suffixPart ?? '';
+
+    return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 180" width="580" height="180">
     <defs>
         <!-- Gradient principal violet vers cyan -->
@@ -44,7 +57,7 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
           fill="url(#mainGradient)"
           filter="url(#subtleShadow)"
           letter-spacing="2">
-        Can<tspan font-style="italic" font-weight="900">Exam</tspan>
+        ${prefix}${suffix ? `<tspan font-style="italic" font-weight="900">${suffix}</tspan>` : ''}
     </text>
     
     <!-- Ligne décorative sous le texte avec points -->
@@ -57,15 +70,17 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
     <path d="M 170 85 L 175 90 L 170 95 Z" fill="#7C3AED" opacity="0.4"/>
     <path d="M 410 85 L 405 90 L 410 95 Z" fill="#06B6D4" opacity="0.4"/>
 </svg>`;
+};
 
-const Logo: React.FC<{ width?: number; height?: number }> = ({
+const Logo: React.FC<LogoProps> = ({
     width = 260,
     height = 70,
+    title = DEFAULT_TITLE,
 }) => {
     return (
         <View style={{ alignItems: 'center', justifyContent: 'center' }}>
             <SvgXml
-                xml={svg}
+                xml={buildSvg(title)}
                 width={width}
                 height={height}
                 style={{ alignSelf: 'center' }}

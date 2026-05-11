@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CanExam - Presentation architecture</title>
+        <style>
+            :root {
+                --bg: #0a0e27;
+                --surface: rgba(255, 255, 255, 0.08);
+                --surface-strong: rgba(255, 255, 255, 0.12);
+                --text: #ffffff;
+                --muted: rgba(255, 255, 255, 0.72);
+                --primary: #7c3aed;
+                --secondary: #06b6d4;
+                --accent: #f59e0b;
+                --success: #10b981;
+                --danger: #ef4444;
+                --border: rgba(255, 255, 255, 0.12);
+                --shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+                --radius: 24px;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                min-height: 100vh;
+                font-family: Inter, Segoe UI, Arial, sans-serif;
+                background:
+                    radial-gradient(circle at top right, rgba(124, 58, 237, 0.25), transparent 30%),
+                    radial-gradient(circle at bottom left, rgba(6, 182, 212, 0.18), transparent 25%),
+                    var(--bg);
+                color: var(--text);
+            }
+
+            main {
+                min-height: 100vh;
+                padding: 32px 32px 96px;
+                display: grid;
+                place-items: center;
+            }
+
+            .deck {
+                width: min(1200px, 100%);
+                position: relative;
+            }
+
+            .slide {
+                display: none;
+                min-height: 680px;
+                border: 1px solid var(--border);
+                border-radius: var(--radius);
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
+                box-shadow: var(--shadow);
+                padding: 56px;
+                backdrop-filter: blur(10px);
+            }
+
+            .slide.active {
+                display: block;
+            }
+
+            .eyebrow {
+                display: inline-flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 18px;
+                padding: 8px 14px;
+                border-radius: 999px;
+                background: rgba(124, 58, 237, 0.14);
+                color: #d9c8ff;
+                font-size: 14px;
+                font-weight: 700;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+            }
+
+            h1,
+            h2 {
+                margin: 0 0 16px;
+                line-height: 1.1;
+            }
+
+            h1 {
+                font-size: clamp(44px, 7vw, 76px);
+                max-width: 840px;
+            }
+
+            h2 {
+                font-size: clamp(30px, 4vw, 48px);
+            }
+
+            p,
+            li {
+                color: var(--muted);
+                font-size: 20px;
+                line-height: 1.55;
+            }
+
+            .lede {
+                max-width: 860px;
+                font-size: 24px;
+            }
+
+            .two-col,
+            .three-col,
+            .four-col {
+                display: grid;
+                gap: 20px;
+                margin-top: 28px;
+            }
+
+            .two-col {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .three-col {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            .four-col {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+
+            .card,
+            .metric,
+            .flow-step {
+                border: 1px solid var(--border);
+                border-radius: 22px;
+                background: var(--surface);
+                padding: 24px;
+            }
+
+            .card h3,
+            .metric h3,
+            .flow-step h3 {
+                margin: 0 0 10px;
+                font-size: 22px;
+            }
+
+            .metric strong {
+                display: block;
+                margin-bottom: 8px;
+                font-size: 42px;
+                color: var(--text);
+            }
+
+            .stack-list,
+            .plain-list {
+                margin: 20px 0 0;
+                padding-left: 24px;
+            }
+
+            .stack-list li,
+            .plain-list li {
+                margin-bottom: 10px;
+            }
+
+            .diagram {
+                margin-top: 28px;
+                display: grid;
+                gap: 18px;
+            }
+
+            .diagram-row {
+                display: grid;
+                gap: 18px;
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                align-items: stretch;
+            }
+
+            .diagram-box {
+                position: relative;
+                border-radius: 20px;
+                border: 1px solid var(--border);
+                background: var(--surface);
+                padding: 22px;
+            }
+
+            .diagram-box small,
+            .source {
+                color: rgba(255, 255, 255, 0.55);
+                font-size: 14px;
+            }
+
+            .diagram-box strong {
+                display: block;
+                margin-bottom: 10px;
+                font-size: 22px;
+            }
+
+            .accent-primary {
+                border-color: rgba(124, 58, 237, 0.35);
+            }
+
+            .accent-secondary {
+                border-color: rgba(6, 182, 212, 0.35);
+            }
+
+            .accent-warning {
+                border-color: rgba(245, 158, 11, 0.35);
+            }
+
+            .accent-success {
+                border-color: rgba(16, 185, 129, 0.35);
+            }
+
+            .timeline {
+                margin-top: 30px;
+                display: grid;
+                grid-template-columns: repeat(5, minmax(0, 1fr));
+                gap: 14px;
+            }
+
+            .timeline .flow-step {
+                position: relative;
+            }
+
+            .timeline .flow-step::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: -14px;
+                width: 14px;
+                height: 2px;
+                background: rgba(255, 255, 255, 0.28);
+            }
+
+            .timeline .flow-step:last-child::after {
+                display: none;
+            }
+
+            .tree {
+                margin-top: 26px;
+                padding: 24px;
+                border-radius: 22px;
+                background: rgba(10, 14, 39, 0.5);
+                border: 1px solid var(--border);
+                font: 16px/1.6 Consolas, Monaco, monospace;
+                white-space: pre-wrap;
+                color: #d4dbff;
+            }
+
+            .footer {
+                margin-top: 32px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 16px;
+                color: rgba(255, 255, 255, 0.6);
+                font-size: 14px;
+            }
+
+            .controls {
+                position: fixed;
+                left: 50%;
+                bottom: 24px;
+                transform: translateX(-50%);
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                padding: 10px 14px;
+                border-radius: 999px;
+                background: rgba(10, 14, 39, 0.82);
+                border: 1px solid var(--border);
+                backdrop-filter: blur(14px);
+            }
+
+            button {
+                border: 0;
+                border-radius: 999px;
+                padding: 12px 18px;
+                background: var(--primary);
+                color: var(--text);
+                font-size: 15px;
+                font-weight: 700;
+                cursor: pointer;
+            }
+
+            button.secondary {
+                background: rgba(255, 255, 255, 0.1);
+            }
+
+            .progress {
+                min-width: 92px;
+                text-align: center;
+                font-weight: 700;
+                color: var(--text);
+            }
+
+            .pill-row {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+                margin-top: 24px;
+            }
+
+            .pill {
+                padding: 10px 14px;
+                border-radius: 999px;
+                background: rgba(255, 255, 255, 0.08);
+                border: 1px solid var(--border);
+                font-size: 15px;
+                color: var(--text);
+            }
+
+            .highlight {
+                color: var(--text);
+                font-weight: 700;
+            }
+
+            @media (max-width: 960px) {
+                main {
+                    padding: 16px 16px 92px;
+                }
+
+                .slide {
+                    min-height: auto;
+                    padding: 28px;
+                }
+
+                .two-col,
+                .three-col,
+                .four-col,
+                .diagram-row,
+                .timeline {
+                    grid-template-columns: 1fr;
+                }
+
+                p,
+                li {
+                    font-size: 18px;
+                }
+            }
+
+            @media print {
+                body {
+                    background: #fff;
+                    color: #000;
+                }
+
+                main {
+                    display: block;
+                    padding: 0;
+                }
+
+                .slide {
+                    display: block;
+                    min-height: 100vh;
+                    page-break-after: always;
+                    color: #000;
+                    box-shadow: none;
+                    background: #fff;
+                }
+
+                .controls {
+                    display: none;
+                }
+
+                p,
+                li,
+                .footer,
+                .source,
+                .diagram-box small {
+                    color: #333;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="deck">
+                <section class="slide active">
+                    <div class="eyebrow">CanExam / Architecture</div>
+                    <h1>Architecture du projet CanExam</h1>
+                    <p class="lede">
+                        Application Expo/React Native multiplateforme pour preparer
+                        l'examen de citoyennete canadienne, avec une approche
+                        <span class="highlight">front-end only</span>,
+                        <span class="highlight">offline-first</span> et
+                        <span class="highlight">bilingue</span>.
+                    </p>
+
+                    <div class="pill-row">
+                        <span class="pill">iOS</span>
+                        <span class="pill">Android</span>
+                        <span class="pill">Web / PWA</span>
+                        <span class="pill">React 19</span>
+                        <span class="pill">Expo 54</span>
+                        <span class="pill">TypeScript</span>
+                    </div>
+
+                    <div class="two-col">
+                        <div class="metric">
+                            <strong>6</strong>
+                            Ecrans principaux dans la pile de navigation.
+                        </div>
+                        <div class="metric">
+                            <strong>0</strong>
+                            Backend, API distante ou base serveur: toute la logique est locale.
+                        </div>
+                    </div>
+
+                    <div class="footer">
+                        <span>Presentation generee a partir du code du depot</span>
+                        <span>Sources: App.tsx, src/screens/*, src/i18n, public/service-worker.js</span>
+                    </div>
+                </section>
+
+                <section class="slide">
+                    <div class="eyebrow">1 / Vue d'ensemble</div>
+                    <h2>Style d'architecture</h2>
+                    <p class="lede">
+                        CanExam repose sur une architecture UI simple et compacte:
+                        une coque applicative unique, des ecrans React relies par
+                        React Navigation, des donnees de quiz embarquees dans le depot
+                        et un stockage local pour la personnalisation et l'historique.
+                    </p>
+
+                    <div class="diagram">
+                        <div class="diagram-row">
+                            <div class="diagram-box accent-primary">
+                                <strong>Presentation</strong>
+                                Ecrans, composants design system, animations,
+                                header applicatif.
+                                <div class="source">src/screens, src/components</div>
+                            </div>
+                            <div class="diagram-box accent-secondary">
+                                <strong>Etat local</strong>
+                                Hooks React + AsyncStorage pour les preferences
+                                et l'historique des sessions.
+                                <div class="source">App.tsx, ResultScreen, SettingsScreen</div>
+                            </div>
+                            <div class="diagram-box accent-warning">
+                                <strong>Contenu</strong>
+                                Questions d'examen statiques en JSON,
+                                traductions FR/EN et ressources locales.
+                                <div class="source">src/data, src/i18n/locales</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tree">CanExam
+|- App.tsx
+|- src/
+|  |- components/
+|  |- screens/
+|  |- data/questions.json
+|  |- i18n/
+|  |- hooks/useInstallPrompt.ts
+|  |- theme.ts
+|  \- types/index.ts
+|- public/service-worker.js
+|- webpack.config.js
+\- app.json</div>
+                </section>
+
+                <section class="slide">
+                    <div class="eyebrow">2 / Stack technique</div>
+                    <h2>Socle technologique</h2>
+
+                    <div class="three-col">
+                        <div class="card">
+                            <h3>Runtime</h3>
+                            <ul class="stack-list">
+                                <li>Expo 54 comme socle multi-plateforme</li>
+                                <li>React 19 + React Native 0.81</li>
+                                <li>Bundling web via webpack Expo</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>UX et navigation</h3>
+                            <ul class="stack-list">
+                                <li>React Navigation (stack)</li>
+                                <li>styled-components pour le theming</li>
+                                <li>Animated + react-native-svg pour le rendu</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Services locaux</h3>
+                            <ul class="stack-list">
+                                <li>AsyncStorage pour les preferences et scores</li>
+                                <li>i18next pour les langues</li>
+                                <li>Service worker + manifest pour la couche PWA</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="pill-row">
+                        <span class="pill">Analytics Vercel sur le web</span>
+                        <span class="pill">Google Font Comfortaa</span>
+                        <span class="pill">Aucun appel reseau requis pour le quiz</span>
+                    </div>
+                </section>
+
+                <section class="slide">
+                    <div class="eyebrow">3 / Demarrage</div>
+                    <h2>Sequence de bootstrap</h2>
+                    <p class="lede">
+                        Le point d'entree <span class="highlight">App.tsx</span>
+                        assemble les fournisseurs globaux puis expose la navigation.
+                    </p>
+
+                    <div class="timeline">
+                        <div class="flow-step">
+                            <h3>1. Preferences</h3>
+                            <p>Lecture du theme persiste dans AsyncStorage.</p>
+                        </div>
+                        <div class="flow-step">
+                            <h3>2. Assets</h3>
+                            <p>Chargement des polices Comfortaa avec Expo Fonts.</p>
+                        </div>
+                        <div class="flow-step">
+                            <h3>3. Web</h3>
+                            <p>Enregistrement du service worker si l'app tourne sur le web.</p>
+                        </div>
+                        <div class="flow-step">
+                            <h3>4. Providers</h3>
+                            <p>I18next, ThemeModeContext, ThemeProvider et NavigationContainer.</p>
+                        </div>
+                        <div class="flow-step">
+                            <h3>5. Analytics</h3>
+                            <p>Injection de Vercel Analytics dans la coquille de l'application.</p>
+                        </div>
+                    </div>
+
+                    <div class="footer">
+                        <span>Etat global leger: pas de Redux, pas de Zustand, pas de backend state.</span>
+                        <span>Fichier cle: App.tsx</span>
+                    </div>
+                </section>
+
+                <section class="slide">
+                    <div class="eyebrow">4 / Couche presentation</div>
+                    <h2>Organisation front-end</h2>
+
+                    <div class="four-col">
+                        <div class="card">
+                            <h3>Home</h3>
+                            <p>Point d'entree, cartes de navigation, CTA d'installation web.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Training</h3>
+                            <p>Session de quiz, progression, choix de reponse, correction et explication.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Result / Statistics</h3>
+                            <p>Persistance puis lecture de l'historique pour le retour utilisateur.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Info / Settings</h3>
+                            <p>Contenu de preparation, liens externes, bascule FR/EN et soutien.</p>
+                        </div>
+                    </div>
+
+                    <div class="diagram">
+                        <div class="diagram-row">
+                            <div class="diagram-box accent-primary">
+                                <strong>Design system local</strong>
+                                Button, Card, MenuCard, AppHeader, ScoreChart, Logo.
+                            </div>
+                            <div class="diagram-box accent-secondary">
+                                <strong>Theme centralise</strong>
+                                lightTheme/darkTheme, couleurs, espacements,
+                                typographie, rayons et ombres.
+                            </div>
+                            <div class="diagram-box accent-success">
+                                <strong>Animations</strong>
+                                Micro-interactions natives pour les boutons,
+                                l'apparition des cartes et la progression du quiz.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="slide">
+                    <div class="eyebrow">5 / Donnees et etat</div>
+                    <h2>Flux metier principal</h2>
+
+                    <div class="diagram">
+                        <div class="diagram-row">
+                            <div class="diagram-box accent-warning">
+                                <strong>Questions</strong>
+                                <p>
+                                    Les questions proviennent de
+                                    <span class="highlight">src/data/questions.json</span>.
+                                </p>
+                            </div>
+                            <div class="diagram-box accent-primary">
+                                <strong>Session de quiz</strong>
+                                <p>
+                                    TrainingScreen melange les questions,
+                                    remappe les options FR/EN et limite la session a 20 questions.
+                                </p>
+                            </div>
+                            <div class="diagram-box accent-success">
+                                <strong>Resultats</strong>
+                                <p>
+                                    ResultScreen enregistre score, total et date dans
+                                    <span class="highlight">exam_history</span>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="two-col">
+                        <div class="card">
+                            <h3>Persistance locale</h3>
+                            <ul class="plain-list">
+                                <li><strong>preferred_theme</strong> charge au demarrage</li>
+                                <li><strong>preferred_lang</strong> gere dans SettingsScreen</li>
+                                <li><strong>exam_history</strong> exploite dans ResultScreen et StatisticsScreen</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Implication architecturale</h3>
+                            <ul class="plain-list">
+                                <li>Experience rapide et sans dependance reseau</li>
+                                <li>Faible complexite operationnelle</li>
+                                <li>Pas de synchronisation entre appareils</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="slide">
+                    <div class="eyebrow">6 / Internationalisation</div>
+                    <h2>Bilingue par construction</h2>
+
+                    <div class="two-col">
+                        <div class="card">
+                            <h3>Couche i18n</h3>
+                            <p>
+                                L'initialisation i18next charge les ressources
+                                <span class="highlight">fr.json</span> et
+                                <span class="highlight">en.json</span>, avec le francais par defaut
+                                et l'anglais en fallback.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3>Contenu metier</h3>
+                            <p>
+                                Les questions, options et explications sont stockees
+                                avec une structure bilingue directement dans les fichiers JSON.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="diagram">
+                        <div class="diagram-row">
+                            <div class="diagram-box accent-primary">
+                                <strong>UI</strong>
+                                useTranslation() fournit titres, labels et contenus statiques.
+                            </div>
+                            <div class="diagram-box accent-secondary">
+                                <strong>Quiz</strong>
+                                Le choix de langue pilote le rendu de question[lang], options[lang] et explanation[lang].
+                            </div>
+                            <div class="diagram-box accent-warning">
+                                <strong>Experience</strong>
+                                La preference est persistante et appliquee au prochain lancement.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="slide">
+                    <div class="eyebrow">7 / Web, PWA et livraison</div>
+                    <h2>Specificites de la cible web</h2>
+
+                    <div class="three-col">
+                        <div class="card">
+                            <h3>PWA</h3>
+                            <p>
+                                useInstallPrompt intercepte <code>beforeinstallprompt</code>
+                                et HomeScreen expose un bouton "Add to Home Screen".
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3>Cache offline</h3>
+                            <p>
+                                Le service worker met en cache la racine,
+                                l'index et le manifest, puis revalide les ressources au fil de l'eau.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3>Build</h3>
+                            <p>
+                                <code>npm run build:web</code> exporte l'application web,
+                                et webpack desactive la minification pour contourner des erreurs Terser.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pill-row">
+                        <span class="pill">app.json cible ios / android / web</span>
+                        <span class="pill">vercel-build reutilise build:web</span>
+                        <span class="pill">analytics web via @vercel/analytics</span>
+                    </div>
+                </section>
+
+                <section class="slide">
+                    <div class="eyebrow">8 / Lecture critique</div>
+                    <h2>Forces et axes d'evolution</h2>
+
+                    <div class="two-col">
+                        <div class="card">
+                            <h3>Forces actuelles</h3>
+                            <ul class="plain-list">
+                                <li>Architecture facile a comprendre et a maintenir</li>
+                                <li>Produit utilisable sans compte, sans API et avec peu d'infrastructure</li>
+                                <li>Support multiplateforme et mode web installable</li>
+                                <li>Theme et i18n centralises</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Prochaines evolutions naturelles</h3>
+                            <ul class="plain-list">
+                                <li>Factoriser l'acces a AsyncStorage dans un service dedie</li>
+                                <li>Introduire un vrai domaine "quiz session" partage entre ecrans</li>
+                                <li>Ajouter synchronisation cloud ou compte utilisateur si besoin produit</li>
+                                <li>Completer la gouvernance du theme avec un controle utilisateur explicite</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer">
+                        <span>En l'etat, CanExam privilegie la simplicite et la rapidite de livraison.</span>
+                        <span>Bonne base pour une evolution incrementale.</span>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <div class="controls" aria-label="Presentation controls">
+            <button class="secondary" id="prev" type="button">Precedent</button>
+            <div class="progress" id="progress">1 / 8</div>
+            <button id="next" type="button">Suivant</button>
+        </div>
+
+        <script>
+            const slides = Array.from(document.querySelectorAll(".slide"));
+            const progress = document.getElementById("progress");
+            const prev = document.getElementById("prev");
+            const next = document.getElementById("next");
+            let index = 0;
+
+            const render = () => {
+                slides.forEach((slide, current) => {
+                    slide.classList.toggle("active", current === index);
+                });
+                progress.textContent = `${index + 1} / ${slides.length}`;
+                prev.disabled = index === 0;
+                next.disabled = index === slides.length - 1;
+            };
+
+            prev.addEventListener("click", () => {
+                index = Math.max(0, index - 1);
+                render();
+            });
+
+            next.addEventListener("click", () => {
+                index = Math.min(slides.length - 1, index + 1);
+                render();
+            });
+
+            window.addEventListener("keydown", (event) => {
+                if (event.key === "ArrowRight" || event.key === "PageDown") {
+                    index = Math.min(slides.length - 1, index + 1);
+                    render();
+                }
+
+                if (event.key === "ArrowLeft" || event.key === "PageUp") {
+                    index = Math.max(0, index - 1);
+                    render();
+                }
+            });
+
+            render();
+        </script>
+    </body>
+</html>
