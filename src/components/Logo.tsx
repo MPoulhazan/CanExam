@@ -18,17 +18,17 @@ const buildSvg = (title: string) => {
     return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 180" width="580" height="180">
     <defs>
-        <!-- Gradient principal violet vers cyan -->
+        <!-- Gradient principal rouge canadien -->
         <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" style="stop-color:#7C3AED;stop-opacity:1" />
-            <stop offset="50%" style="stop-color:#A78BFA;stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:1" />
+            <stop offset="0%" style="stop-color:#D42B2B;stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#E84040;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#D42B2B;stop-opacity:1" />
         </linearGradient>
-        
+
         <!-- Gradient pour le glow -->
         <linearGradient id="glowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" style="stop-color:#7C3AED;stop-opacity:0.8" />
-            <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:0.8" />
+            <stop offset="0%" style="stop-color:#D42B2B;stop-opacity:0.6" />
+            <stop offset="100%" style="stop-color:#E84040;stop-opacity:0.6" />
         </linearGradient>
         
         <!-- Filtre glow effect -->
@@ -62,13 +62,13 @@ const buildSvg = (title: string) => {
     
     <!-- Ligne décorative sous le texte avec points -->
     <line x1="180" y1="120" x2="230" y2="120" stroke="url(#mainGradient)" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
-    <circle cx="240" cy="120" r="3" fill="#A78BFA" opacity="0.8"/>
-    <circle cx="250" cy="120" r="2" fill="#7C3AED" opacity="0.6"/>
+    <circle cx="240" cy="120" r="3" fill="#E84040" opacity="0.8"/>
+    <circle cx="250" cy="120" r="2" fill="#D42B2B" opacity="0.6"/>
     <line x1="255" y1="120" x2="400" y2="120" stroke="url(#mainGradient)" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
     
     <!-- Petit accent géométrique -->
-    <path d="M 170 85 L 175 90 L 170 95 Z" fill="#7C3AED" opacity="0.4"/>
-    <path d="M 410 85 L 405 90 L 410 95 Z" fill="#06B6D4" opacity="0.4"/>
+    <path d="M 170 85 L 175 90 L 170 95 Z" fill="#D42B2B" opacity="0.4"/>
+    <path d="M 410 85 L 405 90 L 410 95 Z" fill="#D42B2B" opacity="0.4"/>
 </svg>`;
 };
 

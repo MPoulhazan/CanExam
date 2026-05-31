@@ -29,7 +29,7 @@ type ThemeProps = { theme: DefaultTheme };
 
 const Container = styled(SafeAreaView)`
     flex: 1;
-    background-color: #0a0e27;
+    background-color: ${(props: ThemeProps) => props.theme.colors.background};
 `;
 
 const ScrollContainer = styled(ScrollView)`
@@ -51,9 +51,9 @@ const Footer = styled.View`
     bottom: 0;
     padding: ${(props: ThemeProps) => props.theme.spacing.md}px;
     align-items: center;
-    background-color: rgba(10, 14, 39, 0.9);
+    background-color: rgba(17, 18, 20, 0.92);
     border-top-width: 1px;
-    border-top-color: rgba(255, 255, 255, 0.1);
+    border-top-color: rgba(255, 255, 255, 0.08);
 `;
 
 const Header = styled.View`

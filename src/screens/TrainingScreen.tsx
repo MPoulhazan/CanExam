@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ScrollView, Alert, Animated, Text, View } from 'react-native';
+import { ScrollView, Animated, Text, View } from 'react-native';
 import styled from 'styled-components/native';
 import { useTranslation } from 'react-i18next';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
+import { SvgXml } from 'react-native-svg';
 import { StackNavigationProp } from '@react-navigation/stack';
 import Card from '../components/Card';
 import Button from '../components/Button';
@@ -166,8 +167,122 @@ const ButtonContainer = styled.View`
     padding-top: ${(props: ThemeProps) => props.theme.spacing.md}px;
 `;
 
+// ─── Intro screen styled components ───────────────────────────────────────────
+
+const IntroScrollView = styled(ScrollView)`
+    flex: 1;
+    background-color: ${(props: ThemeProps) => props.theme.colors.background};
+`;
+
+const IntroContent = styled.View`
+    padding: 24px;
+    padding-top: 36px;
+    padding-bottom: 48px;
+    max-width: 600px;
+    align-self: center;
+    width: 100%;
+    align-items: center;
+`;
+
+const IntroTitle = styled.Text`
+    color: ${(props: ThemeProps) => props.theme.colors.text};
+    font-size: 26px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+`;
+
+const IntroSubtitle = styled.Text`
+    color: ${(props: ThemeProps) => props.theme.colors.textSecondary};
+    font-size: 15px;
+    text-align: center;
+    line-height: 22px;
+    margin-bottom: 28px;
+`;
+
+const InfoCard = styled.View`
+    background-color: ${(props: ThemeProps) => props.theme.colors.surface};
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 28px;
+    width: 100%;
+    border: 1px solid ${(props: ThemeProps) => props.theme.colors.border};
+`;
+
+const InfoCardTitle = styled.Text`
+    color: ${(props: ThemeProps) => props.theme.colors.text};
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 14px;
+`;
+
+const BulletRow = styled.View`
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 10px;
+`;
+
+const BulletDot = styled.View`
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: ${(props: ThemeProps) => props.theme.colors.text};
+    margin-top: 8px;
+    margin-right: 12px;
+    flex-shrink: 0;
+`;
+
+const BulletText = styled.Text`
+    color: ${(props: ThemeProps) => props.theme.colors.textSecondary};
+    font-size: 14px;
+    line-height: 21px;
+    flex: 1;
+`;
+
+const StartButton = styled.TouchableOpacity`
+    background-color: ${(props: ThemeProps) => props.theme.colors.primary};
+    border-radius: 12px;
+    padding: 16px;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+`;
+
+const StartButtonText = styled.Text`
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+`;
+
+const SourceNote = styled.Text`
+    color: ${(props: ThemeProps) => props.theme.colors.textMuted};
+    font-size: 12px;
+    text-align: center;
+    font-style: italic;
+    line-height: 18px;
+`;
+
+const canadianFlagSvg = `
+<svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg">
+  <rect width="150" height="360" fill="#D42B2B"/>
+  <rect x="150" width="300" height="360" fill="white"/>
+  <rect x="450" width="150" height="360" fill="#D42B2B"/>
+  <path d="M 300 72
+    L 313 112 L 355 98 L 340 135
+    L 378 130 L 366 152 L 378 168
+    L 348 156 L 340 186 L 300 165
+    L 260 186 L 252 156 L 222 168
+    L 234 152 L 222 130 L 260 135
+    L 245 98 L 287 112 Z
+    M 270 186 L 330 186 L 330 216 L 270 216 Z"
+    fill="#D42B2B"/>
+</svg>`;
+
 const TrainingScreen: React.FC<TrainingScreenProps> = ({ navigation }) => {
     const { t, i18n } = useTranslation();
+    const [isStarted, setIsStarted] = useState<boolean>(false);
     const [currentQuestion, setCurrentQuestion] = useState<number>(0);
     const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
     const [showExplanation, setShowExplanation] = useState<boolean>(false);
@@ -269,17 +384,55 @@ const TrainingScreen: React.FC<TrainingScreenProps> = ({ navigation }) => {
         }
     };
 
+    // Intro screen before starting the quiz
+    if (!isStarted) {
+        return (
+            <IntroScrollView
+                contentContainerStyle={{ flexGrow: 1 }}
+                showsVerticalScrollIndicator={false}
+            >
+                <IntroContent>
+                    <SvgXml
+                        xml={canadianFlagSvg}
+                        width={160}
+                        height={96}
+                        style={{ borderRadius: 8 }}
+                    />
+                    <IntroTitle>{t('training.introTitle')}</IntroTitle>
+                    <IntroSubtitle>{t('training.introSubtitle')}</IntroSubtitle>
+
+                    <InfoCard>
+                        <InfoCardTitle>{t('training.howItWorks')}</InfoCardTitle>
+                        {[
+                            t('training.bullet1'),
+                            t('training.bullet2'),
+                            t('training.bullet3'),
+                            t('training.bullet4'),
+                        ].map((text, i) => (
+                            <BulletRow key={i}>
+                                <BulletDot />
+                                <BulletText>{text}</BulletText>
+                            </BulletRow>
+                        ))}
+                    </InfoCard>
+
+                    <StartButton
+                        onPress={() => setIsStarted(true)}
+                        activeOpacity={0.85}
+                    >
+                        <StartButtonText>{t('training.startButton')}</StartButtonText>
+                    </StartButton>
+
+                    <SourceNote>{t('training.sourceNote')}</SourceNote>
+                </IntroContent>
+            </IntroScrollView>
+        );
+    }
+
     if (questions.length === 0) {
         return (
             <Container>
                 <Header>
-                    <BackButton onPress={() => navigation.goBack()}>
-                        <Ionicons
-                            name="arrow-back"
-                            size={24}
-                            color={theme.colors.text}
-                        />
-                    </BackButton>
                     <HeaderTitle>{t('training.title')}</HeaderTitle>
                 </Header>
             </Container>

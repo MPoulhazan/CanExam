@@ -16,26 +16,25 @@ const StyledButton = styled(TouchableOpacity)<{
         props.outline
             ? 'rgba(255, 255, 255, 0.05)'
             : props.variant === 'secondary'
-            ? '#06B6D4'
-            : '#7C3AED'};
+            ? props.theme.colors.secondary
+            : props.theme.colors.primary};
     padding: ${(props: ThemeProps) =>
         `${props.theme.spacing.md}px ${props.theme.spacing.xl}px`};
-    border-radius: ${(props: ThemeProps) => props.theme.borderRadius.xl}px;
+    border-radius: ${(props: ThemeProps) => props.theme.borderRadius.lg}px;
     align-items: center;
     justify-content: center;
     border: ${(props: ThemeProps & { outline?: boolean }) =>
         props.outline
             ? `1px solid rgba(255, 255, 255, 0.2)`
-            : '1px solid rgba(255, 255, 255, 0.1)'};
+            : '0px solid transparent'};
     max-width: 400px;
     align-self: center;
     width: 100%;
-    shadow-color: ${(props: ThemeProps & { variant?: string }) =>
-        props.variant === 'secondary' ? '#06B6D4' : '#7C3AED'};
-    shadow-offset: 0px 8px;
-    shadow-opacity: 0.4;
-    shadow-radius: 16px;
-    elevation: 8;
+    shadow-color: rgba(212, 43, 43, 0.4);
+    shadow-offset: 0px 4px;
+    shadow-opacity: 0.5;
+    shadow-radius: 12px;
+    elevation: 6;
 `;
 
 const ButtonText = styled(Text)`
