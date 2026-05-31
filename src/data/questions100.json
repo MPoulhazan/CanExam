@@ -3508,5 +3508,3255 @@
       "fr": "Chaque année, le 11 novembre, les Canadiens observent un moment de silence à la 11e heure du 11e jour du 11e mois pour honorer les sacrifices de plus d'un million de Canadiens qui ont servi le pays.",
       "en": "Each year on November 11, Canadians observe a moment of silence at the 11th hour of the 11th day of the 11th month to honour the sacrifices of more than one million Canadians who served their country."
     }
+  },
+  {
+    "id": 136,
+    "question": {
+      "fr": "Quelles sont les trois responsabilités liées à la citoyenneté ?",
+      "en": "What are the three responsibilities of citizenship?"
+    },
+    "options": {
+      "fr": [
+        "Être fidèle au Canada, recycler le papier journal, s'enrôler dans la marine.",
+        "Respecter les lois, répondre à ses propres besoins et à ceux de sa famille, faire partie d'un jury.",
+        "Apprendre les deux langues officielles, voter aux élections, faire partie d'un syndicat.",
+        "Acheter des produits canadiens, exploiter sa propre entreprise, utiliser moins d'eau potable."
+      ],
+      "en": [
+        "Be loyal to Canada, recycle newspaper, enlist in the navy.",
+        "Obey the law, take responsibility for oneself and one's family, serve on a jury.",
+        "Learn both official languages, vote in elections, join a union.",
+        "Buy Canadian products, run one's own business, use less drinking water."
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Les responsabilités incluent : respecter les lois, subvenir à ses besoins et ceux de sa famille, faire partie d'un jury, voter, aider la communauté, protéger le patrimoine et l'environnement.",
+      "en": "Responsibilities include: obeying the law, caring for oneself and one's family, serving on a jury, voting, helping the community, and protecting Canada's heritage and environment."
+    }
+  },
+  {
+    "id": 137,
+    "question": {
+      "fr": "Quelle est la signification du coquelicot du jour du Souvenir ?",
+      "en": "What is the significance of the Remembrance Day poppy?"
+    },
+    "options": {
+      "fr": [
+        "Honorer notre souveraine, la reine Elizabeth II.",
+        "Célébrer la Confédération.",
+        "Rendre hommage aux premiers ministres décédés.",
+        "Honorer les sacrifices des Canadiens qui ont participé ou sont morts à la guerre."
+      ],
+      "en": [
+        "Honour our sovereign, Queen Elizabeth II.",
+        "Celebrate Confederation.",
+        "Pay tribute to deceased Prime Ministers.",
+        "Honour the sacrifices of Canadians who served or died in war."
+      ]
+    },
+    "correctAnswer": 3,
+    "explanation": {
+      "fr": "Le coquelicot rouge se porte le 11 novembre pour honorer plus d'un million de Canadiens ayant servi et les 110 000 qui ont donné leur vie.",
+      "en": "The red poppy is worn on November 11 to honour more than one million Canadians who served and the 110,000 who gave their lives."
+    }
+  },
+  {
+    "id": 138,
+    "question": {
+      "fr": "Comment les députés sont-ils choisis ?",
+      "en": "How are Members of Parliament chosen?"
+    },
+    "options": {
+      "fr": [
+        "Ils sont nommés par les Nations Unies.",
+        "Ils sont choisis par les premiers ministres provinciaux.",
+        "Ils sont élus par les citoyens de leur circonscription.",
+        "Ils sont élus par les propriétaires fonciers et les chefs de police."
+      ],
+      "en": [
+        "They are appointed by the United Nations.",
+        "They are chosen by provincial premiers.",
+        "They are elected by citizens in their riding.",
+        "They are elected by landowners and police chiefs."
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "Le Canada est divisé en circonscriptions ; dans chacune, les citoyens élisent un député qui siège à la Chambre des communes.",
+      "en": "Canada is divided into ridings; in each one, citizens elect a Member of Parliament who sits in the House of Commons."
+    }
+  },
+  {
+    "id": 139,
+    "question": {
+      "fr": "Quel document, ajouté à la Constitution en 1982, énonce les droits et libertés des Canadiens ?",
+      "en": "What document, added to the Constitution in 1982, sets out the rights and freedoms of Canadians?"
+    },
+    "options": {
+      "fr": [
+        "La Magna Carta",
+        "La Charte canadienne des droits et libertés",
+        "L'Acte de l'Amérique du Nord britannique",
+        "La Loi sur les langues officielles"
+      ],
+      "en": [
+        "The Magna Carta",
+        "The Canadian Charter of Rights and Freedoms",
+        "The British North America Act",
+        "The Official Languages Act"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "La Charte canadienne des droits et libertés a été incluse dans la Constitution modifiée en 1982.",
+      "en": "The Canadian Charter of Rights and Freedoms was included in the amended Constitution in 1982."
+    }
+  },
+  {
+    "id": 140,
+    "question": {
+      "fr": "À quelle année remonte la Magna Carta, point de départ de la tradition de liberté ordonnée ?",
+      "en": "What year was the Magna Carta signed, marking the beginning of the tradition of ordered liberty?"
+    },
+    "options": {
+      "fr": [
+        "1215",
+        "1066",
+        "1492",
+        "1763"
+      ],
+      "en": [
+        "1215",
+        "1066",
+        "1492",
+        "1763"
+      ]
+    },
+    "correctAnswer": 0,
+    "explanation": {
+      "fr": "La Magna Carta (Grande Charte des libertés) a été signée en 1215 en Angleterre.",
+      "en": "The Magna Carta (Great Charter of Liberties) was signed in 1215 in England."
+    }
+  },
+  {
+    "id": 141,
+    "question": {
+      "fr": "Laquelle de ces libertés n'est PAS une liberté fondamentale garantie par la Charte ?",
+      "en": "Which of the following is NOT a fundamental freedom guaranteed by the Charter?"
+    },
+    "options": {
+      "fr": [
+        "La liberté de conscience et de religion",
+        "La liberté de pensée et d'expression",
+        "La liberté de posséder une arme à feu",
+        "La liberté de réunion pacifique"
+      ],
+      "en": [
+        "Freedom of conscience and religion",
+        "Freedom of thought and expression",
+        "Freedom to own a firearm",
+        "Freedom of peaceful assembly"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "Les libertés fondamentales sont : conscience et religion, pensée/croyance/opinion/expression (incluant la presse), réunion pacifique et association.",
+      "en": "The fundamental freedoms are: conscience and religion, thought/belief/opinion/expression (including the press), peaceful assembly, and association."
+    }
+  },
+  {
+    "id": 142,
+    "question": {
+      "fr": "Que signifie l'habeas corpus ?",
+      "en": "What does habeas corpus mean?"
+    },
+    "options": {
+      "fr": [
+        "Le droit de garder le silence",
+        "Le droit de contester une détention illégale par l'État",
+        "Le droit à un avocat",
+        "Le droit à un procès devant jury"
+      ],
+      "en": [
+        "The right to remain silent",
+        "The right to challenge unlawful detention by the state",
+        "The right to a lawyer",
+        "The right to a jury trial"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "L'habeas corpus, emprunté à la common law britannique, est le droit de contester une détention illégale.",
+      "en": "Habeas corpus, drawn from British common law, is the right to challenge unlawful detention."
+    }
+  },
+  {
+    "id": 143,
+    "question": {
+      "fr": "Au Canada, les hommes et les femmes sont :",
+      "en": "In Canada, men and women are:"
+    },
+    "options": {
+      "fr": [
+        "Égaux uniquement sur le marché du travail",
+        "Égaux devant la loi",
+        "Soumis à des règles religieuses différentes",
+        "Égaux seulement après mariage"
+      ],
+      "en": [
+        "Equal only in the workplace",
+        "Equal before the law",
+        "Subject to different religious rules",
+        "Equal only after marriage"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "L'égalité entre les femmes et les hommes devant la loi est une valeur fondamentale du Canada.",
+      "en": "Equality between women and men before the law is a fundamental Canadian value."
+    }
+  },
+  {
+    "id": 144,
+    "question": {
+      "fr": "Laquelle des pratiques suivantes est SÉVÈREMENT punie par le droit pénal canadien ?",
+      "en": "Which of the following practices is SEVERELY punished under Canadian criminal law?"
+    },
+    "options": {
+      "fr": [
+        "Le bénévolat",
+        "La violence conjugale et les « meurtres d'honneur »",
+        "L'apprentissage du français",
+        "Le port d'un coquelicot"
+      ],
+      "en": [
+        "Volunteering",
+        "Domestic violence and 'honour killings'",
+        "Learning French",
+        "Wearing a poppy"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Le Canada exclut les pratiques culturelles barbares (violence conjugale, meurtres d'honneur, mutilations, mariages forcés, polygamie) ; elles sont punies par les lois pénales.",
+      "en": "Canada rejects barbaric cultural practices (domestic violence, honour killings, mutilations, forced marriages, polygamy); they are punished under criminal law."
+    }
+  },
+  {
+    "id": 145,
+    "question": {
+      "fr": "Quel est l'un des principes fondateurs du Canada ?",
+      "en": "What is one of Canada's founding principles?"
+    },
+    "options": {
+      "fr": [
+        "La séparation totale entre francophones et anglophones",
+        "La primauté du droit",
+        "La neutralité religieuse stricte",
+        "L'isolationnisme"
+      ],
+      "en": [
+        "Complete separation between francophones and anglophones",
+        "The rule of law",
+        "Strict religious neutrality",
+        "Isolationism"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "La primauté du droit signifie que personne — pas même les gouvernements — n'est au-dessus des lois.",
+      "en": "The rule of law means that no one — not even governments — is above the law."
+    }
+  },
+  {
+    "id": 146,
+    "question": {
+      "fr": "Le service militaire au Canada est :",
+      "en": "Military service in Canada is:"
+    },
+    "options": {
+      "fr": [
+        "Obligatoire pour tous les hommes de 18 à 25 ans",
+        "Obligatoire pour les nouveaux citoyens",
+        "Volontaire",
+        "Réservé aux personnes nées au Canada"
+      ],
+      "en": [
+        "Mandatory for all men aged 18 to 25",
+        "Mandatory for new citizens",
+        "Voluntary",
+        "Reserved for people born in Canada"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "Le Canada n'impose pas le service militaire obligatoire.",
+      "en": "Canada does not impose mandatory military service."
+    }
+  },
+  {
+    "id": 147,
+    "question": {
+      "fr": "Qui sont les trois peuples fondateurs du Canada ?",
+      "en": "Who are the three founding peoples of Canada?"
+    },
+    "options": {
+      "fr": [
+        "Les Vikings, les Français et les Anglais",
+        "Les Autochtones, les Français et les Britanniques",
+        "Les Acadiens, les Québécois et les Loyalistes",
+        "Les Inuits, les Métis et les Premières Nations"
+      ],
+      "en": [
+        "The Vikings, the French, and the English",
+        "Aboriginal peoples, the French, and the British",
+        "The Acadians, the Québécois, and the Loyalists",
+        "The Inuit, the Métis, and the First Nations"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Les trois peuples fondateurs sont les Autochtones, les Français et les Britanniques.",
+      "en": "The three founding peoples are Aboriginal peoples, the French, and the British."
+    }
+  },
+  {
+    "id": 148,
+    "question": {
+      "fr": "Qui sont les Métis ?",
+      "en": "Who are the Métis?"
+    },
+    "options": {
+      "fr": [
+        "Les premiers explorateurs européens",
+        "Un peuple distinct né de l'union d'Autochtones et d'Européens",
+        "Les habitants francophones du Québec",
+        "Les colons venus d'Écosse"
+      ],
+      "en": [
+        "The first European explorers",
+        "A distinct people descended from unions between Aboriginal and European peoples",
+        "The French-speaking inhabitants of Quebec",
+        "Settlers who came from Scotland"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Les Métis sont un peuple distinct, principalement établi dans les Prairies, parlant le michif.",
+      "en": "The Métis are a distinct people, mainly settled in the Prairies, who speak Michif."
+    }
+  },
+  {
+    "id": 149,
+    "question": {
+      "fr": "Que signifie le mot « Inuit » ?",
+      "en": "What does the word 'Inuit' mean?"
+    },
+    "options": {
+      "fr": [
+        "« chasseur »",
+        "« peuple du nord »",
+        "« le peuple »",
+        "« terre gelée »"
+      ],
+      "en": [
+        "'hunter'",
+        "'people of the north'",
+        "'the people'",
+        "'frozen land'"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "« Inuit » signifie « le peuple » en langue inuktitute.",
+      "en": "'Inuit' means 'the people' in the Inuktitut language."
+    }
+  },
+  {
+    "id": 150,
+    "question": {
+      "fr": "Aujourd'hui, les peuples autochtones désignent trois groupes :",
+      "en": "Today, Aboriginal peoples refer to three groups:"
+    },
+    "options": {
+      "fr": [
+        "Algonquins, Iroquois et Hurons",
+        "Premières Nations, Inuits et Métis",
+        "Cris, Dénés et Mohawks",
+        "Acadiens, Métis et Inuits"
+      ],
+      "en": [
+        "Algonquin, Iroquois, and Huron",
+        "First Nations, Inuit, and Métis",
+        "Cree, Dene, and Mohawk",
+        "Acadian, Métis, and Inuit"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Les peuples autochtones se composent des Premières Nations (≈65 %), des Métis (≈30 %) et des Inuits (≈4 %).",
+      "en": "Aboriginal peoples consist of First Nations (~65%), Métis (~30%), and Inuit (~4%)."
+    }
+  },
+  {
+    "id": 151,
+    "question": {
+      "fr": "Qui étaient les Acadiens ?",
+      "en": "Who were the Acadians?"
+    },
+    "options": {
+      "fr": [
+        "Des explorateurs vikings",
+        "Des colons français établis dès 1604 dans les Maritimes",
+        "Des marchands de fourrures écossais",
+        "Des soldats loyalistes britanniques"
+      ],
+      "en": [
+        "Viking explorers",
+        "French settlers established in the Maritimes as early as 1604",
+        "Scottish fur traders",
+        "British Loyalist soldiers"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Les Acadiens descendent de colons français établis dès 1604 dans ce qu'on appelle aujourd'hui les Maritimes.",
+      "en": "Acadians are descended from French settlers established as early as 1604 in what is now called the Maritimes."
+    }
+  },
+  {
+    "id": 152,
+    "question": {
+      "fr": "Le « Grand Dérangement » désigne :",
+      "en": "The 'Great Upheaval' refers to:"
+    },
+    "options": {
+      "fr": [
+        "La Crise d'octobre de 1970",
+        "La déportation des Acadiens entre 1755 et 1763",
+        "Les rébellions de 1837-1838",
+        "L'invasion américaine de 1812"
+      ],
+      "en": [
+        "The October Crisis of 1970",
+        "The deportation of the Acadians between 1755 and 1763",
+        "The Rebellions of 1837–1838",
+        "The American invasion of 1812"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "De 1755 à 1763, plus des deux tiers des Acadiens ont été déportés hors de leur patrie pendant la guerre franco-britannique.",
+      "en": "From 1755 to 1763, more than two-thirds of the Acadians were deported from their homeland during the French-British war."
+    }
+  },
+  {
+    "id": 153,
+    "question": {
+      "fr": "Combien y a-t-il d'anglophones (langue maternelle anglaise) au Canada ?",
+      "en": "How many anglophones (English mother tongue) are in Canada?"
+    },
+    "options": {
+      "fr": [
+        "7 millions",
+        "12 millions",
+        "18 millions",
+        "25 millions"
+      ],
+      "en": [
+        "7 million",
+        "12 million",
+        "18 million",
+        "25 million"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "Le Canada compte environ 18 millions d'anglophones et 7 millions de francophones.",
+      "en": "Canada has approximately 18 million anglophones and 7 million francophones."
+    }
+  },
+  {
+    "id": 154,
+    "question": {
+      "fr": "Quelle est la seule province officiellement bilingue ?",
+      "en": "What is the only officially bilingual province?"
+    },
+    "options": {
+      "fr": [
+        "Québec",
+        "Ontario",
+        "Nouveau-Brunswick",
+        "Manitoba"
+      ],
+      "en": [
+        "Quebec",
+        "Ontario",
+        "New Brunswick",
+        "Manitoba"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "Le Nouveau-Brunswick est la seule province officiellement bilingue.",
+      "en": "New Brunswick is the only officially bilingual province."
+    }
+  },
+  {
+    "id": 155,
+    "question": {
+      "fr": "En 2006, la Chambre des communes a reconnu que :",
+      "en": "In 2006, the House of Commons recognized that:"
+    },
+    "options": {
+      "fr": [
+        "Le Canada est une république",
+        "Les Québécois forment une nation au sein d'un Canada uni",
+        "L'anglais est la langue principale du Canada",
+        "Le Québec doit devenir indépendant"
+      ],
+      "en": [
+        "Canada is a republic",
+        "Québécois form a nation within a united Canada",
+        "English is the main language of Canada",
+        "Quebec should become independent"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "En 2006, la Chambre des communes a reconnu que les Québécois forment une nation au sein d'un Canada uni.",
+      "en": "In 2006, the House of Commons recognized that the Québécois form a nation within a united Canada."
+    }
+  },
+  {
+    "id": 156,
+    "question": {
+      "fr": "Qui a été le premier à tracer la carte de la côte Atlantique du Canada en 1497 ?",
+      "en": "Who was the first to map Canada's Atlantic coast in 1497?"
+    },
+    "options": {
+      "fr": [
+        "Jacques Cartier",
+        "Samuel de Champlain",
+        "Jean Cabot",
+        "Pierre de Monts"
+      ],
+      "en": [
+        "Jacques Cartier",
+        "Samuel de Champlain",
+        "John Cabot",
+        "Pierre de Monts"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "Jean Cabot, Italien ayant immigré en Angleterre, débarque à Terre-Neuve ou à l'île du Cap-Breton en 1497.",
+      "en": "John Cabot, an Italian who had immigrated to England, landed in Newfoundland or Cape Breton Island in 1497."
+    }
+  },
+  {
+    "id": 157,
+    "question": {
+      "fr": "D'où vient le nom « Canada » ?",
+      "en": "Where does the name 'Canada' come from?"
+    },
+    "options": {
+      "fr": [
+        "Du nom d'un roi français",
+        "Du mot iroquois « kanata » qui signifie « village »",
+        "Du nom d'un explorateur viking",
+        "D'un mot algonquin signifiant « grande terre »"
+      ],
+      "en": [
+        "From the name of a French king",
+        "From the Iroquois word 'kanata' meaning 'village'",
+        "From the name of a Viking explorer",
+        "From an Algonquin word meaning 'great land'"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Jacques Cartier a entendu deux guides iroquois capturés prononcer « kanata » (village) ; dès 1550, le nom Canada apparaît sur les cartes.",
+      "en": "Jacques Cartier heard two captured Iroquois guides say 'kanata' (village); by 1550 the name Canada appeared on maps."
+    }
+  },
+  {
+    "id": 158,
+    "question": {
+      "fr": "Qui a fondé la ville de Québec en 1608 ?",
+      "en": "Who founded the city of Quebec in 1608?"
+    },
+    "options": {
+      "fr": [
+        "Jacques Cartier",
+        "Samuel de Champlain",
+        "Jean Talon",
+        "Pierre de Monts"
+      ],
+      "en": [
+        "Jacques Cartier",
+        "Samuel de Champlain",
+        "Jean Talon",
+        "Pierre de Monts"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Samuel de Champlain a bâti une forteresse à l'emplacement actuel de Québec en 1608.",
+      "en": "Samuel de Champlain built a fortress at the site of present-day Quebec City in 1608."
+    }
+  },
+  {
+    "id": 159,
+    "question": {
+      "fr": "En 1759, quelle bataille marque la fin de l'Empire français en Amérique ?",
+      "en": "In 1759, what battle marked the end of the French Empire in North America?"
+    },
+    "options": {
+      "fr": [
+        "La bataille des plaines d'Abraham",
+        "La bataille de Châteauguay",
+        "La bataille de Queenston Heights",
+        "La bataille de Vimy"
+      ],
+      "en": [
+        "The Battle of the Plains of Abraham",
+        "The Battle of Châteauguay",
+        "The Battle of Queenston Heights",
+        "The Battle of Vimy Ridge"
+      ]
+    },
+    "correctAnswer": 0,
+    "explanation": {
+      "fr": "En 1759, les Britanniques remportent la bataille des plaines d'Abraham à Québec, mettant fin à l'Empire français en Amérique.",
+      "en": "In 1759, the British won the Battle of the Plains of Abraham in Quebec, ending the French Empire in North America."
+    }
+  },
+  {
+    "id": 160,
+    "question": {
+      "fr": "Que prévoyait l'Acte de Québec de 1774 ?",
+      "en": "What did the Quebec Act of 1774 provide?"
+    },
+    "options": {
+      "fr": [
+        "L'indépendance du Québec",
+        "L'interdiction du français",
+        "La liberté religieuse pour les catholiques et le retour des règles juridiques françaises au civil",
+        "La fusion du Canada avec les États-Unis"
+      ],
+      "en": [
+        "Quebec's independence",
+        "A ban on the French language",
+        "Religious freedom for Catholics and the restoration of French civil law",
+        "The merger of Canada with the United States"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "L'Acte de Québec accorde la liberté religieuse aux catholiques, leur permet d'exercer des fonctions officielles, et réintroduit le droit civil français.",
+      "en": "The Quebec Act granted religious freedom to Catholics, allowed them to hold public office, and restored French civil law."
+    }
+  },
+  {
+    "id": 161,
+    "question": {
+      "fr": "Qui étaient les « loyalistes » arrivés au Canada après 1776 ?",
+      "en": "Who were the 'Loyalists' who came to Canada after 1776?"
+    },
+    "options": {
+      "fr": [
+        "Des explorateurs vikings",
+        "Des personnes fidèles à la Couronne britannique qui ont fui la Révolution américaine",
+        "Des immigrants chinois travaillant au chemin de fer",
+        "Des soldats français vaincus"
+      ],
+      "en": [
+        "Viking explorers",
+        "People loyal to the British Crown who fled the American Revolution",
+        "Chinese immigrants who worked on the railway",
+        "Defeated French soldiers"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Plus de 40 000 loyalistes, fidèles à la Couronne, ont fui les États-Unis pour s'établir en Nouvelle-Écosse et au Québec.",
+      "en": "More than 40,000 Loyalists, faithful to the Crown, fled the United States to settle in Nova Scotia and Quebec."
+    }
+  },
+  {
+    "id": 162,
+    "question": {
+      "fr": "Quel était le rôle de la Compagnie de la Baie d'Hudson ?",
+      "en": "What was the role of the Hudson's Bay Company?"
+    },
+    "options": {
+      "fr": [
+        "Construire le chemin de fer transcontinental",
+        "Dominer le commerce des fourrures dans le Nord-Ouest",
+        "Administrer la Nouvelle-France",
+        "Défendre le Canada contre les Américains"
+      ],
+      "en": [
+        "Build the transcontinental railway",
+        "Dominate the fur trade in the Northwest",
+        "Administer New France",
+        "Defend Canada against the Americans"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Fondée en 1670, la Compagnie de la Baie d'Hudson a dominé le commerce des fourrures pendant des siècles.",
+      "en": "Founded in 1670, the Hudson's Bay Company dominated the fur trade for centuries."
+    }
+  },
+  {
+    "id": 163,
+    "question": {
+      "fr": "Pendant la guerre de 1812, qui a aidé à défendre le Canada contre l'invasion américaine ?",
+      "en": "During the War of 1812, who helped defend Canada against the American invasion?"
+    },
+    "options": {
+      "fr": [
+        "Les seules troupes britanniques",
+        "Les soldats britanniques, les Premières Nations et les volontaires canadiens",
+        "Les Américains eux-mêmes",
+        "Les Français de Louisiane"
+      ],
+      "en": [
+        "British troops alone",
+        "British soldiers, First Nations, and Canadian volunteers",
+        "The Americans themselves",
+        "The French from Louisiana"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Des volontaires canadiens et des Premières Nations (dont les Shawnees menés par Tecumseh) ont aidé les Britanniques à repousser l'invasion.",
+      "en": "Canadian volunteers and First Nations (including the Shawnee led by Tecumseh) helped the British repel the invasion."
+    }
+  },
+  {
+    "id": 164,
+    "question": {
+      "fr": "Qui était Laura Secord ?",
+      "en": "Who was Laura Secord?"
+    },
+    "options": {
+      "fr": [
+        "La première femme députée du Canada",
+        "Une pionnière qui a marché 30 km pour avertir les Britanniques d'une attaque américaine en 1813",
+        "La première femme à voter aux élections fédérales",
+        "Une suffragette du Manitoba"
+      ],
+      "en": [
+        "Canada's first female Member of Parliament",
+        "A pioneer who walked 30 km to warn the British of an American attack in 1813",
+        "The first woman to vote in federal elections",
+        "A suffragette from Manitoba"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "En 1813, Laura Secord a entrepris une marche de 30 km pour avertir le lieutenant FitzGibbon d'une attaque planifiée ; sa bravoure a contribué à la victoire de Beaver Dams.",
+      "en": "In 1813, Laura Secord walked 30 km to warn Lieutenant FitzGibbon of a planned attack; her bravery contributed to the victory at Beaver Dams."
+    }
+  },
+  {
+    "id": 165,
+    "question": {
+      "fr": "Que veut-on dire par « gouvernement responsable » ?",
+      "en": "What is meant by 'responsible government'?"
+    },
+    "options": {
+      "fr": [
+        "Un gouvernement qui équilibre le budget",
+        "Les ministres doivent obtenir le soutien de la majorité des représentants élus pour gouverner",
+        "Un gouvernement responsable de l'environnement",
+        "Un gouvernement nommé par la Couronne sans élection"
+      ],
+      "en": [
+        "A government that balances the budget",
+        "Ministers must have the support of a majority of elected representatives to govern",
+        "A government responsible for the environment",
+        "A government appointed by the Crown without elections"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Dans un gouvernement responsable, si le gouvernement perd un vote de confiance, il doit démissionner.",
+      "en": "In a responsible government, if the government loses a confidence vote, it must resign."
+    }
+  },
+  {
+    "id": 166,
+    "question": {
+      "fr": "Qui était sir Louis-Hippolyte La Fontaine ?",
+      "en": "Who was Sir Louis-Hippolyte La Fontaine?"
+    },
+    "options": {
+      "fr": [
+        "Le premier explorateur de la baie d'Hudson",
+        "Le premier chef d'un gouvernement responsable des deux Canadas, défenseur des droits des francophones",
+        "Le premier ministre du Québec",
+        "Le fondateur de Montréal"
+      ],
+      "en": [
+        "The first explorer of Hudson Bay",
+        "The first head of a responsible government in the two Canadas, champion of French-speaking rights",
+        "The Premier of Quebec",
+        "The founder of Montreal"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "La Fontaine, défenseur des droits des francophones, est devenu le premier chef d'un gouvernement responsable en 1849.",
+      "en": "La Fontaine, a champion of French-speaking rights, became the first head of a responsible government in 1849."
+    }
+  },
+  {
+    "id": 167,
+    "question": {
+      "fr": "Quand le Dominion du Canada a-t-il été officiellement créé ?",
+      "en": "When was the Dominion of Canada officially created?"
+    },
+    "options": {
+      "fr": [
+        "1er juillet 1867",
+        "11 novembre 1918",
+        "1er juillet 1982",
+        "24 juin 1497"
+      ],
+      "en": [
+        "July 1, 1867",
+        "November 11, 1918",
+        "July 1, 1982",
+        "June 24, 1497"
+      ]
+    },
+    "correctAnswer": 0,
+    "explanation": {
+      "fr": "Le Dominion du Canada a été officiellement créé le 1er juillet 1867, aujourd'hui la Fête du Canada.",
+      "en": "The Dominion of Canada was officially created on July 1, 1867, which is now Canada Day."
+    }
+  },
+  {
+    "id": 168,
+    "question": {
+      "fr": "Que signifie le mot « Confédération » ?",
+      "en": "What does the word 'Confederation' mean?"
+    },
+    "options": {
+      "fr": [
+        "L'union de plusieurs religions",
+        "L'union des provinces pour former le Dominion du Canada en 1867",
+        "Un accord commercial avec les États-Unis",
+        "Une rébellion populaire"
+      ],
+      "en": [
+        "The union of several religions",
+        "The union of provinces to form the Dominion of Canada in 1867",
+        "A trade agreement with the United States",
+        "A popular rebellion"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "La Confédération désigne l'union, en 1867, de l'Ontario, du Québec, du Nouveau-Brunswick et de la Nouvelle-Écosse pour former le Dominion du Canada.",
+      "en": "Confederation refers to the union, in 1867, of Ontario, Quebec, New Brunswick, and Nova Scotia to form the Dominion of Canada."
+    }
+  },
+  {
+    "id": 169,
+    "question": {
+      "fr": "Quelles étaient les quatre provinces originales de la Confédération en 1867 ?",
+      "en": "What were the four original provinces of Confederation in 1867?"
+    },
+    "options": {
+      "fr": [
+        "Ontario, Québec, Manitoba, Colombie-Britannique",
+        "Ontario, Québec, Nouvelle-Écosse, Nouveau-Brunswick",
+        "Québec, Acadie, Terre-Neuve, Yukon",
+        "Ontario, Manitoba, Saskatchewan, Alberta"
+      ],
+      "en": [
+        "Ontario, Quebec, Manitoba, British Columbia",
+        "Ontario, Quebec, Nova Scotia, New Brunswick",
+        "Quebec, Acadia, Newfoundland, Yukon",
+        "Ontario, Manitoba, Saskatchewan, Alberta"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "L'Ontario, le Québec, la Nouvelle-Écosse et le Nouveau-Brunswick forment le Dominion du Canada en 1867.",
+      "en": "Ontario, Quebec, Nova Scotia, and New Brunswick formed the Dominion of Canada in 1867."
+    }
+  },
+  {
+    "id": 170,
+    "question": {
+      "fr": "Qui a été le premier premier ministre du Canada ?",
+      "en": "Who was Canada's first Prime Minister?"
+    },
+    "options": {
+      "fr": [
+        "Sir Wilfrid Laurier",
+        "Sir John A. Macdonald",
+        "Sir George-Étienne Cartier",
+        "Sir Louis-Hippolyte La Fontaine"
+      ],
+      "en": [
+        "Sir Wilfrid Laurier",
+        "Sir John A. Macdonald",
+        "Sir George-Étienne Cartier",
+        "Sir Louis-Hippolyte La Fontaine"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Sir John Alexander Macdonald, un des Pères de la Confédération, est devenu le premier premier ministre en 1867. Son portrait figure sur les billets de 10 $.",
+      "en": "Sir John Alexander Macdonald, one of the Fathers of Confederation, became the first Prime Minister in 1867. His portrait appears on the $10 bill."
+    }
+  },
+  {
+    "id": 171,
+    "question": {
+      "fr": "Qui a été le premier Canadien français à devenir premier ministre depuis la Confédération ?",
+      "en": "Who was the first French Canadian to become Prime Minister since Confederation?"
+    },
+    "options": {
+      "fr": [
+        "George-Étienne Cartier",
+        "Louis-Hippolyte La Fontaine",
+        "Sir Wilfrid Laurier",
+        "Pierre Elliott Trudeau"
+      ],
+      "en": [
+        "George-Étienne Cartier",
+        "Louis-Hippolyte La Fontaine",
+        "Sir Wilfrid Laurier",
+        "Pierre Elliott Trudeau"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "Sir Wilfrid Laurier, dont le portrait figure sur les billets de 5 $, a encouragé l'immigration vers l'Ouest.",
+      "en": "Sir Wilfrid Laurier, whose portrait appears on the $5 bill, encouraged immigration to the West."
+    }
+  },
+  {
+    "id": 172,
+    "question": {
+      "fr": "Que symbolisait le Chemin de fer Canadien Pacifique (CFCP) achevé en 1885 ?",
+      "en": "What did the completion of the Canadian Pacific Railway in 1885 symbolize?"
+    },
+    "options": {
+      "fr": [
+        "La fin de la traite des fourrures",
+        "L'unité nationale, reliant le pays d'un océan à l'autre",
+        "La victoire militaire contre les États-Unis",
+        "L'indépendance du Canada"
+      ],
+      "en": [
+        "The end of the fur trade",
+        "National unity, linking the country from ocean to ocean",
+        "Military victory against the United States",
+        "Canadian independence"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Le 7 novembre 1885, l'achèvement du CFCP a concrétisé un rêve national : relier le pays « d'un océan à l'autre ».",
+      "en": "On November 7, 1885, the completion of the CPR realized a national dream: linking the country 'from sea to sea'."
+    }
+  },
+  {
+    "id": 173,
+    "question": {
+      "fr": "En quelle année le Manitoba est-il devenu une province ?",
+      "en": "In what year did Manitoba become a province?"
+    },
+    "options": {
+      "fr": [
+        "1867",
+        "1870",
+        "1885",
+        "1905"
+      ],
+      "en": [
+        "1867",
+        "1870",
+        "1885",
+        "1905"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Le Manitoba a été créé en 1870 après la première résistance des Métis menée par Louis Riel.",
+      "en": "Manitoba was created in 1870 following the first Métis resistance led by Louis Riel."
+    }
+  },
+  {
+    "id": 174,
+    "question": {
+      "fr": "En quelle année l'Alberta et la Saskatchewan ont-elles rejoint la Confédération ?",
+      "en": "In what year did Alberta and Saskatchewan join Confederation?"
+    },
+    "options": {
+      "fr": [
+        "1867",
+        "1898",
+        "1905",
+        "1949"
+      ],
+      "en": [
+        "1867",
+        "1898",
+        "1905",
+        "1949"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "L'Alberta et la Saskatchewan sont devenues provinces en 1905.",
+      "en": "Alberta and Saskatchewan became provinces in 1905."
+    }
+  },
+  {
+    "id": 175,
+    "question": {
+      "fr": "Quelle province a rejoint la Confédération la dernière (avant le Nunavut) ?",
+      "en": "Which province was the last to join Confederation (before Nunavut)?"
+    },
+    "options": {
+      "fr": [
+        "Alberta",
+        "Île-du-Prince-Édouard",
+        "Terre-Neuve-et-Labrador",
+        "Colombie-Britannique"
+      ],
+      "en": [
+        "Alberta",
+        "Prince Edward Island",
+        "Newfoundland and Labrador",
+        "British Columbia"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "Terre-Neuve-et-Labrador a rejoint le Canada en 1949. Le Nunavut a été créé en 1999 (territoire, pas province).",
+      "en": "Newfoundland and Labrador joined Canada in 1949. Nunavut was created in 1999 (a territory, not a province)."
+    }
+  },
+  {
+    "id": 176,
+    "question": {
+      "fr": "En quelle année a été créé le Nunavut ?",
+      "en": "In what year was Nunavut created?"
+    },
+    "options": {
+      "fr": [
+        "1949",
+        "1982",
+        "1999",
+        "2005"
+      ],
+      "en": [
+        "1949",
+        "1982",
+        "1999",
+        "2005"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "Le Nunavut, dont le nom signifie « notre terre » en inuktitut, a été créé en 1999 à partir de la section est des T.N.-O.",
+      "en": "Nunavut, whose name means 'our land' in Inuktitut, was created in 1999 from the eastern section of the NWT."
+    }
+  },
+  {
+    "id": 177,
+    "question": {
+      "fr": "Quel corps policier le premier ministre Macdonald a-t-il créé en 1873 ?",
+      "en": "What police force did Prime Minister Macdonald create in 1873?"
+    },
+    "options": {
+      "fr": [
+        "La Sûreté du Québec",
+        "La Police à cheval du Nord-Ouest (ancêtre de la GRC)",
+        "La Garde côtière canadienne",
+        "Les Rangers canadiens"
+      ],
+      "en": [
+        "The Sûreté du Québec",
+        "The North-West Mounted Police (forerunner of the RCMP)",
+        "The Canadian Coast Guard",
+        "The Canadian Rangers"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "La PCNO, devenue la Gendarmerie royale du Canada (GRC), est aujourd'hui un des symboles les plus connus du pays.",
+      "en": "The NWMP, which became the Royal Canadian Mounted Police (RCMP), is now one of the country's most recognized symbols."
+    }
+  },
+  {
+    "id": 178,
+    "question": {
+      "fr": "Quelle bataille de 1917 est considérée comme un moment fondateur de la fierté nationale canadienne ?",
+      "en": "What 1917 battle is considered a defining moment of Canadian national pride?"
+    },
+    "options": {
+      "fr": [
+        "La bataille de la Somme",
+        "La bataille de la crête de Vimy",
+        "La bataille de Dieppe",
+        "La bataille de Hong Kong"
+      ],
+      "en": [
+        "The Battle of the Somme",
+        "The Battle of Vimy Ridge",
+        "The Battle of Dieppe",
+        "The Battle of Hong Kong"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Le Corps canadien s'empare de la crête de Vimy en avril 1917 (10 000 morts/blessés). Le 9 avril est le Jour de la bataille de Vimy.",
+      "en": "The Canadian Corps captured Vimy Ridge in April 1917 (10,000 casualties). April 9 is Vimy Ridge Day."
+    }
+  },
+  {
+    "id": 179,
+    "question": {
+      "fr": "Quelle a été la première province à accorder le droit de vote aux femmes ?",
+      "en": "Which was the first province to grant women the right to vote?"
+    },
+    "options": {
+      "fr": [
+        "Ontario",
+        "Québec",
+        "Manitoba",
+        "Nouvelle-Écosse"
+      ],
+      "en": [
+        "Ontario",
+        "Quebec",
+        "Manitoba",
+        "Nova Scotia"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "Le Manitoba est devenu en 1916 la première province à accorder le droit de vote aux femmes.",
+      "en": "Manitoba became the first province to grant women the right to vote in 1916."
+    }
+  },
+  {
+    "id": 180,
+    "question": {
+      "fr": "Qui a été la première femme députée au Canada (1921) ?",
+      "en": "Who was the first female Member of Parliament in Canada (1921)?"
+    },
+    "options": {
+      "fr": [
+        "Emily Stowe",
+        "Thérèse Casgrain",
+        "Agnes Macphail",
+        "Adrienne Clarkson"
+      ],
+      "en": [
+        "Emily Stowe",
+        "Thérèse Casgrain",
+        "Agnes Macphail",
+        "Adrienne Clarkson"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "Agnes Macphail, fermière et enseignante, devient la première députée en 1921.",
+      "en": "Agnes Macphail, a farmer and teacher, became the first female MP in 1921."
+    }
+  },
+  {
+    "id": 181,
+    "question": {
+      "fr": "Quand le Québec a-t-il accordé le droit de vote aux femmes ?",
+      "en": "When did Quebec grant women the right to vote?"
+    },
+    "options": {
+      "fr": [
+        "1916",
+        "1918",
+        "1940",
+        "1960"
+      ],
+      "en": [
+        "1916",
+        "1918",
+        "1940",
+        "1960"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "Grâce notamment au travail de Thérèse Casgrain, le Québec a accordé le droit de vote aux femmes en 1940.",
+      "en": "Thanks in large part to the work of Thérèse Casgrain, Quebec granted women the right to vote in 1940."
+    }
+  },
+  {
+    "id": 182,
+    "question": {
+      "fr": "Que s'est-il passé le 6 juin 1944, jour J ?",
+      "en": "What happened on June 6, 1944, D-Day?"
+    },
+    "options": {
+      "fr": [
+        "La déclaration de guerre du Canada",
+        "Les Canadiens prennent la plage Juno lors de l'invasion alliée en Normandie",
+        "L'armistice de la Seconde Guerre mondiale",
+        "L'attaque de Hong Kong"
+      ],
+      "en": [
+        "Canada's declaration of war",
+        "Canadians stormed Juno Beach during the Allied invasion of Normandy",
+        "The Second World War armistice",
+        "The attack on Hong Kong"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "15 000 soldats canadiens prennent la plage Juno le 6 juin 1944 ; environ un soldat allié sur dix est canadien ce jour-là.",
+      "en": "15,000 Canadian soldiers stormed Juno Beach on June 6, 1944; about one in ten Allied soldiers that day was Canadian."
+    }
+  },
+  {
+    "id": 183,
+    "question": {
+      "fr": "Quelle est l'importance de la découverte de l'insuline par Banting et Best ?",
+      "en": "What is the significance of the discovery of insulin by Banting and Best?"
+    },
+    "options": {
+      "fr": [
+        "Elle a permis de cartographier l'Arctique",
+        "Elle a sauvé la vie de millions de diabétiques dans le monde",
+        "Elle a mis fin à la Première Guerre mondiale",
+        "Elle a abolicé l'esclavage au Canada"
+      ],
+      "en": [
+        "It allowed mapping of the Arctic",
+        "It saved the lives of millions of diabetics worldwide",
+        "It ended the First World War",
+        "It abolished slavery in Canada"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Sir Frederick Banting et Charles Best ont découvert l'insuline en 1922, un traitement qui a sauvé d'innombrables vies.",
+      "en": "Sir Frederick Banting and Charles Best discovered insulin in 1922, a treatment that has saved countless lives."
+    }
+  },
+  {
+    "id": 184,
+    "question": {
+      "fr": "Quels sont les trois faits principaux qui caractérisent le système de gouvernement du Canada ?",
+      "en": "What are the three key features of Canada's system of government?"
+    },
+    "options": {
+      "fr": [
+        "Démocratie directe, république, monarchie",
+        "État fédéral, démocratie parlementaire, monarchie constitutionnelle",
+        "État unitaire, république, fédéralisme",
+        "Confédération, théocratie, démocratie"
+      ],
+      "en": [
+        "Direct democracy, republic, monarchy",
+        "Federal state, parliamentary democracy, constitutional monarchy",
+        "Unitary state, republic, federalism",
+        "Confederation, theocracy, democracy"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Le Canada est un État fédéral, une démocratie parlementaire et une monarchie constitutionnelle.",
+      "en": "Canada is a federal state, a parliamentary democracy, and a constitutional monarchy."
+    }
+  },
+  {
+    "id": 185,
+    "question": {
+      "fr": "Qu'est-ce qu'une monarchie constitutionnelle ?",
+      "en": "What is a constitutional monarchy?"
+    },
+    "options": {
+      "fr": [
+        "Un système où le monarque détient tous les pouvoirs",
+        "Un système où le chef d'État est un souverain héréditaire qui règne selon la Constitution",
+        "Un gouvernement religieux dirigé par un évêque",
+        "Un système sans constitution écrite"
+      ],
+      "en": [
+        "A system where the monarch holds all power",
+        "A system where the head of state is a hereditary sovereign who reigns according to the Constitution",
+        "A religious government led by a bishop",
+        "A system without a written constitution"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Dans une monarchie constitutionnelle, le souverain est chef d'État et règne selon la primauté du droit ; le premier ministre dirige le gouvernement.",
+      "en": "In a constitutional monarchy, the sovereign is head of state and reigns according to the rule of law; the Prime Minister leads the government."
+    }
+  },
+  {
+    "id": 186,
+    "question": {
+      "fr": "Quels sont les trois pouvoirs du gouvernement ?",
+      "en": "What are the three branches of government?"
+    },
+    "options": {
+      "fr": [
+        "Fédéral, provincial, municipal",
+        "Exécutif, législatif et judiciaire",
+        "Souverain, parlement, citoyens",
+        "Couronne, premier ministre, gouverneur général"
+      ],
+      "en": [
+        "Federal, provincial, municipal",
+        "Executive, legislative, and judicial",
+        "Sovereign, parliament, citizens",
+        "Crown, Prime Minister, Governor General"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Les trois pouvoirs sont l'exécutif, le législatif et le judiciaire ; ils protègent les droits et libertés.",
+      "en": "The three branches are the executive, the legislative, and the judicial; they protect rights and freedoms."
+    }
+  },
+  {
+    "id": 187,
+    "question": {
+      "fr": "Quels sont les trois ordres de gouvernement au Canada ?",
+      "en": "What are the three levels of government in Canada?"
+    },
+    "options": {
+      "fr": [
+        "Exécutif, législatif, judiciaire",
+        "Fédéral, provincial/territorial, municipal",
+        "Roi, Sénat, Chambre des communes",
+        "Premier ministre, ministres, députés"
+      ],
+      "en": [
+        "Executive, legislative, judicial",
+        "Federal, provincial/territorial, municipal",
+        "King, Senate, House of Commons",
+        "Prime Minister, ministers, Members of Parliament"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Les trois ordres sont : fédéral, provincial/territorial et municipal (local).",
+      "en": "The three levels are: federal, provincial/territorial, and municipal (local)."
+    }
+  },
+  {
+    "id": 188,
+    "question": {
+      "fr": "De quoi le Parlement du Canada est-il composé ?",
+      "en": "What is the Parliament of Canada composed of?"
+    },
+    "options": {
+      "fr": [
+        "De la Chambre des communes uniquement",
+        "Du souverain, du Sénat et de la Chambre des communes",
+        "Du premier ministre, du Cabinet et des députés",
+        "Du gouverneur général et des juges"
+      ],
+      "en": [
+        "The House of Commons only",
+        "The sovereign, the Senate, and the House of Commons",
+        "The Prime Minister, Cabinet, and Members of Parliament",
+        "The Governor General and judges"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Le Parlement comprend trois parties : le souverain (la reine ou le roi), le Sénat et la Chambre des communes.",
+      "en": "Parliament has three parts: the sovereign (the Queen or King), the Senate, and the House of Commons."
+    }
+  },
+  {
+    "id": 189,
+    "question": {
+      "fr": "Comment les sénateurs sont-ils choisis ?",
+      "en": "How are senators chosen?"
+    },
+    "options": {
+      "fr": [
+        "Élus par les Canadiens",
+        "Nommés par le gouverneur général sur recommandation du premier ministre",
+        "Tirés au sort parmi les électeurs",
+        "Désignés par les premiers ministres provinciaux"
+      ],
+      "en": [
+        "Elected by Canadians",
+        "Appointed by the Governor General on the advice of the Prime Minister",
+        "Drawn by lot from the electorate",
+        "Designated by provincial premiers"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Les sénateurs sont nommés par le gouverneur général sur recommandation du premier ministre et restent en poste jusqu'à 75 ans.",
+      "en": "Senators are appointed by the Governor General on the advice of the Prime Minister and serve until age 75."
+    }
+  },
+  {
+    "id": 190,
+    "question": {
+      "fr": "Jusqu'à quel âge un sénateur reste-t-il en poste ?",
+      "en": "Until what age does a senator serve?"
+    },
+    "options": {
+      "fr": [
+        "65 ans",
+        "70 ans",
+        "75 ans",
+        "À vie"
+      ],
+      "en": [
+        "65",
+        "70",
+        "75",
+        "For life"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "Les sénateurs restent en poste jusqu'à l'âge de 75 ans.",
+      "en": "Senators serve until the age of 75."
+    }
+  },
+  {
+    "id": 191,
+    "question": {
+      "fr": "Qu'est-ce que la sanction royale ?",
+      "en": "What is Royal Assent?"
+    },
+    "options": {
+      "fr": [
+        "Une cérémonie de couronnement",
+        "L'approbation finale d'un projet de loi par le gouverneur général au nom du souverain",
+        "Une décoration honorifique",
+        "Un vote populaire de confiance"
+      ],
+      "en": [
+        "A coronation ceremony",
+        "The final approval of a bill by the Governor General on behalf of the sovereign",
+        "An honorary decoration",
+        "A popular vote of confidence"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Aucun projet de loi ne devient une loi avant d'avoir été adopté par les deux Chambres et d'avoir reçu la sanction royale.",
+      "en": "No bill becomes law until it has been passed by both Chambers and received Royal Assent."
+    }
+  },
+  {
+    "id": 192,
+    "question": {
+      "fr": "Qui représente le souverain au Canada ?",
+      "en": "Who represents the sovereign in Canada?"
+    },
+    "options": {
+      "fr": [
+        "Le premier ministre",
+        "Le président du Sénat",
+        "Le gouverneur général",
+        "Le juge en chef de la Cour suprême"
+      ],
+      "en": [
+        "The Prime Minister",
+        "The Speaker of the Senate",
+        "The Governor General",
+        "The Chief Justice of the Supreme Court"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "Le gouverneur général représente le souverain et est nommé sur recommandation du premier ministre, habituellement pour cinq ans.",
+      "en": "The Governor General represents the sovereign and is appointed on the advice of the Prime Minister, usually for five years."
+    }
+  },
+  {
+    "id": 193,
+    "question": {
+      "fr": "Qui représente le souverain dans chaque province ?",
+      "en": "Who represents the sovereign in each province?"
+    },
+    "options": {
+      "fr": [
+        "Le premier ministre provincial",
+        "Le lieutenant-gouverneur",
+        "Le commissaire",
+        "Le maire"
+      ],
+      "en": [
+        "The provincial Premier",
+        "The Lieutenant Governor",
+        "The Commissioner",
+        "The Mayor"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Dans chaque province, le souverain est représenté par le lieutenant-gouverneur, nommé par le gouverneur général sur recommandation du PM.",
+      "en": "In each province, the sovereign is represented by the Lieutenant Governor, appointed by the Governor General on the advice of the PM."
+    }
+  },
+  {
+    "id": 194,
+    "question": {
+      "fr": "Qui représente le gouvernement fédéral dans chacun des trois territoires ?",
+      "en": "Who represents the federal government in each of the three territories?"
+    },
+    "options": {
+      "fr": [
+        "Le commissaire",
+        "Le lieutenant-gouverneur",
+        "Le gouverneur général",
+        "Le premier ministre territorial"
+      ],
+      "en": [
+        "The Commissioner",
+        "The Lieutenant Governor",
+        "The Governor General",
+        "The territorial Premier"
+      ]
+    },
+    "correctAnswer": 0,
+    "explanation": {
+      "fr": "Dans les trois territoires, le commissaire représente le gouvernement fédéral et joue un rôle cérémonial.",
+      "en": "In the three territories, the Commissioner represents the federal government and plays a ceremonial role."
+    }
+  },
+  {
+    "id": 195,
+    "question": {
+      "fr": "Quelle est la différence entre la reine/le roi et le premier ministre ?",
+      "en": "What is the difference between the Queen/King and the Prime Minister?"
+    },
+    "options": {
+      "fr": [
+        "Aucune, leurs rôles sont identiques",
+        "Le souverain est chef d'État ; le premier ministre est chef du gouvernement",
+        "Le premier ministre est nommé par la reine sans élection",
+        "Le souverain dirige le pays au quotidien"
+      ],
+      "en": [
+        "None, their roles are identical",
+        "The sovereign is head of state; the Prime Minister is head of government",
+        "The Prime Minister is appointed by the Queen without elections",
+        "The sovereign runs the country day to day"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Le souverain est chef d'État (rôle symbolique) ; le premier ministre dirige réellement le pays.",
+      "en": "The sovereign is head of state (a symbolic role); the Prime Minister actually leads the country."
+    }
+  },
+  {
+    "id": 196,
+    "question": {
+      "fr": "Pour quelles affaires le gouvernement fédéral est-il responsable ?",
+      "en": "What matters is the federal government responsible for?"
+    },
+    "options": {
+      "fr": [
+        "L'éducation et la santé",
+        "Les autoroutes et les ressources naturelles",
+        "La défense, la politique étrangère, le droit criminel et la citoyenneté",
+        "La collecte des ordures et le déneigement"
+      ],
+      "en": [
+        "Education and health",
+        "Highways and natural resources",
+        "Defence, foreign policy, criminal law, and citizenship",
+        "Garbage collection and snow removal"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "Le fédéral gère : défense, politique étrangère, commerce, monnaie, droit criminel, citoyenneté, etc.",
+      "en": "The federal government manages: defence, foreign policy, trade, currency, criminal law, citizenship, etc."
+    }
+  },
+  {
+    "id": 197,
+    "question": {
+      "fr": "De quoi les gouvernements provinciaux sont-ils responsables ?",
+      "en": "What are provincial governments responsible for?"
+    },
+    "options": {
+      "fr": [
+        "La défense nationale et la monnaie",
+        "L'éducation, la santé, les ressources naturelles, les autoroutes",
+        "La politique étrangère",
+        "La citoyenneté et le droit criminel"
+      ],
+      "en": [
+        "National defence and currency",
+        "Education, health, natural resources, highways",
+        "Foreign policy",
+        "Citizenship and criminal law"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Les provinces gèrent l'éducation, la santé, les ressources naturelles, les autoroutes, la propriété et les droits civils.",
+      "en": "Provinces manage education, health, natural resources, highways, property, and civil rights."
+    }
+  },
+  {
+    "id": 198,
+    "question": {
+      "fr": "De quoi les administrations municipales sont-elles habituellement responsables ?",
+      "en": "What are municipal governments usually responsible for?"
+    },
+    "options": {
+      "fr": [
+        "La défense nationale",
+        "La planification urbaine, le déneigement, la collecte des ordures, les pompiers",
+        "L'émission des passeports",
+        "Le droit criminel"
+      ],
+      "en": [
+        "National defence",
+        "Urban planning, snow removal, garbage collection, fire services",
+        "Issuing passports",
+        "Criminal law"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Les municipalités s'occupent notamment de la voirie, du déneigement, des pompiers, des ambulances et des services locaux.",
+      "en": "Municipalities handle roads, snow removal, fire services, ambulances, and local services."
+    }
+  },
+  {
+    "id": 199,
+    "question": {
+      "fr": "Qui peut voter aux élections fédérales canadiennes ?",
+      "en": "Who can vote in Canadian federal elections?"
+    },
+    "options": {
+      "fr": [
+        "Tout résident du Canada",
+        "Les citoyens canadiens d'au moins 18 ans inscrits sur la liste électorale",
+        "Tous les Canadiens nés au pays uniquement",
+        "Les propriétaires fonciers seulement"
+      ],
+      "en": [
+        "Any resident of Canada",
+        "Canadian citizens at least 18 years of age who are on the voters list",
+        "Only Canadian-born citizens",
+        "Landowners only"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Pour voter, il faut être citoyen canadien, avoir au moins 18 ans et être inscrit sur la liste électorale.",
+      "en": "To vote, you must be a Canadian citizen, at least 18 years old, and on the voters list."
+    }
+  },
+  {
+    "id": 200,
+    "question": {
+      "fr": "Quand ont lieu les élections fédérales canadiennes selon la loi ?",
+      "en": "When are Canadian federal elections held by law?"
+    },
+    "options": {
+      "fr": [
+        "Le premier mardi de novembre tous les deux ans",
+        "Le troisième lundi d'octobre tous les quatre ans",
+        "Tous les cinq ans à date fixe",
+        "Lorsque le souverain le décide"
+      ],
+      "en": [
+        "The first Tuesday in November every two years",
+        "The third Monday in October every four years",
+        "Every five years on a fixed date",
+        "When the sovereign decides"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Selon la loi, les élections fédérales doivent avoir lieu le troisième lundi d'octobre tous les quatre ans (mais le PM peut demander une élection plus tôt).",
+      "en": "By law, federal elections must be held on the third Monday in October every four years (but the PM can call an earlier election)."
+    }
+  },
+  {
+    "id": 201,
+    "question": {
+      "fr": "Êtes-vous tenu de dire à d'autres personnes pour qui vous avez voté ?",
+      "en": "Are you required to tell others who you voted for?"
+    },
+    "options": {
+      "fr": [
+        "Oui, à votre employeur",
+        "Oui, aux membres de votre famille",
+        "Non, le vote est secret",
+        "Oui, à Élections Canada"
+      ],
+      "en": [
+        "Yes, to your employer",
+        "Yes, to your family members",
+        "No, the vote is secret",
+        "Yes, to Elections Canada"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "Le vote est secret au Canada ; personne — ni famille, ni employeur, ni syndicat — n'a le droit d'exiger pour qui vous avez voté.",
+      "en": "The vote is secret in Canada; no one — not family, employer, or union — has the right to demand who you voted for."
+    }
+  },
+  {
+    "id": 202,
+    "question": {
+      "fr": "Après une élection, quel parti forme habituellement le gouvernement ?",
+      "en": "After an election, which party usually forms the government?"
+    },
+    "options": {
+      "fr": [
+        "Le parti qui a le plus grand nombre de sièges à la Chambre des communes",
+        "Le parti choisi par le Sénat",
+        "Le parti dont le chef est le plus ancien",
+        "Le parti désigné par le souverain"
+      ],
+      "en": [
+        "The party with the most seats in the House of Commons",
+        "The party chosen by the Senate",
+        "The party with the longest-serving leader",
+        "The party designated by the sovereign"
+      ]
+    },
+    "correctAnswer": 0,
+    "explanation": {
+      "fr": "Le chef du parti ayant le plus grand nombre de sièges est invité par le gouverneur général à former le gouvernement.",
+      "en": "The leader of the party with the most seats is invited by the Governor General to form the government."
+    }
+  },
+  {
+    "id": 203,
+    "question": {
+      "fr": "Qu'est-ce qu'un gouvernement majoritaire ?",
+      "en": "What is a majority government?"
+    },
+    "options": {
+      "fr": [
+        "Un gouvernement appuyé par plus de la moitié des provinces",
+        "Un gouvernement détenant au moins la moitié des sièges à la Chambre des communes",
+        "Un gouvernement avec plus de 60 % de votes populaires",
+        "Un gouvernement appuyé par tous les partis"
+      ],
+      "en": [
+        "A government supported by more than half the provinces",
+        "A government holding at least half the seats in the House of Commons",
+        "A government with more than 60% of the popular vote",
+        "A government supported by all parties"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Si le parti au pouvoir détient au moins la moitié des sièges, on parle de gouvernement majoritaire ; sinon, minoritaire.",
+      "en": "If the governing party holds at least half the seats, it is a majority government; otherwise, a minority government."
+    }
+  },
+  {
+    "id": 204,
+    "question": {
+      "fr": "Qu'est-ce que « La loyale Opposition de Sa Majesté » ?",
+      "en": "What is 'His/Her Majesty's Loyal Opposition'?"
+    },
+    "options": {
+      "fr": [
+        "Une organisation caritative royale",
+        "Le parti d'opposition qui a le plus grand nombre de députés",
+        "Les sénateurs nommés par l'opposition",
+        "Une assemblée de juges"
+      ],
+      "en": [
+        "A royal charitable organization",
+        "The opposition party with the most seats in the House of Commons",
+        "Senators appointed by the opposition",
+        "An assembly of judges"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "L'opposition officielle est le parti d'opposition qui détient le plus de sièges à la Chambre des communes.",
+      "en": "The Official Opposition is the opposition party that holds the most seats in the House of Commons."
+    }
+  },
+  {
+    "id": 205,
+    "question": {
+      "fr": "Qu'est-ce qu'une circonscription ?",
+      "en": "What is a riding (electoral district)?"
+    },
+    "options": {
+      "fr": [
+        "Une assemblée législative provinciale",
+        "Une zone géographique représentée par un député",
+        "Un comité du Sénat",
+        "Un parti politique"
+      ],
+      "en": [
+        "A provincial legislature",
+        "A geographic area represented by an MP",
+        "A Senate committee",
+        "A political party"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Le Canada est divisé en 338 circonscriptions ; chacune élit un député à la Chambre des communes.",
+      "en": "Canada is divided into 338 ridings; each elects one MP to the House of Commons."
+    }
+  },
+  {
+    "id": 206,
+    "question": {
+      "fr": "Quel organisme neutre du Parlement gère le Registre national des électeurs ?",
+      "en": "Which neutral parliamentary agency manages the National Register of Electors?"
+    },
+    "options": {
+      "fr": [
+        "Statistique Canada",
+        "Élections Canada",
+        "Le Sénat",
+        "Le Bureau du gouverneur général"
+      ],
+      "en": [
+        "Statistics Canada",
+        "Elections Canada",
+        "The Senate",
+        "The Office of the Governor General"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Élections Canada, organisme neutre, produit les listes électorales à partir du Registre national des électeurs.",
+      "en": "Elections Canada, a neutral agency, produces voters lists from the National Register of Electors."
+    }
+  },
+  {
+    "id": 207,
+    "question": {
+      "fr": "Quels sont les principaux partis politiques fédéraux mentionnés dans le guide ?",
+      "en": "What are the main federal political parties mentioned in the guide?"
+    },
+    "options": {
+      "fr": [
+        "Le Parti libéral, le Bloc québécois et le Parti vert",
+        "Le Parti conservateur, le Nouveau Parti démocratique et le Parti libéral",
+        "Le Parti républicain, le Parti démocrate et le Parti libertarien",
+        "Le Parti unioniste et le Parti progressiste"
+      ],
+      "en": [
+        "The Liberal Party, the Bloc Québécois, and the Green Party",
+        "The Conservative Party, the New Democratic Party, and the Liberal Party",
+        "The Republican Party, the Democratic Party, and the Libertarian Party",
+        "The Union Party and the Progressive Party"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Le guide mentionne trois grands partis représentés à la Chambre des communes : le Parti conservateur, le NPD et le Parti libéral.",
+      "en": "The guide mentions three major parties represented in the House of Commons: the Conservative Party, the NDP, and the Liberal Party."
+    }
+  },
+  {
+    "id": 208,
+    "question": {
+      "fr": "Que doit-on apporter à son bureau de vote ?",
+      "en": "What should you bring to your polling station?"
+    },
+    "options": {
+      "fr": [
+        "Rien, votre nom suffit",
+        "La carte d'information de l'électeur et une preuve d'identité et d'adresse",
+        "Votre passeport canadien uniquement",
+        "Votre acte de naissance"
+      ],
+      "en": [
+        "Nothing, your name is sufficient",
+        "Your voter information card and proof of identity and address",
+        "Your Canadian passport only",
+        "Your birth certificate"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Apportez votre carte d'information de l'électeur et une preuve d'identité et d'adresse au bureau de vote.",
+      "en": "Bring your voter information card and proof of identity and address to the polling station."
+    }
+  },
+  {
+    "id": 209,
+    "question": {
+      "fr": "Quelle est la devise du Canada ?",
+      "en": "What is Canada's motto?"
+    },
+    "options": {
+      "fr": [
+        "A mari usque ad mare (D'un océan à l'autre)",
+        "Liberté, égalité, fraternité",
+        "E pluribus unum",
+        "Dieu et mon droit"
+      ],
+      "en": [
+        "A mari usque ad mare (From sea to sea)",
+        "Liberté, égalité, fraternité",
+        "E pluribus unum",
+        "Dieu et mon droit"
+      ]
+    },
+    "correctAnswer": 0,
+    "explanation": {
+      "fr": "La devise nationale « A mari usque ad mare » signifie « d'un océan à l'autre ».",
+      "en": "The national motto 'A mari usque ad mare' means 'from sea to sea'."
+    }
+  },
+  {
+    "id": 210,
+    "question": {
+      "fr": "Quelles sont les couleurs nationales du Canada (depuis 1921) ?",
+      "en": "What are Canada's national colours (since 1921)?"
+    },
+    "options": {
+      "fr": [
+        "Bleu et blanc",
+        "Rouge et blanc",
+        "Vert et blanc",
+        "Bleu, blanc et rouge"
+      ],
+      "en": [
+        "Blue and white",
+        "Red and white",
+        "Green and white",
+        "Blue, white, and red"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Le rouge et le blanc sont les couleurs nationales depuis 1921, établies par le roi George V.",
+      "en": "Red and white have been the national colours since 1921, established by King George V."
+    }
+  },
+  {
+    "id": 211,
+    "question": {
+      "fr": "Quand le drapeau canadien actuel (à feuille d'érable) a-t-il été hissé pour la première fois ?",
+      "en": "When was Canada's current flag (with the maple leaf) first flown?"
+    },
+    "options": {
+      "fr": [
+        "1867",
+        "1921",
+        "1965",
+        "1982"
+      ],
+      "en": [
+        "1867",
+        "1921",
+        "1965",
+        "1982"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "Le drapeau canadien actuel a été hissé pour la première fois en 1965.",
+      "en": "Canada's current flag was first flown in 1965."
+    }
+  },
+  {
+    "id": 212,
+    "question": {
+      "fr": "Quel est le symbole canadien le plus connu ?",
+      "en": "What is Canada's most recognized symbol?"
+    },
+    "options": {
+      "fr": [
+        "Le castor",
+        "La feuille d'érable",
+        "La fleur de lys",
+        "L'orignal"
+      ],
+      "en": [
+        "The beaver",
+        "The maple leaf",
+        "The fleur-de-lis",
+        "The moose"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "La feuille d'érable, portée sur les uniformes militaires depuis les années 1850, est le symbole canadien le plus connu.",
+      "en": "The maple leaf, worn on military uniforms since the 1850s, is Canada's most recognized symbol."
+    }
+  },
+  {
+    "id": 213,
+    "question": {
+      "fr": "Quelle est la plus haute distinction que peuvent recevoir les Canadiens ?",
+      "en": "What is the highest honour Canadians can receive?"
+    },
+    "options": {
+      "fr": [
+        "L'Ordre du Canada",
+        "La Croix de Victoria",
+        "La Médaille du jubilé",
+        "L'Étoile du Canada"
+      ],
+      "en": [
+        "The Order of Canada",
+        "The Victoria Cross",
+        "The Jubilee Medal",
+        "The Star of Canada"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "La Croix de Victoria reconnaît des actes de bravoure remarquables face à l'ennemi ; décernée à 96 Canadiens depuis 1854.",
+      "en": "The Victoria Cross recognizes acts of remarkable bravery in the face of the enemy; awarded to 96 Canadians since 1854."
+    }
+  },
+  {
+    "id": 214,
+    "question": {
+      "fr": "Quand l'hymne national « Ô Canada » a-t-il été proclamé hymne national ?",
+      "en": "When was 'O Canada' proclaimed the national anthem?"
+    },
+    "options": {
+      "fr": [
+        "1867",
+        "1921",
+        "1965",
+        "1980"
+      ],
+      "en": [
+        "1867",
+        "1921",
+        "1965",
+        "1980"
+      ]
+    },
+    "correctAnswer": 3,
+    "explanation": {
+      "fr": "« Ô Canada » a été proclamé hymne national en 1980, un siècle après avoir été chanté pour la première fois en 1880.",
+      "en": "'O Canada' was proclaimed the national anthem in 1980, a century after it was first sung in 1880."
+    }
+  },
+  {
+    "id": 215,
+    "question": {
+      "fr": "Quel est l'hymne royal du Canada ?",
+      "en": "What is the royal anthem of Canada?"
+    },
+    "options": {
+      "fr": [
+        "Ô Canada",
+        "Dieu protège le Roi/la Reine (God Save the King/Queen)",
+        "La Marseillaise",
+        "Rule Britannia"
+      ],
+      "en": [
+        "O Canada",
+        "God Save the King/Queen",
+        "La Marseillaise",
+        "Rule Britannia"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "« Dieu protège le Roi (ou la Reine) » peut être joué à toute occasion où l'on veut honorer le souverain.",
+      "en": "'God Save the King (or Queen)' may be played on any occasion where one wishes to honour the sovereign."
+    }
+  },
+  {
+    "id": 216,
+    "question": {
+      "fr": "Quel sport est considéré comme le sport d'hiver national du Canada ?",
+      "en": "What sport is considered Canada's national winter sport?"
+    },
+    "options": {
+      "fr": [
+        "Le curling",
+        "Le ski",
+        "Le hockey sur glace",
+        "Le patinage de vitesse"
+      ],
+      "en": [
+        "Curling",
+        "Skiing",
+        "Ice hockey",
+        "Speed skating"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "Le hockey sur glace, né au Canada au XIXe siècle, est le sport d'hiver national.",
+      "en": "Ice hockey, born in Canada in the 19th century, is the national winter sport."
+    }
+  },
+  {
+    "id": 217,
+    "question": {
+      "fr": "Quel est le sport officiel d'été du Canada ?",
+      "en": "What is Canada's official summer sport?"
+    },
+    "options": {
+      "fr": [
+        "Le baseball",
+        "Le soccer",
+        "Le football canadien",
+        "La crosse"
+      ],
+      "en": [
+        "Baseball",
+        "Soccer",
+        "Canadian football",
+        "Lacrosse"
+      ]
+    },
+    "correctAnswer": 3,
+    "explanation": {
+      "fr": "La crosse, sport ancien joué à l'origine par les Autochtones, est le sport officiel d'été.",
+      "en": "Lacrosse, an ancient sport originally played by Aboriginal peoples, is the official summer sport."
+    }
+  },
+  {
+    "id": 218,
+    "question": {
+      "fr": "Quel animal figure sur la pièce de 5 cents canadienne ?",
+      "en": "What animal appears on the Canadian 5-cent coin?"
+    },
+    "options": {
+      "fr": [
+        "Le caribou",
+        "Le castor",
+        "L'orignal",
+        "L'ours polaire"
+      ],
+      "en": [
+        "The caribou",
+        "The beaver",
+        "The moose",
+        "The polar bear"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Le castor figure sur la pièce de 5 cents et est un symbole emblématique du Canada.",
+      "en": "The beaver appears on the 5-cent coin and is an iconic symbol of Canada."
+    }
+  },
+  {
+    "id": 219,
+    "question": {
+      "fr": "En quelle année a été créé l'Ordre du Canada ?",
+      "en": "In what year was the Order of Canada created?"
+    },
+    "options": {
+      "fr": [
+        "1867",
+        "1921",
+        "1967",
+        "1982"
+      ],
+      "en": [
+        "1867",
+        "1921",
+        "1967",
+        "1982"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "L'Ordre du Canada a été créé en 1967, année du centenaire de la Confédération.",
+      "en": "The Order of Canada was created in 1967, the centennial year of Confederation."
+    }
+  },
+  {
+    "id": 220,
+    "question": {
+      "fr": "Quel jour est le Jour du Souvenir ?",
+      "en": "What day is Remembrance Day?"
+    },
+    "options": {
+      "fr": [
+        "1er juillet",
+        "11 novembre",
+        "9 avril",
+        "24 juin"
+      ],
+      "en": [
+        "July 1",
+        "November 11",
+        "April 9",
+        "June 24"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Le 11 novembre, les Canadiens portent le coquelicot et observent un moment de silence à la 11e heure du 11e jour du 11e mois.",
+      "en": "On November 11, Canadians wear the poppy and observe a moment of silence at the 11th hour of the 11th day of the 11th month."
+    }
+  },
+  {
+    "id": 221,
+    "question": {
+      "fr": "Quel jour est célébrée la Fête du Canada ?",
+      "en": "What day is Canada Day celebrated?"
+    },
+    "options": {
+      "fr": [
+        "1er janvier",
+        "24 juin",
+        "1er juillet",
+        "11 novembre"
+      ],
+      "en": [
+        "January 1",
+        "June 24",
+        "July 1",
+        "November 11"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "La Fête du Canada est célébrée le 1er juillet, jour anniversaire de la Confédération de 1867.",
+      "en": "Canada Day is celebrated on July 1, the anniversary of Confederation in 1867."
+    }
+  },
+  {
+    "id": 222,
+    "question": {
+      "fr": "Quelle est la fête nationale du Québec ?",
+      "en": "What is Quebec's national holiday?"
+    },
+    "options": {
+      "fr": [
+        "1er juillet",
+        "24 juin (Saint-Jean-Baptiste)",
+        "9 avril",
+        "11 novembre"
+      ],
+      "en": [
+        "July 1",
+        "June 24 (Saint-Jean-Baptiste)",
+        "April 9",
+        "November 11"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "La Fête nationale du Québec est le 24 juin, jour de la Saint-Jean-Baptiste.",
+      "en": "Quebec's national holiday is June 24, Saint-Jean-Baptiste Day."
+    }
+  },
+  {
+    "id": 223,
+    "question": {
+      "fr": "Quel jour est la Journée sir John A. Macdonald ?",
+      "en": "What day is Sir John A. Macdonald Day?"
+    },
+    "options": {
+      "fr": [
+        "1er juillet",
+        "11 janvier",
+        "20 novembre",
+        "24 juin"
+      ],
+      "en": [
+        "July 1",
+        "January 11",
+        "November 20",
+        "June 24"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Le Parlement a fait du 11 janvier (sa date de naissance) la Journée sir John A. Macdonald.",
+      "en": "Parliament made January 11 (his birthday) Sir John A. Macdonald Day."
+    }
+  },
+  {
+    "id": 224,
+    "question": {
+      "fr": "Combien de provinces et de territoires compte le Canada ?",
+      "en": "How many provinces and territories does Canada have?"
+    },
+    "options": {
+      "fr": [
+        "10 provinces et 2 territoires",
+        "10 provinces et 3 territoires",
+        "12 provinces et 3 territoires",
+        "13 provinces"
+      ],
+      "en": [
+        "10 provinces and 2 territories",
+        "10 provinces and 3 territories",
+        "12 provinces and 3 territories",
+        "13 provinces"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Le Canada compte 10 provinces et 3 territoires (Yukon, T.N.-O., Nunavut).",
+      "en": "Canada has 10 provinces and 3 territories (Yukon, NWT, Nunavut)."
+    }
+  },
+  {
+    "id": 225,
+    "question": {
+      "fr": "Quelle est la capitale du Canada ?",
+      "en": "What is the capital of Canada?"
+    },
+    "options": {
+      "fr": [
+        "Toronto",
+        "Montréal",
+        "Ottawa",
+        "Vancouver"
+      ],
+      "en": [
+        "Toronto",
+        "Montreal",
+        "Ottawa",
+        "Vancouver"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "Ottawa, sur la rivière des Outaouais, a été choisie comme capitale en 1857 par la reine Victoria.",
+      "en": "Ottawa, on the Ottawa River, was chosen as capital in 1857 by Queen Victoria."
+    }
+  },
+  {
+    "id": 226,
+    "question": {
+      "fr": "Combien d'habitants compte environ le Canada ?",
+      "en": "What is Canada's approximate population?"
+    },
+    "options": {
+      "fr": [
+        "10 millions",
+        "20 millions",
+        "34 millions",
+        "60 millions"
+      ],
+      "en": [
+        "10 million",
+        "20 million",
+        "34 million",
+        "60 million"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "Le Canada compte environ 34 millions d'habitants selon le guide.",
+      "en": "Canada has approximately 34 million inhabitants according to the guide."
+    }
+  },
+  {
+    "id": 227,
+    "question": {
+      "fr": "Quels sont les trois océans qui bordent le Canada ?",
+      "en": "What are the three oceans that border Canada?"
+    },
+    "options": {
+      "fr": [
+        "Pacifique, Atlantique et Indien",
+        "Atlantique, Arctique et Pacifique",
+        "Pacifique, Atlantique et du Sud",
+        "Atlantique, Arctique et Indien"
+      ],
+      "en": [
+        "Pacific, Atlantic, and Indian",
+        "Atlantic, Arctic, and Pacific",
+        "Pacific, Atlantic, and Southern",
+        "Atlantic, Arctic, and Indian"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Le Pacifique (ouest), l'Atlantique (est) et l'Arctique (nord) bordent le Canada.",
+      "en": "The Pacific (west), Atlantic (east), and Arctic (north) border Canada."
+    }
+  },
+  {
+    "id": 228,
+    "question": {
+      "fr": "Quelles sont les provinces de l'Atlantique ?",
+      "en": "What are the Atlantic provinces?"
+    },
+    "options": {
+      "fr": [
+        "Terre-Neuve-et-Labrador, Île-du-Prince-Édouard, Nouvelle-Écosse, Nouveau-Brunswick",
+        "Québec, Ontario, Nouveau-Brunswick",
+        "Nouvelle-Écosse, Terre-Neuve, Manitoba, Ontario",
+        "Yukon, Nunavut, T.N.-O."
+      ],
+      "en": [
+        "Newfoundland and Labrador, Prince Edward Island, Nova Scotia, New Brunswick",
+        "Quebec, Ontario, New Brunswick",
+        "Nova Scotia, Newfoundland, Manitoba, Ontario",
+        "Yukon, Nunavut, NWT"
+      ]
+    },
+    "correctAnswer": 0,
+    "explanation": {
+      "fr": "Les provinces de l'Atlantique sont Terre-Neuve-et-Labrador, l'Î.-P.-É., la Nouvelle-Écosse et le Nouveau-Brunswick.",
+      "en": "The Atlantic provinces are Newfoundland and Labrador, PEI, Nova Scotia, and New Brunswick."
+    }
+  },
+  {
+    "id": 229,
+    "question": {
+      "fr": "Quelles sont les provinces des Prairies ?",
+      "en": "What are the Prairie provinces?"
+    },
+    "options": {
+      "fr": [
+        "Ontario, Québec, Manitoba",
+        "Manitoba, Saskatchewan, Alberta",
+        "Alberta, Colombie-Britannique, Saskatchewan",
+        "Yukon, T.N.-O., Manitoba"
+      ],
+      "en": [
+        "Ontario, Quebec, Manitoba",
+        "Manitoba, Saskatchewan, Alberta",
+        "Alberta, British Columbia, Saskatchewan",
+        "Yukon, NWT, Manitoba"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Le Manitoba, la Saskatchewan et l'Alberta forment les provinces des Prairies.",
+      "en": "Manitoba, Saskatchewan, and Alberta form the Prairie provinces."
+    }
+  },
+  {
+    "id": 230,
+    "question": {
+      "fr": "Quelle est la capitale de l'Ontario ?",
+      "en": "What is the capital of Ontario?"
+    },
+    "options": {
+      "fr": [
+        "Ottawa",
+        "Toronto",
+        "Hamilton",
+        "Kingston"
+      ],
+      "en": [
+        "Ottawa",
+        "Toronto",
+        "Hamilton",
+        "Kingston"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "La capitale de l'Ontario est Toronto, qui est aussi la plus grande ville du Canada.",
+      "en": "The capital of Ontario is Toronto, which is also Canada's largest city."
+    }
+  },
+  {
+    "id": 231,
+    "question": {
+      "fr": "Quelle est la capitale du Québec ?",
+      "en": "What is the capital of Quebec?"
+    },
+    "options": {
+      "fr": [
+        "Montréal",
+        "Québec",
+        "Gatineau",
+        "Trois-Rivières"
+      ],
+      "en": [
+        "Montreal",
+        "Quebec City",
+        "Gatineau",
+        "Trois-Rivières"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "La capitale de la province de Québec est la ville de Québec.",
+      "en": "The capital of the province of Quebec is Quebec City."
+    }
+  },
+  {
+    "id": 232,
+    "question": {
+      "fr": "Quelle est la capitale de la Colombie-Britannique ?",
+      "en": "What is the capital of British Columbia?"
+    },
+    "options": {
+      "fr": [
+        "Vancouver",
+        "Victoria",
+        "Kelowna",
+        "Surrey"
+      ],
+      "en": [
+        "Vancouver",
+        "Victoria",
+        "Kelowna",
+        "Surrey"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "La capitale de la Colombie-Britannique est Victoria, port d'attache de la flotte du Pacifique.",
+      "en": "The capital of British Columbia is Victoria, home port of the Pacific fleet."
+    }
+  },
+  {
+    "id": 233,
+    "question": {
+      "fr": "Quelle est la capitale du Manitoba ?",
+      "en": "What is the capital of Manitoba?"
+    },
+    "options": {
+      "fr": [
+        "Winnipeg",
+        "Brandon",
+        "Saint-Boniface",
+        "Regina"
+      ],
+      "en": [
+        "Winnipeg",
+        "Brandon",
+        "Saint-Boniface",
+        "Regina"
+      ]
+    },
+    "correctAnswer": 0,
+    "explanation": {
+      "fr": "Winnipeg est la capitale du Manitoba et sa ville la plus peuplée.",
+      "en": "Winnipeg is the capital and most populous city of Manitoba."
+    }
+  },
+  {
+    "id": 234,
+    "question": {
+      "fr": "Quelle est la capitale de la Saskatchewan ?",
+      "en": "What is the capital of Saskatchewan?"
+    },
+    "options": {
+      "fr": [
+        "Saskatoon",
+        "Regina",
+        "Moose Jaw",
+        "Prince Albert"
+      ],
+      "en": [
+        "Saskatoon",
+        "Regina",
+        "Moose Jaw",
+        "Prince Albert"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Regina est la capitale de la Saskatchewan ; elle abrite l'école de la GRC.",
+      "en": "Regina is the capital of Saskatchewan; it is home to the RCMP training academy."
+    }
+  },
+  {
+    "id": 235,
+    "question": {
+      "fr": "Quelle est la capitale de l'Alberta ?",
+      "en": "What is the capital of Alberta?"
+    },
+    "options": {
+      "fr": [
+        "Calgary",
+        "Edmonton",
+        "Banff",
+        "Red Deer"
+      ],
+      "en": [
+        "Calgary",
+        "Edmonton",
+        "Banff",
+        "Red Deer"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Edmonton est la capitale de l'Alberta.",
+      "en": "Edmonton is the capital of Alberta."
+    }
+  },
+  {
+    "id": 236,
+    "question": {
+      "fr": "Quelle est la capitale du Nunavut ?",
+      "en": "What is the capital of Nunavut?"
+    },
+    "options": {
+      "fr": [
+        "Yellowknife",
+        "Whitehorse",
+        "Iqaluit",
+        "Resolute"
+      ],
+      "en": [
+        "Yellowknife",
+        "Whitehorse",
+        "Iqaluit",
+        "Resolute"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "Iqaluit (autrefois Frobisher Bay) est la capitale du Nunavut.",
+      "en": "Iqaluit (formerly Frobisher Bay) is the capital of Nunavut."
+    }
+  },
+  {
+    "id": 237,
+    "question": {
+      "fr": "Quelle est la capitale du Yukon ?",
+      "en": "What is the capital of Yukon?"
+    },
+    "options": {
+      "fr": [
+        "Dawson City",
+        "Whitehorse",
+        "Iqaluit",
+        "Yellowknife"
+      ],
+      "en": [
+        "Dawson City",
+        "Whitehorse",
+        "Iqaluit",
+        "Yellowknife"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Whitehorse est la capitale du territoire du Yukon.",
+      "en": "Whitehorse is the capital of Yukon."
+    }
+  },
+  {
+    "id": 238,
+    "question": {
+      "fr": "Quelle est la capitale des Territoires du Nord-Ouest ?",
+      "en": "What is the capital of the Northwest Territories?"
+    },
+    "options": {
+      "fr": [
+        "Yellowknife",
+        "Iqaluit",
+        "Whitehorse",
+        "Inuvik"
+      ],
+      "en": [
+        "Yellowknife",
+        "Iqaluit",
+        "Whitehorse",
+        "Inuvik"
+      ]
+    },
+    "correctAnswer": 0,
+    "explanation": {
+      "fr": "Yellowknife, surnommée la « capitale nord-américaine du diamant », est la capitale des T.N.-O.",
+      "en": "Yellowknife, nicknamed the 'diamond capital of North America', is the capital of the NWT."
+    }
+  },
+  {
+    "id": 239,
+    "question": {
+      "fr": "Quelle est la capitale de Terre-Neuve-et-Labrador ?",
+      "en": "What is the capital of Newfoundland and Labrador?"
+    },
+    "options": {
+      "fr": [
+        "Halifax",
+        "Charlottetown",
+        "St. John's",
+        "Fredericton"
+      ],
+      "en": [
+        "Halifax",
+        "Charlottetown",
+        "St. John's",
+        "Fredericton"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "St. John's est la capitale de Terre-Neuve-et-Labrador.",
+      "en": "St. John's is the capital of Newfoundland and Labrador."
+    }
+  },
+  {
+    "id": 240,
+    "question": {
+      "fr": "Quelle est la capitale de la Nouvelle-Écosse ?",
+      "en": "What is the capital of Nova Scotia?"
+    },
+    "options": {
+      "fr": [
+        "Halifax",
+        "Sydney",
+        "Truro",
+        "Dartmouth"
+      ],
+      "en": [
+        "Halifax",
+        "Sydney",
+        "Truro",
+        "Dartmouth"
+      ]
+    },
+    "correctAnswer": 0,
+    "explanation": {
+      "fr": "Halifax, plus grand port de la côte Est, est la capitale de la Nouvelle-Écosse.",
+      "en": "Halifax, the largest port on the East Coast, is the capital of Nova Scotia."
+    }
+  },
+  {
+    "id": 241,
+    "question": {
+      "fr": "Quelle est la capitale du Nouveau-Brunswick ?",
+      "en": "What is the capital of New Brunswick?"
+    },
+    "options": {
+      "fr": [
+        "Saint John",
+        "Moncton",
+        "Fredericton",
+        "Bathurst"
+      ],
+      "en": [
+        "Saint John",
+        "Moncton",
+        "Fredericton",
+        "Bathurst"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "Fredericton est la capitale historique du Nouveau-Brunswick.",
+      "en": "Fredericton is the historic capital of New Brunswick."
+    }
+  },
+  {
+    "id": 242,
+    "question": {
+      "fr": "Quelle est la capitale de l'Île-du-Prince-Édouard ?",
+      "en": "What is the capital of Prince Edward Island?"
+    },
+    "options": {
+      "fr": [
+        "Charlottetown",
+        "Summerside",
+        "Halifax",
+        "St. John's"
+      ],
+      "en": [
+        "Charlottetown",
+        "Summerside",
+        "Halifax",
+        "St. John's"
+      ]
+    },
+    "correctAnswer": 0,
+    "explanation": {
+      "fr": "Charlottetown est la capitale de l'Î.-P.-É., berceau de la Confédération.",
+      "en": "Charlottetown is the capital of PEI, the birthplace of Confederation."
+    }
+  },
+  {
+    "id": 243,
+    "question": {
+      "fr": "Quel est le rang du Canada dans le monde par étendue ?",
+      "en": "What is Canada's rank in the world by size?"
+    },
+    "options": {
+      "fr": [
+        "Le plus grand pays",
+        "Deuxième plus grand",
+        "Troisième plus grand",
+        "Cinquième plus grand"
+      ],
+      "en": [
+        "The largest country",
+        "Second largest",
+        "Third largest",
+        "Fifth largest"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Le Canada est le deuxième pays du monde en étendue, avec près de 10 millions de km².",
+      "en": "Canada is the second largest country in the world, with nearly 10 million km²."
+    }
+  },
+  {
+    "id": 244,
+    "question": {
+      "fr": "Quelle est la plus haute montagne du Canada ?",
+      "en": "What is Canada's highest mountain?"
+    },
+    "options": {
+      "fr": [
+        "Le mont Logan (Yukon)",
+        "Le mont Robson",
+        "Le mont Tremblant",
+        "Le mont Royal"
+      ],
+      "en": [
+        "Mount Logan (Yukon)",
+        "Mount Robson",
+        "Mont Tremblant",
+        "Mount Royal"
+      ]
+    },
+    "correctAnswer": 0,
+    "explanation": {
+      "fr": "Le mont Logan, au Yukon, est la plus haute montagne du Canada.",
+      "en": "Mount Logan, in Yukon, is Canada's highest mountain."
+    }
+  },
+  {
+    "id": 245,
+    "question": {
+      "fr": "Quel est le plus grand lac d'eau douce au monde, situé entre l'Ontario et les États-Unis ?",
+      "en": "What is the largest freshwater lake in the world, located between Ontario and the United States?"
+    },
+    "options": {
+      "fr": [
+        "Le lac Érié",
+        "Le lac Ontario",
+        "Le lac Supérieur",
+        "Le lac Huron"
+      ],
+      "en": [
+        "Lake Erie",
+        "Lake Ontario",
+        "Lake Superior",
+        "Lake Huron"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "Le lac Supérieur est le plus grand lac d'eau douce au monde.",
+      "en": "Lake Superior is the largest freshwater lake in the world."
+    }
+  },
+  {
+    "id": 246,
+    "question": {
+      "fr": "Quel océan borde la Colombie-Britannique ?",
+      "en": "What ocean borders British Columbia?"
+    },
+    "options": {
+      "fr": [
+        "L'Atlantique",
+        "L'Arctique",
+        "Le Pacifique",
+        "L'Indien"
+      ],
+      "en": [
+        "The Atlantic",
+        "The Arctic",
+        "The Pacific",
+        "The Indian"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "La Colombie-Britannique se trouve sur la côte du Pacifique.",
+      "en": "British Columbia is on the Pacific coast."
+    }
+  },
+  {
+    "id": 247,
+    "question": {
+      "fr": "Quelle province est connue comme « le grenier du monde » et la province du blé ?",
+      "en": "Which province is known as the 'breadbasket of the world' and the wheat province?"
+    },
+    "options": {
+      "fr": [
+        "Manitoba",
+        "Saskatchewan",
+        "Alberta",
+        "Ontario"
+      ],
+      "en": [
+        "Manitoba",
+        "Saskatchewan",
+        "Alberta",
+        "Ontario"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "La Saskatchewan possède 40 % des terres arables du Canada et est la plus grande productrice de céréales.",
+      "en": "Saskatchewan has 40% of Canada's arable land and is the largest grain producer."
+    }
+  },
+  {
+    "id": 248,
+    "question": {
+      "fr": "Quelle province est la première productrice de pétrole et de gaz du Canada ?",
+      "en": "Which province is Canada's leading producer of oil and gas?"
+    },
+    "options": {
+      "fr": [
+        "Alberta",
+        "Saskatchewan",
+        "Terre-Neuve",
+        "Colombie-Britannique"
+      ],
+      "en": [
+        "Alberta",
+        "Saskatchewan",
+        "Newfoundland",
+        "British Columbia"
+      ]
+    },
+    "correctAnswer": 0,
+    "explanation": {
+      "fr": "L'Alberta est la première productrice de pétrole et de gaz ; ses sables bitumineux sont une source énergétique majeure.",
+      "en": "Alberta is the leading producer of oil and gas; its oil sands are a major energy source."
+    }
+  },
+  {
+    "id": 249,
+    "question": {
+      "fr": "Quel province est le plus grand producteur d'hydroélectricité ?",
+      "en": "Which province is the largest producer of hydroelectric power?"
+    },
+    "options": {
+      "fr": [
+        "Ontario",
+        "Québec",
+        "Manitoba",
+        "Colombie-Britannique"
+      ],
+      "en": [
+        "Ontario",
+        "Quebec",
+        "Manitoba",
+        "British Columbia"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Le Québec est le plus grand producteur d'hydroélectricité grâce à ses immenses réserves d'eau douce.",
+      "en": "Quebec is the largest producer of hydroelectric power thanks to its vast freshwater reserves."
+    }
+  },
+  {
+    "id": 250,
+    "question": {
+      "fr": "Quelle province a la plus grande population autochtone (en proportion) ?",
+      "en": "Which province has the largest Aboriginal population (proportionally)?"
+    },
+    "options": {
+      "fr": [
+        "Saskatchewan",
+        "Manitoba",
+        "Alberta",
+        "Nunavut"
+      ],
+      "en": [
+        "Saskatchewan",
+        "Manitoba",
+        "Alberta",
+        "Nunavut"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Le Manitoba compte la plus grande proportion d'Autochtones de toutes les provinces (plus de 15 %).",
+      "en": "Manitoba has the largest proportion of Aboriginal peoples of all provinces (over 15%)."
+    }
+  },
+  {
+    "id": 251,
+    "question": {
+      "fr": "Quel pourcentage de la population du Nunavut est inuit ?",
+      "en": "What percentage of Nunavut's population is Inuit?"
+    },
+    "options": {
+      "fr": [
+        "Environ 30 %",
+        "Environ 50 %",
+        "Environ 85 %",
+        "Environ 100 %"
+      ],
+      "en": [
+        "About 30%",
+        "About 50%",
+        "About 85%",
+        "About 100%"
+      ]
+    },
+    "correctAnswer": 2,
+    "explanation": {
+      "fr": "La population du Nunavut est composée à environ 85 % d'Inuits.",
+      "en": "About 85% of Nunavut's population is Inuit."
+    }
+  },
+  {
+    "id": 252,
+    "question": {
+      "fr": "Où la baie de Fundy est-elle située et qu'est-ce qui la rend célèbre ?",
+      "en": "Where is the Bay of Fundy located and what makes it famous?"
+    },
+    "options": {
+      "fr": [
+        "Au Québec ; ses chutes",
+        "En Nouvelle-Écosse ; ses marées atteignent des hauteurs inégalées",
+        "En Colombie-Britannique ; ses baleines",
+        "À Terre-Neuve ; ses icebergs"
+      ],
+      "en": [
+        "In Quebec; its waterfalls",
+        "In Nova Scotia; its tides reach unmatched heights",
+        "In British Columbia; its whales",
+        "In Newfoundland; its icebergs"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "La baie de Fundy, en Nouvelle-Écosse, est connue pour avoir les plus hautes marées au monde.",
+      "en": "The Bay of Fundy, in Nova Scotia, is known for having the highest tides in the world."
+    }
+  },
+  {
+    "id": 253,
+    "question": {
+      "fr": "Quel est le rôle des cours (tribunaux) au Canada ?",
+      "en": "What is the role of the courts in Canada?"
+    },
+    "options": {
+      "fr": [
+        "Adopter des lois",
+        "Régler les différends de manière équitable, en suivant les lois adoptées par le Parlement et les législatures",
+        "Élire les députés",
+        "Diriger la police"
+      ],
+      "en": [
+        "Pass laws",
+        "Settle disputes fairly, by following the laws passed by Parliament and the legislatures",
+        "Elect Members of Parliament",
+        "Direct the police"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Les cours règlent les différends pacifiquement en appliquant la loi et en jugeant les faits.",
+      "en": "The courts settle disputes peacefully by applying the law and judging the facts."
+    }
+  },
+  {
+    "id": 254,
+    "question": {
+      "fr": "Avez-vous le droit de poser des questions aux agents de police au sujet de leurs services ou de leur conduite ?",
+      "en": "Do you have the right to ask police officers about their services or conduct?"
+    },
+    "options": {
+      "fr": [
+        "Non, jamais",
+        "Oui, vous avez ce droit",
+        "Seulement avec l'autorisation d'un juge",
+        "Seulement si vous êtes citoyen depuis plus de 5 ans"
+      ],
+      "en": [
+        "No, never",
+        "Yes, you have this right",
+        "Only with a judge's authorization",
+        "Only if you have been a citizen for more than 5 years"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Au Canada, vous avez le droit de poser des questions aux agents de police au sujet de leurs services et de leur conduite.",
+      "en": "In Canada, you have the right to ask police officers about their services and conduct."
+    }
+  },
+  {
+    "id": 255,
+    "question": {
+      "fr": "Quel principe juridique signifie qu'une personne accusée est présumée innocente jusqu'à preuve du contraire ?",
+      "en": "What legal principle means that an accused person is presumed innocent until proven guilty?"
+    },
+    "options": {
+      "fr": [
+        "L'habeas corpus",
+        "La présomption d'innocence",
+        "La primauté du droit",
+        "Le droit au silence"
+      ],
+      "en": [
+        "Habeas corpus",
+        "The presumption of innocence",
+        "The rule of law",
+        "The right to silence"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "La présomption d'innocence est un fondement de la justice canadienne.",
+      "en": "The presumption of innocence is a cornerstone of Canadian justice."
+    }
+  },
+  {
+    "id": 256,
+    "question": {
+      "fr": "Quel est le partenaire commercial le plus important du Canada ?",
+      "en": "What is Canada's most important trading partner?"
+    },
+    "options": {
+      "fr": [
+        "Le Royaume-Uni",
+        "Les États-Unis",
+        "La Chine",
+        "La France"
+      ],
+      "en": [
+        "The United Kingdom",
+        "The United States",
+        "China",
+        "France"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Les États-Unis sont, de loin, le principal partenaire commercial du Canada.",
+      "en": "The United States is, by far, Canada's most important trading partner."
+    }
+  },
+  {
+    "id": 257,
+    "question": {
+      "fr": "Quelles sont les trois industries piliers de l'économie canadienne ?",
+      "en": "What are the three pillars of the Canadian economy?"
+    },
+    "options": {
+      "fr": [
+        "Tourisme, agriculture, mode",
+        "Ressources naturelles, fabrication, services",
+        "Pêche, finance, agriculture",
+        "Énergie, télécommunications, défense"
+      ],
+      "en": [
+        "Tourism, agriculture, fashion",
+        "Natural resources, manufacturing, services",
+        "Fishing, finance, agriculture",
+        "Energy, telecommunications, defence"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "L'économie canadienne repose sur trois piliers : les ressources naturelles, la fabrication et les services.",
+      "en": "The Canadian economy rests on three pillars: natural resources, manufacturing, and services."
+    }
+  },
+  {
+    "id": 258,
+    "question": {
+      "fr": "Quelle est la monnaie du Canada ?",
+      "en": "What is Canada's currency?"
+    },
+    "options": {
+      "fr": [
+        "Le dollar américain",
+        "Le dollar canadien",
+        "L'euro",
+        "La livre sterling"
+      ],
+      "en": [
+        "The US dollar",
+        "The Canadian dollar",
+        "The euro",
+        "The pound sterling"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Le Canada utilise le dollar canadien ; la Banque du Canada gère la masse monétaire.",
+      "en": "Canada uses the Canadian dollar; the Bank of Canada manages the money supply."
+    }
+  },
+  {
+    "id": 259,
+    "question": {
+      "fr": "Qui figure sur le billet de 10 $ canadien ?",
+      "en": "Who appears on the Canadian $10 bill?"
+    },
+    "options": {
+      "fr": [
+        "Sir Wilfrid Laurier",
+        "Sir John A. Macdonald",
+        "La reine Elizabeth II",
+        "Pierre Elliott Trudeau"
+      ],
+      "en": [
+        "Sir Wilfrid Laurier",
+        "Sir John A. Macdonald",
+        "Queen Elizabeth II",
+        "Pierre Elliott Trudeau"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Le portrait de sir John A. Macdonald, premier premier ministre, figure sur le billet de 10 $.",
+      "en": "The portrait of Sir John A. Macdonald, the first Prime Minister, appears on the $10 bill."
+    }
+  },
+  {
+    "id": 260,
+    "question": {
+      "fr": "Qui figure sur le billet de 5 $ canadien ?",
+      "en": "Who appears on the Canadian $5 bill?"
+    },
+    "options": {
+      "fr": [
+        "Sir John A. Macdonald",
+        "Sir Wilfrid Laurier",
+        "Sir George-Étienne Cartier",
+        "Sir Robert Borden"
+      ],
+      "en": [
+        "Sir John A. Macdonald",
+        "Sir Wilfrid Laurier",
+        "Sir George-Étienne Cartier",
+        "Sir Robert Borden"
+      ]
+    },
+    "correctAnswer": 1,
+    "explanation": {
+      "fr": "Le portrait de sir Wilfrid Laurier, premier Canadien français à devenir PM, figure sur le billet de 5 $.",
+      "en": "The portrait of Sir Wilfrid Laurier, the first French Canadian to become PM, appears on the $5 bill."
+    }
   }
 ]
