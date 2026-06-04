@@ -9,6 +9,10 @@ i18n.use(initReactI18next).init({
         fr: { translation: fr },
     },
     lng: 'en', // Default to English
+    detection: {
+        order: ['querystring', 'cookie', 'localStorage', 'navigator'],
+        caches: ['cookie'],
+    },
     fallbackLng: ['fr', 'en'], // Allow fallback to French
     compatibilityJSON: 'v3',
     interpolation: {
