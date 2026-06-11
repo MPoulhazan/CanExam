@@ -45,7 +45,7 @@ export default function AppHeader(headerProps: any) {
             scene.descriptor &&
             scene.descriptor.options &&
             scene.descriptor.options.headerTitle) ??
-        (scene && scene.route && scene.route.name) ??
+        (scene && scene.route && scene.route.name === 'CanExam' ? 'Can-Exam' : scene.route.name) ??
         '';
 
     return (
